@@ -275,7 +275,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
-  PlayerMoveSpeed: .25
+  PlayerMoveSpeed: 10
 --- !u!65 &616702049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -566,7 +566,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1537262105}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e8b4444bb8845aa49ab0abc64f1172e4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -639,7 +639,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1704733711}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e8b4444bb8845aa49ab0abc64f1172e4, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

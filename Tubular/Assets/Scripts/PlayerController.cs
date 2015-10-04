@@ -10,18 +10,21 @@ public class PlayerController : NetworkBehaviour {
 
     private bool isGrounded {
         get {
-            return Physics.CheckSphere(transform.position + (Vector3.up * -1.25f), 0.5f, whatIsGround);
+            return Physics.CheckSphere(transform.position + (Vector3.up * -1f), 0.25f, whatIsGround);
         }
     }
 
 
     void Update() {
         if (rb == null) rb = GetComponent<Rigidbody>();
-        rb.AddForce(Input.GetAxis("Horizontal") * PlayerMoveSpeed, 0f, 0f, ForceMode.VelocityChange);
+        if (isGrounded) {
+            rb.velocity = new Vector3(Input.GetAxis("Horizontal") * PlayerMoveSpeed, rb.velocity.y, 0f);
 
-
-        if (Input.GetButtonDown("Jump") && isGrounded) {
-            rb.AddRelativeForce(0f, 10f, 0f, ForceMode.Impulse);
+            if (Input.GetButtonDown("Jump")) {
+                rb.AddRelativeForce(0f, 20f, 0f, ForceMode.Impulse);
+            }
         }
+
+
     }
 }
