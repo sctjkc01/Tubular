@@ -18,7 +18,7 @@ public class PlayerController : NetworkBehaviour {
     void Update() {
         if (rb == null) rb = GetComponent<Rigidbody>();
 
-        if (/*isLocalPlayer && */isGrounded) {
+        if (isLocalPlayer && isGrounded) {
             rb.velocity = new Vector3(Input.GetAxis("Horizontal") * PlayerMoveSpeed, rb.velocity.y, 0f);
 
             if (Input.GetButtonDown("Jump")) {
