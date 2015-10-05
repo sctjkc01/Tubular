@@ -11,11 +11,20 @@ public class GameNetworkManager : NetworkManager
 {
     private string username;
     private bool isServer = false;
+    
+    private struct ClientContainer
+    {
+        public string username;
+        public NetworkConnection conn;
+    }
 
+    private List<ClientContainer> clients;
+    private string[] usernames; //Username list stored on client. Not maintained on server.
 
     void Start()
     {
         this.SetupLoginButtons();
+        clients = new List<ClientContainer>();
     }
 
     
@@ -45,6 +54,8 @@ public class GameNetworkManager : NetworkManager
         NetworkManager.singleton.StartHost();
         this.RegisterHostHandlers();
         this.RegisterClientHandlers();
+
+        this.clients = new List<ClientContainer>();
     }
 
     public void JoinGame()
@@ -54,6 +65,8 @@ public class GameNetworkManager : NetworkManager
         SetUsername();
         NetworkManager.singleton.StartClient();
         this.RegisterClientHandlers();
+
+        this.usernames = new string[0];
     }
 
     public void Disconnect()
@@ -76,29 +89,97 @@ public class GameNetworkManager : NetworkManager
     
     void SetupLoginButtons()
     {
-        GameObject.Find("btnHost").GetComponent<Button>().onClick.RemoveAllListeners();
         GameObject.Find("btnHost").GetComponent<Button>().onClick.AddListener(StartupHost);
-
-        GameObject.Find("btnJoin").GetComponent<Button>().onClick.RemoveAllListeners();
+        
         GameObject.Find("btnJoin").GetComponent<Button>().onClick.AddListener(JoinGame);
     }
 
     void SetupGameSceneButtons()
     {
-        GameObject.Find("btnDisconnect").GetComponent<Button>().onClick.RemoveAllListeners();
-        GameObject.Find("btnDisconnect").GetComponent<Button>().onClick.AddListener(NetworkManager.singleton.StopHost);
+        GameObject.Find("btnDisconnect").GetComponent<Button>().onClick.AddListener(Disconnect);
+        GameObject.Find("Player List Container").GetComponent<Text>().text = "";
     }
 
 
+    //Called on client when connected to server
+    public override void OnClientConnect(NetworkConnection conn)
+    {
+        base.OnClientConnect(conn);
+        HandshakeMsg msg = new HandshakeMsg();
+        msg.username = this.username;
+        conn.Send(HandshakeMsg.msgType, msg);
+    }
+
+    //Called on server when client disconnects
+    public override void OnServerDisconnect(NetworkConnection conn)
+    {
+        base.OnServerDisconnect(conn);
+        foreach (ClientContainer c in this.clients)
+        {
+            if(c.conn == conn)
+            {
+                GameObject.Find("Player List Container").GetComponent<Text>().text.Replace(c.username + "\n", "");
+                Debug.Log(c.username + " disconnected.");
+                this.clients.Remove(c);
+                break;
+            }
+        }
+
+        //Updating clients on change
+        ClientListMsg updateMsg = new ClientListMsg();
+        updateMsg.usernames = new string[this.clients.Count];
+        for (int i = 0; i < this.clients.Count; i++)
+        {
+            updateMsg.usernames[i] = this.clients[i].username;
+        }
+        NetworkServer.SendToAll(ClientListMsg.msgType, updateMsg);
+    }
 
     //Methods for registering delegates for NetworkMessages
     void RegisterClientHandlers()
     {
+        this.client.RegisterHandler(ClientListMsg.msgType, new NetworkMessageDelegate(OnUpdateClientListReceived));
     }
 
     void RegisterHostHandlers()
     {
+        NetworkServer.RegisterHandler(HandshakeMsg.msgType, new NetworkMessageDelegate(OnClientHandshakeReceived));
     }
+
+    #region Network Message Receivers (received on host)
+    void OnClientHandshakeReceived(NetworkMessage msg)
+    {
+        HandshakeMsg hmsg = msg.ReadMessage<HandshakeMsg>();
+        ClientContainer c = new ClientContainer();
+        c.username = hmsg.username;
+        c.conn = msg.conn;
+        this.clients.Add(c);
+
+        Debug.Log(hmsg.username + " connected.");
+        
+        //Updating clients on change and telling newly connected of currently connected
+        ClientListMsg updateMsg = new ClientListMsg();
+        updateMsg.usernames = new string[this.clients.Count];
+        for(int i = 0; i < this.clients.Count; i++)
+        {
+            updateMsg.usernames[i] = this.clients[i].username;
+        }
+
+        NetworkServer.SendToAll(ClientListMsg.msgType, updateMsg);
+    }
+
+    #endregion
+
+    #region Network Message Receivers (received on client)
+
+    void OnUpdateClientListReceived(NetworkMessage msg)
+    {
+        ClientListMsg cmsg = msg.ReadMessage<ClientListMsg>();
+        this.usernames = cmsg.usernames;
+        GameObject.Find("Player List Container").GetComponent<Text>().text = string.Join("\n", this.usernames);
+    }
+
+    #endregion
 
     public string Username { get { return username; } }
 }
