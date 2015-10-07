@@ -937,6 +937,7 @@ MonoBehaviour:
     maxDistFromCenter: 12
   - prefab: {fileID: 137562, guid: efd1b9e2a4da47142a1f5fbd6120a698, type: 2}
     maxDistFromCenter: 12.5
+  SpawnChance: .25
 --- !u!1 &824889688
 GameObject:
   m_ObjectHideFlags: 0
