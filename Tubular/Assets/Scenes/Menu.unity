@@ -956,7 +956,10 @@ MonoBehaviour:
   m_PlayerSpawnMethod: 0
   m_OfflineScene: Menu
   m_OnlineScene: Game
-  m_SpawnPrefabs: []
+  m_SpawnPrefabs:
+  - {fileID: 137562, guid: efd1b9e2a4da47142a1f5fbd6120a698, type: 2}
+  - {fileID: 174730, guid: d07deb3fafc360748ba1597024ef067a, type: 2}
+  - {fileID: 186214, guid: 8b3e8906083df2546ac7ebfe6429670d, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -978,7 +981,7 @@ MonoBehaviour:
     m_MaxSentMessageQueueSize: 128
     m_IsAcksLong: 0
     m_Channels: []
-  m_Channels: 
+  m_Channels: 0500000000000000
   m_UseSimulator: 0
   m_SimulatedLatency: 1
   m_PacketLossPercentage: 0
