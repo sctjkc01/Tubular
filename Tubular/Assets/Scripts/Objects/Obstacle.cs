@@ -9,14 +9,14 @@ public class Obstacle : NetworkBehaviour {
 
     void Start()
     {
-        if (!isServer) return;
+        /*if (!isServer) return;
         Collider[] colliders = this.GetComponentsInChildren<Collider>();
         foreach(Collider col in colliders)
         {
             col.isTrigger = true;
             col.gameObject.AddComponent<DetectCollisionToParent>();
-        }
-    }
+        }*/
+    }/*
 
     void OnTriggerEnterChild(Collider c)
     {
@@ -34,5 +34,5 @@ public class Obstacle : NetworkBehaviour {
     void OnTriggerEnter(Collider c)
     {
         OnTriggerEnterChild(c);
-    }
+    }*/
 }

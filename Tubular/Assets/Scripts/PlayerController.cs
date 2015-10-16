@@ -5,10 +5,11 @@ using UnityEngine.Networking;
 [AddComponentMenu("Tubular Scripts/Runtime/Networked/Player Controller")]
 public class PlayerController : NetworkBehaviour {
     private Rigidbody rb;
+    private GameManager gm;
     [SyncVar]
     public bool alive = true;
     public LayerMask whatIsGround;
-    //public LayerMask whatIsObstacle;
+    public LayerMask whatIsObstacle;
     public float PlayerMoveSpeed = 10f;
 
     private bool isGrounded {
@@ -16,24 +17,24 @@ public class PlayerController : NetworkBehaviour {
             return Physics.CheckSphere(transform.position + (Vector3.up * -1f), 0.25f, whatIsGround);
         }
     }
-    /*private bool foundObstacle {
+    private bool foundObstacle {
         get {
             return Physics.CheckSphere(transform.position + (Vector3.forward * 1f), 0.25f, whatIsObstacle);
         }
-    }*/
+    }
 
     void Start() {
         if(rb == null) rb = GetComponent<Rigidbody>();
 
         rb.isKinematic = !isLocalPlayer;
-
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
 
     void Update() {
         if(rb == null) rb = GetComponent<Rigidbody>();
 
-        if (isLocalPlayer) {
+        if (isLocalPlayer && gm.live) {
             if (!alive) { //Ghost controls
                 this.transform.position = new Vector3(this.transform.position.x, 15, this.transform.position.z);
                 rb.velocity = new Vector3(Input.GetAxis("Horizontal") * PlayerMoveSpeed, rb.velocity.y, 0f);
@@ -47,10 +48,13 @@ public class PlayerController : NetworkBehaviour {
                     rb.AddRelativeForce(0f, 20f, 0f, ForceMode.Impulse);
                 }
             }
-        }
 
-        if(isLocalPlayer && !alive/* && foundObstacle*/) {
-
+            if(alive && foundObstacle) {
+                alive = false;
+                rb.useGravity = false;
+                rb.drag = 0.85f;
+                Debug.Log("HIT");
+            }
         }
     }
 
