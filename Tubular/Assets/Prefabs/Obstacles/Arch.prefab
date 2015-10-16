@@ -412,6 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be3ab85f6a08d645a2f0b0cee84d0c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hostile: 0
 --- !u!114 &11475080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,6 +486,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SendInterval
       value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hostile
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
