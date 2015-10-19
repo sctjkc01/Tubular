@@ -40,21 +40,6 @@ public class PlayerController : NetworkBehaviour {
 
         if(isLocalPlayer && gm.live) {
 
-            //left
-            if(Input.GetKeyDown(KeyCode.LeftArrow)) {
-                left = true;
-            }
-            if(Input.GetKeyUp(KeyCode.LeftArrow)) {
-                left = false;
-            }
-            //right
-            if(Input.GetKeyDown(KeyCode.RightArrow)) {
-                right = true;
-            }
-            if(Input.GetKeyUp(KeyCode.RightArrow)) {
-                right = false;
-            }
-
             if(!alive) { //Ghost controls
                 rb.velocity = new Vector3(Input.GetAxis("Horizontal") * PlayerMoveSpeed, rb.velocity.y, 0f);
             } else {
@@ -66,17 +51,18 @@ public class PlayerController : NetworkBehaviour {
                 rb.AddRelativeForce(0f, 20f, 0f, ForceMode.Impulse);
             }
 
-            if(right) {
+			float horiz = Input.GetAxis ("Horizontal");
+            if(horiz > 0) {
                 rot--;
             }
 
-            if(left) {
+            if(horiz < 0) {
                 rot++;
             }
             rot = Mathf.Clamp(rot, -40f, 40f);
 
 
-            if(right == false && left == false) {
+            if(horiz ==0 ) {
                 if(rot < 0) {
                     rot++;
                 } else if(rot > 0) {
