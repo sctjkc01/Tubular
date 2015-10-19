@@ -9,6 +9,6 @@ using UnityEngine.Networking;
 /// </summary>
 public class ClientListMsg : MessageBase
 {
-    public const short msgType = MsgType.Highest + 1;
+    public const short msgType = MsgType.Highest + 2;
     public string[] usernames;
 }
