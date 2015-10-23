@@ -11,6 +11,8 @@ public class GameNetworkManager : NetworkManager
 {
     private string username;
     private bool isServer = false;
+    [SerializeField]
+    private GameObject gameManagerPrefab;
     
     private struct ClientContainer
     {
@@ -72,6 +74,7 @@ public class GameNetworkManager : NetworkManager
     public void Disconnect()
     {
         NetworkManager.singleton.StopHost();
+        this.clients = new List<ClientContainer>();
     }
     
     void OnLevelWasLoaded(int level)
@@ -113,7 +116,10 @@ public class GameNetworkManager : NetworkManager
         if (this.isServer)
         {
             Debug.Log("START");
-            GameObject.Find("GameManager").GetComponent<GameManager>().live = true;
+            GameObject inst = Instantiate(this.gameManagerPrefab);
+            NetworkServer.Spawn(inst);
+            inst.GetComponent<GameManager>().live = true;
+            //GameObject.Find("GameManager").GetComponent<GameManager>().live = true;
             NetworkServer.SendToAll(StartGameMsg.msgType, new StartGameMsg());
         }
     }

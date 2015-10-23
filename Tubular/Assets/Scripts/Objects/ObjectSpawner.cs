@@ -35,7 +35,7 @@ public class ObjectSpawner : NetworkBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (!isLocalPlayer && GameManager.inst.live) {
+        if (!isLocalPlayer && GameManager.inst != null && GameManager.inst.live) {
             TimeSinceLastCheck += Time.deltaTime;
             
             while (TimeSinceLastCheck > 1.0f) {
