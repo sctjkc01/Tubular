@@ -53,11 +53,11 @@ public class PlayerController : NetworkBehaviour {
 
 			float horiz = Input.GetAxis ("Horizontal");
             if(horiz > 0) {
-                rot--;
+				rot+= -8;
             }
 
             if(horiz < 0) {
-                rot++;
+                rot += 8;
             }
             rot = Mathf.Clamp(rot, -40f, 40f);
 
