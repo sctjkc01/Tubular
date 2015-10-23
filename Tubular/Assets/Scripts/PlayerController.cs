@@ -5,7 +5,6 @@ using UnityEngine.Networking;
 [AddComponentMenu("Tubular Scripts/Runtime/Networked/Player Controller")]
 public class PlayerController : NetworkBehaviour {
     private Rigidbody rb;
-    private GameManager gm;
     [SyncVar]
     public bool alive = true;
     public LayerMask whatIsGround;
@@ -31,14 +30,13 @@ public class PlayerController : NetworkBehaviour {
         if(rb == null) rb = GetComponent<Rigidbody>();
 
         rb.isKinematic = !isLocalPlayer;
-        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
 
     void Update() {
         if(rb == null) rb = GetComponent<Rigidbody>();
 
-        if(isLocalPlayer && gm.live) {
+        if(isLocalPlayer && GameManager.inst != null && GameManager.inst.IsLive()) {
 
             //left
             if(Input.GetKeyDown(KeyCode.LeftArrow)) {
