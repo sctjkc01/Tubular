@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11419436}
   - 65: {fileID: 6539838}
   m_Layer: 11
-  m_Name: 15degPiece
+  m_Name: 15degR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
