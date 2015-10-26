@@ -33,21 +33,21 @@ public class ObjectSpawner : NetworkBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
-        if(!isLocalPlayer && GameManager.inst.live) {
+    void Update()
+    {
+        if (!isLocalPlayer && GameManager.inst != null && GameManager.inst.live) {
             TimeSinceLastCheck += Time.deltaTime;
-
-            if(TimeSinceLastCheck > 1.0f) {
-                while (TimeSinceLastCheck > 1.0f) {
-                    if (Random.value < SpawnChance) {
-                        SpawnBundle bundleToUse = bundles[Random.Range(0, bundles.Length)];
-                        GameObject newGO = GameObject.Instantiate<GameObject>(bundleToUse.prefab);
-                        newGO.transform.position = transform.position + new Vector3(Random.Range(bundleToUse.maxDistFromCenter * -1f, bundleToUse.maxDistFromCenter), 0, 0);
-                        NetworkServer.Spawn(newGO);
-                    }
-
-                    TimeSinceLastCheck -= 1.0f;
+            
+            while (TimeSinceLastCheck > 1.0f) {
+                if (Random.value < SpawnChance)
+                {
+                    SpawnBundle bundleToUse = bundles[Random.Range(0, bundles.Length)];
+                    GameObject newGO = GameObject.Instantiate<GameObject>(bundleToUse.prefab);
+                    newGO.transform.position = transform.position + new Vector3(Random.Range(bundleToUse.maxDistFromCenter * -1f, bundleToUse.maxDistFromCenter), 0, 0);
+                    NetworkServer.Spawn(newGO);
                 }
+
+                TimeSinceLastCheck -= 1.0f;
             }
         }
     }

@@ -11,6 +11,8 @@ public class GameNetworkManager : NetworkManager
 {
     private string username;
     private bool isServer = false;
+    [SerializeField]
+    private GameObject gameManagerPrefab;
     
     private struct ClientContainer
     {
@@ -72,6 +74,7 @@ public class GameNetworkManager : NetworkManager
     public void Disconnect()
     {
         NetworkManager.singleton.StopHost();
+        this.clients = new List<ClientContainer>();
     }
     
     void OnLevelWasLoaded(int level)
@@ -96,10 +99,30 @@ public class GameNetworkManager : NetworkManager
 
     void SetupGameSceneButtons()
     {
-        GameObject.Find("btnDisconnect").GetComponent<Button>().onClick.AddListener(Disconnect);
+        GameObject.Find("Shade").SetActive(true);
+        //GameObject.Find("Lobby").SetActive(true);
+		GameObject.Find("btnDisconnect").GetComponent<Button>().onClick.AddListener(Disconnect);
+        if(this.isServer) {
+          GameObject.Find("btnStart").GetComponent<Button>().onClick.AddListener(OnStartClicked);
+          GameObject.Find("btnStart").SetActive(true);
+        }else{
+          GameObject.Find("btnStart").SetActive(false);
+        }
         GameObject.Find("Player List Container").GetComponent<Text>().text = "";
     }
 
+    public void OnStartClicked()
+    {
+        if (this.isServer)
+        {
+            Debug.Log("START");
+            GameObject inst = Instantiate(this.gameManagerPrefab);
+            NetworkServer.Spawn(inst);
+            inst.GetComponent<GameManager>().live = true;
+            //GameObject.Find("GameManager").GetComponent<GameManager>().live = true;
+            NetworkServer.SendToAll(StartGameMsg.msgType, new StartGameMsg());
+        }
+    }
 
     //Called on client when connected to server
     public override void OnClientConnect(NetworkConnection conn)
@@ -139,6 +162,7 @@ public class GameNetworkManager : NetworkManager
     void RegisterClientHandlers()
     {
         this.client.RegisterHandler(ClientListMsg.msgType, new NetworkMessageDelegate(OnUpdateClientListReceived));
+        this.client.RegisterHandler(StartGameMsg.msgType, new NetworkMessageDelegate(OnGameStartReceived));
     }
 
     void RegisterHostHandlers()
@@ -177,6 +201,12 @@ public class GameNetworkManager : NetworkManager
         ClientListMsg cmsg = msg.ReadMessage<ClientListMsg>();
         this.usernames = cmsg.usernames;
         GameObject.Find("Player List Container").GetComponent<Text>().text = string.Join("\n", this.usernames);
+    }
+
+    void OnGameStartReceived(NetworkMessage msg)
+    {
+        GameObject.Find("Shade").SetActive(false);
+        GameObject.Find("Lobby").SetActive(false);
     }
 
     #endregion
