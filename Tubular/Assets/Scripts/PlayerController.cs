@@ -15,6 +15,8 @@ public class PlayerController : NetworkBehaviour {
     private bool left = false;
     private bool right = false;
 
+	private float invuln = 0;
+
     private bool isGrounded {
         get {
             return Physics.CheckSphere(transform.position + (Vector3.up * -1f), 0.25f, whatIsGround);
@@ -62,6 +64,7 @@ public class PlayerController : NetworkBehaviour {
 
             if(isGrounded && Input.GetButtonDown("Jump")) {
                 rb.AddRelativeForce(0f, 20f, 0f, ForceMode.Impulse);
+				this.GetComponent<PowerupShield>().OnCollected();
             }
 
             if(right) {
@@ -84,13 +87,27 @@ public class PlayerController : NetworkBehaviour {
 
             this.transform.localEulerAngles = new Vector3(0, 0, rot);
 
-            if(alive && foundObstacle) {
-                alive = false;
-                transform.position = new Vector3(transform.position.x, 15f, 0f);
-                rb.useGravity = false;
-                rb.drag = 0.85f;
-                Debug.Log("HIT");
+            if(alive && invuln <= 0 && foundObstacle) {
+
+				PowerupBase[] powerups = this.GetComponents<PowerupBase>();
+				bool kill = true;
+				foreach(PowerupBase p in powerups){
+					if(p.Active)
+						kill &= p.OnObstacleCollision(null);
+				}
+
+				if(kill){
+	                alive = false;
+	                transform.position = new Vector3(transform.position.x, 15f, 0f);
+	                rb.useGravity = false;
+	                rb.drag = 0.85f;
+	                Debug.Log("HIT");
+				}else{
+					invuln = 10;
+				}
             }
+
+			if(invuln > 0) invuln -= Time.deltaTime;
         }
     }
 

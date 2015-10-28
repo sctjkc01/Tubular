@@ -23,6 +23,18 @@ public class GameManager : NetworkBehaviour {
         //else Destroy(this.gameObject);
     }
 
+	public void Update(){
+		//Temporary trail movement
+		GameObject[] trails = GameObject.FindGameObjectsWithTag("TrailContainer");
+		Vector3 speed = new Vector3(0,0,1) * GameTravelSpeed * Time.deltaTime;
+		foreach(GameObject go in trails){
+			for(int i = 0; i < go.transform.childCount; i++){
+				go.transform.GetChild(i).position -= speed;
+			}
+			go.transform.localPosition += speed;
+		}
+	}
+
     public void SetLive(bool val) { _live = val; }
     public bool IsLive() { return _live; }
 
