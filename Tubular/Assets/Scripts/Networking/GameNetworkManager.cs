@@ -45,6 +45,7 @@ public class GameNetworkManager : NetworkManager
     void SetUsername()
     {
         this.username = GameObject.Find("inputUsername").GetComponent<InputField>().text;
+        if (this.username.Trim() == "") this.username = "Player";
     }
     
     public void StartupHost()
@@ -119,7 +120,6 @@ public class GameNetworkManager : NetworkManager
             GameObject inst = Instantiate(this.gameManagerPrefab);
             NetworkServer.Spawn(inst);
             inst.GetComponent<GameManager>().live = true;
-            //GameObject.Find("GameManager").GetComponent<GameManager>().live = true;
             NetworkServer.SendToAll(StartGameMsg.msgType, new StartGameMsg());
         }
     }

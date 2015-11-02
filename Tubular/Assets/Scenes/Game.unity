@@ -544,7 +544,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 292319863}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: .999991059
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -740,6 +740,10 @@ MonoBehaviour:
     maxDistFromCenter: 12
   - prefab: {fileID: 137562, guid: efd1b9e2a4da47142a1f5fbd6120a698, type: 2}
     maxDistFromCenter: 12.5
+  - prefab: {fileID: 163978, guid: d91dd4b35758cbe4e9dd36a0ec9541d5, type: 2}
+    maxDistFromCenter: 15
+  - prefab: {fileID: 193730, guid: 58910ff94383b0143bb4ecb707374b68, type: 2}
+    maxDistFromCenter: 15
   SpawnChance: .25
 --- !u!114 &815657104
 MonoBehaviour:
@@ -971,7 +975,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1146683326}
-  m_LocalRotation: {x: .995151758, y: .00476258202, z: -.0756992474, w: .0626095086}
+  m_LocalRotation: {x: -.998026788, y: -1.72829061e-07, z: 1.72829061e-07, w: -.0627903715}
   m_LocalPosition: {x: 0, y: 90, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
