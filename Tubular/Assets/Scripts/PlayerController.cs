@@ -17,6 +17,8 @@ public class PlayerController : NetworkBehaviour {
 
 	private float invuln = 0;
 
+    private bool wasJumpPressedLastFrame = false;
+
     private bool isGrounded {
         get {
             return Physics.CheckSphere(transform.position + (Vector3.up * -1f), 0.25f, whatIsGround);
@@ -62,10 +64,21 @@ public class PlayerController : NetworkBehaviour {
             }
 
 
-            if(isGrounded && Input.GetButtonDown("Jump")) {
-                rb.AddRelativeForce(0f, 20f, 0f, ForceMode.Impulse);
-				this.GetComponent<PowerupShield>().OnCollected();
+            if (Input.GetButtonDown("Jump") && !wasJumpPressedLastFrame)
+            {
+                PowerupBase[] powerups = this.GetComponents<PowerupBase>();
+                bool grounded = isGrounded;
+                float multiplier = 1.0f;
+                foreach (PowerupBase p in powerups)
+                {
+                    Debug.Log(p.name + " " + p.Active);
+                    if (p.Active)
+                        multiplier *= p.OnJumpPressed(grounded);
+                }
+                if (!grounded && multiplier > 0) rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); //Stop vertical 
+                rb.AddRelativeForce(0f, 16f*multiplier, 0f, ForceMode.Impulse);
             }
+            wasJumpPressedLastFrame = Input.GetButtonDown("Jump");
 
             if(right) {
                 rot--;
@@ -99,11 +112,12 @@ public class PlayerController : NetworkBehaviour {
 				if(kill){
 	                alive = false;
 	                transform.position = new Vector3(transform.position.x, 15f, 0f);
+                    rb.velocity = Vector3.zero;
 	                rb.useGravity = false;
 	                rb.drag = 0.85f;
 	                Debug.Log("HIT");
 				}else{
-					invuln = 10;
+					invuln = 2;
 				}
             }
 
@@ -121,5 +135,13 @@ public class PlayerController : NetworkBehaviour {
             //Add points and multiplier
             //TODO change hostile to enum representing type e.g. gate, obstacle, powerup
         }
+    }
+
+    [ClientRpc]
+    public void RpcOnPowerupCollected(string powerupType)
+    {
+        Debug.Log("Get Power " + this.isClient);
+        PowerupBase powerup = (PowerupBase)this.GetComponent(powerupType);
+        powerup.OnCollected();
     }
 }
