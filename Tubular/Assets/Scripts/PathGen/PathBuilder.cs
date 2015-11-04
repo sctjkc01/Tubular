@@ -21,6 +21,7 @@ public class PathBuilder : MonoBehaviour {
 
     // Update is called once per frame
     void Start() {
+        totalWeight = Straight.weight;
         foreach (ChunkOption alpha in SpawnOptions) {
             totalWeight += alpha.weight;
         }
@@ -36,7 +37,11 @@ public class PathBuilder : MonoBehaviour {
             } else {
                 while (newGO == null) {
                     float selection = Random.Range(0, totalWeight);
-                    for (byte j = 0; j < SpawnOptions.Length; j++) {
+                    for (byte j = 0; j < SpawnOptions.Length + 1; j++) {
+                        if(j == SpawnOptions.Length) {
+                            newGO = GameObject.Instantiate<GameObject>(Straight.option);
+                            break;
+                        }
                         if (selection < SpawnOptions[j].weight) {
                             if ((totalRot < -10 && SpawnOptions[j].vertRotDelta < -10) || (totalRot > 10 && SpawnOptions[j].vertRotDelta > 10)) break;
                             if ((totalRot != 0) && SpawnOptions[j].horizRot) break;
