@@ -34,6 +34,8 @@ public class PlayerController : NetworkBehaviour {
         if(rb == null) rb = GetComponent<Rigidbody>();
 
         rb.isKinematic = !isLocalPlayer;
+
+        transform.SetParent(GameObject.Find("Play Area").transform);
     }
 
 

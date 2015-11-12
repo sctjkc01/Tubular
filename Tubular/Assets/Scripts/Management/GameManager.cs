@@ -19,11 +19,16 @@ public class GameManager : NetworkBehaviour {
 
     void Awake() {
         //if (inst == null) 
-            inst = this;
+        inst = this;
+        DontDestroyOnLoad(this.gameObject);
         //else Destroy(this.gameObject);
     }
 
 	public void Update(){
+#if UNITY_EDITOR
+        if(inst == null) inst = this;
+#endif
+
 		//Temporary trail movement
 		GameObject[] trails = GameObject.FindGameObjectsWithTag("TrailContainer");
 		Vector3 speed = new Vector3(0,0,1) * GameTravelSpeed * Time.deltaTime;

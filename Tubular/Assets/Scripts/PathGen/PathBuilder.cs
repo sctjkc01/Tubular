@@ -30,6 +30,8 @@ public class PathBuilder : MonoBehaviour {
     }
 
     public IEnumerator CreatePath() {
+        yield return new WaitForEndOfFrame();
+        PathFollow[] followers = GameObject.FindObjectsOfType<PathFollow>();
         for (byte i = 0; i < 255; i++) {
             GameObject newGO = null;
             if (i < 5) {
@@ -67,7 +69,21 @@ public class PathBuilder : MonoBehaviour {
             }
             lastPipe = newGO.GetComponent<PathChunk>();
 
-            yield return null;
+            if(i == 0) {
+                for(byte j = 0; j < followers.Length; j++) {
+                    followers[j].currNode = lastPipe.StartPoint; // Place the path followers on the start point.
+                }
+            }
+            if(i == 20) {
+                for(byte j = 0; j < followers.Length; j++) {
+                    followers[j].Travel(5f); // Push everything 5 units ahead, prevent the starting clipping
+                    if(followers[j].gameObject.GetComponent<ObjectSpawner>() != null) {
+                        followers[j].Travel(45f); // Push the obstacle spawner 50 units ahead instead
+                    }
+                }
+            }
+            if(i > 20)
+                yield return null;
         }
 
     }
