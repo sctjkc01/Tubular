@@ -78,7 +78,7 @@ public class PathBuilder : MonoBehaviour {
                 for(byte j = 0; j < followers.Length; j++) {
                     followers[j].Travel(5f); // Push everything 5 units ahead, prevent the starting clipping
                     if(followers[j].gameObject.GetComponent<ObjectSpawner>() != null) {
-                        followers[j].Travel(45f); // Push the obstacle spawner 50 units ahead instead
+                        followers[j].Travel(95f); // Push the obstacle spawner 100 units ahead instead
                     }
                 }
             }

@@ -113,7 +113,7 @@ public class PlayerController : NetworkBehaviour {
 
 				if(kill){
 	                alive = false;
-	                transform.position = new Vector3(transform.position.x, 15f, 0f);
+	                transform.position = transform.position + (transform.up * 15f);
                     rb.velocity = Vector3.zero;
 	                rb.useGravity = false;
 	                rb.drag = 0.85f;
