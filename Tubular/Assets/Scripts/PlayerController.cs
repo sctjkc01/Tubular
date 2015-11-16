@@ -26,7 +26,7 @@ public class PlayerController : NetworkBehaviour {
     }
     private bool foundObstacle {
         get {
-            return Physics.CheckSphere(transform.position + (Vector3.forward * 1f), 0.25f, whatIsObstacle);
+            return Physics.CheckSphere(transform.position + (Vector3.forward * 1f) + (Vector3.up * 0.005f), 0.25f, whatIsObstacle);
         }
     }
 
