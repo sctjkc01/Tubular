@@ -11,12 +11,12 @@ public class CollectablePowerup : NetworkBehaviour
 
 	// Use this for initialization
 	void Start () {
-	
+        Destroy(this.gameObject, 45f); // Destroy this powerup after 45 seconds (hopefully after being passed)
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
     public void OnTriggerEnter(Collider c)

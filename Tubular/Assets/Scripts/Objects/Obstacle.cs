@@ -16,9 +16,10 @@ public class Obstacle : NetworkBehaviour {
             col.isTrigger = true;
             col.gameObject.AddComponent<DetectCollisionToParent>();
         }*/
-    }/*
+        Destroy(this.gameObject, 45f); // Destroy this obstacle after 45 seconds (hopefully after being passed)
+    }
 
-    void OnTriggerEnterChild(Collider c)
+    /*void OnTriggerEnterChild(Collider c)
     {
         if (!isServer) return;
         Destroy(this.gameObject);
