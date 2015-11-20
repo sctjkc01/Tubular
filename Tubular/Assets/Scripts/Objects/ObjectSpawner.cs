@@ -44,6 +44,7 @@ public class ObjectSpawner : NetworkBehaviour {
                     SpawnBundle bundleToUse = bundles[Random.Range(0, bundles.Length)];
                     GameObject newGO = GameObject.Instantiate<GameObject>(bundleToUse.prefab);
                     newGO.transform.position = transform.position + new Vector3(Random.Range(bundleToUse.maxDistFromCenter * -1f, bundleToUse.maxDistFromCenter), 0, 0);
+                    newGO.transform.rotation = transform.rotation;
                     NetworkServer.Spawn(newGO);
                 }
 
