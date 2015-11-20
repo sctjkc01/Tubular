@@ -12,8 +12,6 @@ public class PlayerController : NetworkBehaviour {
     public float PlayerMoveSpeed = 10f;
 
     private float rot = 0;
-    private bool left = false;
-    private bool right = false;
 
 	private float invuln = 0;
 
@@ -21,7 +19,7 @@ public class PlayerController : NetworkBehaviour {
 
     private bool isGrounded {
         get {
-            return Physics.CheckSphere(transform.position + (Vector3.up * -1f), 0.25f, whatIsGround);
+            return Physics.Raycast(transform.position, Vector3.up * -1f, 1.5f, whatIsGround);
         }
     }
     private bool foundObstacle {
@@ -36,6 +34,7 @@ public class PlayerController : NetworkBehaviour {
         rb.isKinematic = !isLocalPlayer;
 
         transform.SetParent(GameObject.Find("Play Area").transform);
+        transform.localPosition = Vector3.up * 2f;
     }
 
 
@@ -43,27 +42,14 @@ public class PlayerController : NetworkBehaviour {
         if(rb == null) rb = GetComponent<Rigidbody>();
 
         if(isLocalPlayer && GameManager.inst != null && GameManager.inst.IsLive()) {
-
-            //left
-            if(Input.GetKeyDown(KeyCode.LeftArrow)) {
-                left = true;
-            }
-            if(Input.GetKeyUp(KeyCode.LeftArrow)) {
-                left = false;
-            }
-            //right
-            if(Input.GetKeyDown(KeyCode.RightArrow)) {
-                right = true;
-            }
-            if(Input.GetKeyUp(KeyCode.RightArrow)) {
-                right = false;
-            }
+            var horizAxis = Input.GetAxis("Horizontal");
 
             if(!alive) { //Ghost controls
-                rb.velocity = new Vector3(Input.GetAxis("Horizontal") * PlayerMoveSpeed, rb.velocity.y, 0f);
+                rb.velocity = (transform.parent.right * horizAxis * PlayerMoveSpeed) + (Vector3.up * rb.velocity.y);
             } else {
-                rb.velocity = new Vector3(Input.GetAxis("Horizontal") * PlayerMoveSpeed * (isGrounded ? 1.0f : 0.5f), rb.velocity.y, 0f);
+                rb.velocity = (transform.parent.right * horizAxis * PlayerMoveSpeed * (isGrounded ? 1.0f : 0.5f)) + (Vector3.up * rb.velocity.y);
             }
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, 0f);
 
 
             if (Input.GetButtonDown("Jump") && !wasJumpPressedLastFrame)
@@ -82,17 +68,17 @@ public class PlayerController : NetworkBehaviour {
             }
             wasJumpPressedLastFrame = Input.GetButtonDown("Jump");
 
-            if(right) {
+            if(horizAxis > 0.05f) {
                 rot--;
             }
 
-            if(left) {
+            if(horizAxis < -0.05f) {
                 rot++;
             }
             rot = Mathf.Clamp(rot, -40f, 40f);
 
 
-            if(right == false && left == false) {
+            if(horizAxis > -0.05f && horizAxis < 0.05f) {
                 if(rot < 0) {
                     rot++;
                 } else if(rot > 0) {
@@ -113,9 +99,9 @@ public class PlayerController : NetworkBehaviour {
 
 				if(kill){
 	                alive = false;
-	                transform.position = transform.position + (transform.up * 15f);
+                    transform.SetParent(GameObject.Find("Dead Area").transform, false);
+                    transform.localPosition = Vector3.up * 2f;
                     rb.velocity = Vector3.zero;
-	                rb.useGravity = false;
 	                rb.drag = 0.85f;
 	                Debug.Log("HIT");
 				}else{

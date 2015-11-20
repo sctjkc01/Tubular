@@ -39,4 +39,12 @@ public class PathFollow : MonoBehaviour {
         }
     }
 
+    public void OnDrawGizmos() {
+        Gizmos.color = Color.black;
+        Gizmos.DrawCube(transform.position, Vector3.one * 0.5f);
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, transform.position + (transform.forward * 5.0f));
+        Gizmos.color = Color.white;
+    }
+
 }

@@ -22,7 +22,7 @@ public class CollectablePowerup : NetworkBehaviour
     public void OnTriggerEnter(Collider c)
     {
         Debug.Log("Powerup " + c.tag + " " + this.isServer);
-        if (!this.collected && this.isServer && c.tag == "Player")
+        if (!this.collected && this.isServer && c.tag == "Player" && c.GetComponent<PlayerController>().alive)
         {
             this.collected = true;
             c.GetComponent<PlayerController>().RpcOnPowerupCollected(powerupClassName);
