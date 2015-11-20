@@ -59,7 +59,6 @@ public class PlayerController : NetworkBehaviour {
                 float multiplier = 1.0f;
                 foreach (PowerupBase p in powerups)
                 {
-                    Debug.Log(p.name + " " + p.Active);
                     if (p.Active)
                         multiplier *= p.OnJumpPressed(grounded);
                 }
