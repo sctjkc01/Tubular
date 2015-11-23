@@ -20,6 +20,7 @@ public class PathChunk : MonoBehaviour {
         if(passed ^ destroyStarted) {
             Destroy(gameObject, 2f);
             destroyStarted = true;
+            PathBuilder.currentChunkCount--;
         }
     }
 
