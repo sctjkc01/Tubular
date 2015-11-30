@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class PathChunk : MonoBehaviour {
+    public bool passed = false, destroyStarted = false;
+
     public PathNode StartPoint {
         get {
             return transform.GetComponentInChildren<PathChunkEntry>();
@@ -13,4 +15,13 @@ public class PathChunk : MonoBehaviour {
             return transform.GetComponentInChildren<PathChunkExit>();
         }
     }
+
+    void Update() {
+        if(passed ^ destroyStarted) {
+            Destroy(gameObject, 2f);
+            destroyStarted = true;
+            PathBuilder.currentChunkCount--;
+        }
+    }
+
 }
