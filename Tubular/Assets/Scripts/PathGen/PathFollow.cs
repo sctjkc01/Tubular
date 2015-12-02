@@ -17,7 +17,7 @@ public class PathFollow : MonoBehaviour {
     }
 
     public void Travel(float amt) {
-        while(currNode.next && amt > 0f) {
+        while(currNode && currNode.next && amt > 0f) {
             float distToNextNode = Vector3.Distance(transform.position, currNode.next.transform.position);
             if(amt > distToNextNode) {
                 amt -= distToNextNode;
