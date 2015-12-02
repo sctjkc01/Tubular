@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473324}
   - 114: {fileID: 11447846}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PathMid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 477974}
   - 114: {fileID: 11463342}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PathExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 442006}
   - 114: {fileID: 11406994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PathEntry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 463094}
   - 114: {fileID: 11419544}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DownPipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,8 @@ GameObject:
   - 4: {fileID: 474832}
   - 33: {fileID: 3318490}
   - 23: {fileID: 2340582}
-  m_Layer: 0
+  - 64: {fileID: 6411078}
+  m_Layer: 11
   m_Name: DownModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,6 +177,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192334}
   m_Mesh: {fileID: 4300010, guid: 367c7f6b49f332d4bb0d9e61c6555cbf, type: 3}
+--- !u!64 &6411078
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300010, guid: 367c7f6b49f332d4bb0d9e61c6555cbf, type: 3}
 --- !u!114 &11406994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -199,6 +212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c7275cd32de224988faf47cf2254fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  passed: 0
+  destroyStarted: 0
 --- !u!114 &11447846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,6 +260,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalRotation.x
       value: .173648223
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
