@@ -10,4 +10,7 @@ using UnityEngine.Networking;
 public class StartGameMsg : MessageBase
 {
     public const short msgType = MsgType.Highest + 3;
+    public int pathSeed;
+    public StartGameMsg() { }
+    public StartGameMsg(int seed) { this.pathSeed = seed; }
 }
