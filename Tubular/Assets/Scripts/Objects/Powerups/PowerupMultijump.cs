@@ -31,6 +31,7 @@ public class PowerupMultijump : PowerupBase
 
     public override void OnCollected()
     {
+		CmdShowVisual(true);
         this.isActive = true;
         this.currentJumps = (int)Mathf.Min(currentJumps + jumpsPerPowerup, maxJumps);
     }
@@ -41,6 +42,7 @@ public class PowerupMultijump : PowerupBase
             if (currentJumps > 0)
             {
                 currentJumps--;
+				if(currentJumps < 1) CmdShowVisual(false);
                 return 1.0f;
             }
             else
@@ -50,5 +52,14 @@ public class PowerupMultijump : PowerupBase
         {
             return 1.0f;
         }
-    }
+	}
+	
+	[Command]
+	public void CmdShowVisual(bool val){
+		RpcShowVisual(val);
+	}
+	[ClientRpc]
+	public void RpcShowVisual(bool val){
+		if(doubleJumpVisual) doubleJumpVisual.SetActive(val);
+	}
 }

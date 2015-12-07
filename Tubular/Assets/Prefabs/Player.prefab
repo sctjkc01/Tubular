@@ -32,6 +32,7 @@ GameObject:
   - 54: {fileID: 5423494}
   - 114: {fileID: 11470426}
   - 114: {fileID: 11468268}
+  - 114: {fileID: 11464738}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -452,6 +453,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   PlayerMoveSpeed: 10
+  ghostMaterial: {fileID: 2100000, guid: a6b61d08b65947047b0d6d72a956c810, type: 2}
 --- !u!114 &11426162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -472,6 +474,19 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &11464738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ba3b4a8aa876b49a59630e45079bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVisual: {fileID: 0}
+  bombPrefab: {fileID: 187362, guid: 6181ac44acf45f64ca543c27f9b5b56f, type: 2}
 --- !u!114 &11468268
 MonoBehaviour:
   m_ObjectHideFlags: 1

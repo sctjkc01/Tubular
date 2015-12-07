@@ -9,6 +9,9 @@ public class GameManager : NetworkBehaviour {
     [Tooltip("In Unity Units per Second.  Read by everything that travels.")]
     public float GameTravelSpeed = 5.0f;
 
+    [SerializeField]
+    private float SpeedIncreasePerSecond = 1.0f;
+
     /// <summary>
     /// Are we playing a game right now?
     /// </summary>
@@ -38,6 +41,8 @@ public class GameManager : NetworkBehaviour {
 			}
 			go.transform.localPosition += speed;
 		}
+
+        GameTravelSpeed += SpeedIncreasePerSecond * Time.deltaTime;
 	}
 
     public void SetLive(bool val) { _live = val; }

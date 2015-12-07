@@ -5,11 +5,13 @@ using UnityEngine.Networking;
 [AddComponentMenu("Tubular Scripts/Runtime/Networked/Player Controller")]
 public class PlayerController : NetworkBehaviour {
     private Rigidbody rb;
-    [SyncVar]
+    [SyncVar(hook="OnKill")]
     public bool alive = true;
     public LayerMask whatIsGround;
     public LayerMask whatIsObstacle;
     public float PlayerMoveSpeed = 10f;
+
+	public Material ghostMaterial;
 
     private float rot = 0;
 
@@ -63,7 +65,7 @@ public class PlayerController : NetworkBehaviour {
                         multiplier *= p.OnJumpPressed(grounded);
                 }
                 if (!grounded && multiplier > 0) rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); //Stop vertical 
-                rb.AddRelativeForce(0f, 16f*multiplier, 0f, ForceMode.Impulse);
+                if(multiplier > 0) rb.AddRelativeForce(0f, 16f*multiplier, 0f, ForceMode.Impulse);
             }
             wasJumpPressedLastFrame = Input.GetButtonDown("Jump");
 
@@ -96,18 +98,21 @@ public class PlayerController : NetworkBehaviour {
 						kill &= p.OnObstacleCollision(null);
 				}
 
-				if(kill){
-	                alive = false;
+                if (kill)
+                {
+                    this.GetComponent<Collider>().isTrigger = true;
+					CmdKill();//alive = false;
                     transform.SetParent(GameObject.Find("Dead Area").transform, false);
-                    transform.localPosition = Vector3.up * 2f;
+                    transform.localPosition = Vector3.up * 10f; //Fly up
                     rb.velocity = Vector3.zero;
 	                rb.drag = 0.85f;
+					rb.useGravity = false;
+					this.GetComponent<DeadPowerup>().Activate ();
 	                Debug.Log("HIT");
 				}else{
 					invuln = 2;
 				}
             }
-
 			if(invuln > 0) invuln -= Time.deltaTime;
         }
     }
@@ -131,4 +136,21 @@ public class PlayerController : NetworkBehaviour {
         PowerupBase powerup = (PowerupBase)this.GetComponent(powerupType);
         powerup.OnCollected();
     }
+
+	[Command]
+	public void CmdKill(){
+		this.alive = false;
+	}
+
+	private void OnKill(bool alive){
+		if(alive == this.alive) return;
+		if(!alive && !this.isLocalPlayer){
+			this.transform.FindChild("Model").gameObject.SetActive(false);
+		}else if(this.isLocalPlayer){
+			Transform model = this.transform.FindChild("Model");
+			model.GetComponent<Renderer>().material = this.ghostMaterial;
+			model.localScale = new Vector3(model.localScale.x, model.localScale.y, -model.localScale.z);
+		}
+		this.alive = alive;
+	}
 }
