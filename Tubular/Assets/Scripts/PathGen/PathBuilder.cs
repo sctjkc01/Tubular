@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class PathBuilder : MonoBehaviour {
     [Tooltip("How many chunks to keep in play at a time.")]
     public byte chunkCnt;
+    private byte chunkCntTemp; //chunkCnt changes to start with smaller amount
     public static byte currentChunkCount; // How many chunks are in play right now
     private PathChunk lastPipe;
+
+    private static System.Random rand;
+    public static void SetSeed(int seed) { rand = new System.Random(seed); }
 
     [System.Serializable]
     public struct ChunkOption {
@@ -28,20 +33,24 @@ public class PathBuilder : MonoBehaviour {
         foreach (ChunkOption alpha in SpawnOptions) {
             totalWeight += alpha.weight;
         }
-
+        chunkCntTemp = 30;
         StartCoroutine(CreatePath());
+
+        SetSeed(0);
     }
 
     public IEnumerator CreatePath() {
         yield return new WaitForEndOfFrame();
         PathFollow[] followers = GameObject.FindObjectsOfType<PathFollow>();
-        for (byte i = 0; i < chunkCnt; i++) {
+        for (byte i = 0; i < chunkCntTemp; i++)
+        {
             GameObject newGO = null;
             if (i < 5) {
                 newGO = GameObject.Instantiate<GameObject>(Straight.option); // Straight Option
             } else {
-                while (newGO == null) {
-                    float selection = Random.Range(0, totalWeight);
+                while (newGO == null)
+                {
+                    float selection = (float)rand.NextDouble()*totalWeight;//Random.Range(0, totalWeight);
                     for (byte j = 0; j < SpawnOptions.Length + 1; j++) {
                         if(j == SpawnOptions.Length) {
                             newGO = GameObject.Instantiate<GameObject>(Straight.option);
@@ -93,15 +102,18 @@ public class PathBuilder : MonoBehaviour {
             if(i > 20)
                 yield return null;
         }
+        chunkCntTemp = chunkCnt; //After first runthrough 
 
         while(true) {
-            while(currentChunkCount >= chunkCnt) {
+            while (currentChunkCount >= chunkCntTemp)
+            {
                 yield return null;
             }
 
             GameObject newGO = null;
-            while(newGO == null) {
-                float selection = Random.Range(0, totalWeight);
+            while (newGO == null)
+            {
+                float selection = (float)rand.NextDouble() * totalWeight;//Random.Range(0, totalWeight);
                 for(byte j = 0; j < SpawnOptions.Length + 1; j++) {
                     if(j == SpawnOptions.Length) {
                         newGO = GameObject.Instantiate<GameObject>(Straight.option);
