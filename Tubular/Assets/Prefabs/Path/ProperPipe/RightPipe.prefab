@@ -217,7 +217,7 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Convex: 0
-  m_Mesh: {fileID: 4300008, guid: 26d263fc58e308144a7dec9f998df663, type: 3}
+  m_Mesh: {fileID: 4300006, guid: 9307954189f5c5841b49a6fd6fafbe92, type: 3}
 --- !u!65 &6507240
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -309,7 +309,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300004, guid: 1b8473bfc588f184f9cf87ec7d2da756, type: 3}
+      objectReference: {fileID: 4300006, guid: 9307954189f5c5841b49a6fd6fafbe92, type: 3}
     - target: {fileID: 0}
       propertyPath: m_Materials.Array.data[0]
       value: 
