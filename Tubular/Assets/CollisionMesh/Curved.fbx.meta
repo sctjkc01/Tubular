@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: e6a60d58e361a38438bb5fede0faa064
-timeCreated: 1449451206
+guid: 9307954189f5c5841b49a6fd6fafbe92
+timeCreated: 1449858655
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: CurveDown
-    100002: CurveLeft
-    100004: CurveRight
-    100006: CurveUp
-    100008: //RootNode
+    100000: //RootNode
+    100002: CurveDown
+    100004: CurveLeft
+    100006: CurveRight
+    100008: CurveUp
     100010: Straight
-    400000: CurveDown
-    400002: CurveLeft
-    400004: CurveRight
-    400006: CurveUp
-    400008: //RootNode
+    400000: //RootNode
+    400002: CurveDown
+    400004: CurveLeft
+    400006: CurveRight
+    400008: CurveUp
     400010: Straight
     2300000: CurveDown
     2300002: CurveLeft
@@ -27,13 +27,11 @@ ModelImporter:
     3300004: CurveRight
     3300006: CurveUp
     3300008: Straight
-    4300000: CurveDown
-    4300002: CurveRight
-    4300004: CurveUp
-    4300006: CurveLeft
-    4300008: Straight
-    7400000: Default Take
-    9500000: //RootNode
+    4300000: CurveUp
+    4300002: Straight
+    4300004: CurveDown
+    4300006: CurveRight
+    4300008: CurveLeft
   materials:
     importMaterials: 0
     materialName: 0
@@ -57,7 +55,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 20
+    globalScale: 2000
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
