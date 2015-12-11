@@ -8,9 +8,9 @@ public class PathNode : MonoBehaviour {
         if(next != null) {
             Gizmos.color = Color.yellow;
             Gizmos.DrawLine(transform.position, next.transform.position);
-            Gizmos.color = Color.red;
-            Gizmos.DrawLine(transform.position, transform.position + (transform.right * 10f));
-            Gizmos.color = Color.white;
         }
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, transform.position + (transform.right * 10f));
+        Gizmos.color = Color.white;
     }
 }
