@@ -21,9 +21,8 @@ public class GameManager : NetworkBehaviour {
     public static GameManager inst;
 
     void Awake() {
-        //if (inst == null) 
         inst = this;
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
         //else Destroy(this.gameObject);
     }
 
