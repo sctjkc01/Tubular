@@ -63,3 +63,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+
+# Some Blender extrastuff
+*.blend[0-9]
+*.blend[0-9].meta

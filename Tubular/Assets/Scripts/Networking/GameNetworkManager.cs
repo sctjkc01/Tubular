@@ -120,7 +120,7 @@ public class GameNetworkManager : NetworkManager
             GameObject inst = Instantiate(this.gameManagerPrefab);
             NetworkServer.Spawn(inst);
             inst.GetComponent<GameManager>().live = true;
-            NetworkServer.SendToAll(StartGameMsg.msgType, new StartGameMsg());
+            NetworkServer.SendToAll(StartGameMsg.msgType, new StartGameMsg(Random.Range(int.MinValue, int.MaxValue)));
         }
     }
 
@@ -205,6 +205,8 @@ public class GameNetworkManager : NetworkManager
 
     void OnGameStartReceived(NetworkMessage msg)
     {
+        StartGameMsg sgm = msg.ReadMessage<StartGameMsg>();
+        PathBuilder.SetSeed(sgm.pathSeed);
         GameObject.Find("Shade").SetActive(false);
         GameObject.Find("Lobby").SetActive(false);
     }
