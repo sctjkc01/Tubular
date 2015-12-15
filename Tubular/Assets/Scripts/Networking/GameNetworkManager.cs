@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.Networking;
+using UnityEngine.Networking;	
 using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -9,10 +9,13 @@ using UnityEngine.EventSystems;
 [AddComponentMenu("Tubular/Scripts/Networking/Game Network Manager")]
 public class GameNetworkManager : NetworkManager
 {
+	//might not break it :) but, NetworkLobbyManager is a subclass of Netwrokmanager
     private string username;
     private bool isServer = false;
     [SerializeField]
     private GameObject gameManagerPrefab;
+
+	public GameObject playerInfo;
     
     private struct ClientContainer
     {
@@ -89,7 +92,7 @@ public class GameNetworkManager : NetworkManager
             SetupGameSceneButtons();
         }
     }
-
+	// i think it is beacause we dont have that specific script
     
     void SetupLoginButtons()
     {
@@ -97,7 +100,7 @@ public class GameNetworkManager : NetworkManager
         
         GameObject.Find("btnJoin").GetComponent<Button>().onClick.AddListener(JoinGame);
     }
-
+	//do you know how to add child?
     void SetupGameSceneButtons()
     {
         GameObject.Find("Shade").SetActive(true);
@@ -109,15 +112,17 @@ public class GameNetworkManager : NetworkManager
         }else{
           GameObject.Find("btnStart").SetActive(false);
         }
+		//577629257929679629289gh4vj894g89fj46h874gh87jk4g86hjk456k941k45
         GameObject.Find("Player List Container").GetComponent<Text>().text = "";
     }
+
 
     public void OnStartClicked()
     {
         if (this.isServer)
         {
             Debug.Log("START");
-            GameObject inst = Instantiate(this.gameManagerPrefab);
+            GameObject inst = Instantiate(this.gameManagerPrefab); // that is similar of what you just said.. This is a ship
             NetworkServer.Spawn(inst);
             inst.GetComponent<GameManager>().live = true;
             NetworkServer.SendToAll(StartGameMsg.msgType, new StartGameMsg(Random.Range(int.MinValue, int.MaxValue)));
@@ -140,7 +145,7 @@ public class GameNetworkManager : NetworkManager
         foreach (ClientContainer c in this.clients)
         {
             if(c.conn == conn)
-            {
+            {  ///54645641554594141891894189189159156156189156891956
                 GameObject.Find("Player List Container").GetComponent<Text>().text.Replace(c.username + "\n", "");
                 Debug.Log(c.username + " disconnected.");
                 this.clients.Remove(c);
@@ -200,6 +205,7 @@ public class GameNetworkManager : NetworkManager
     {
         ClientListMsg cmsg = msg.ReadMessage<ClientListMsg>();
         this.usernames = cmsg.usernames;
+		//dfs4gsd5fg41s9d5f1g9sd16fg56s1df56g1s546dg1546sd1fg81sd876fg41s87df1g546sdf1g87sd10fg541sd87fg1s54df1g87s1dfg541sd876f1gsd65fg18
         GameObject.Find("Player List Container").GetComponent<Text>().text = string.Join("\n", this.usernames);
     }
 
@@ -212,6 +218,6 @@ public class GameNetworkManager : NetworkManager
     }
 
     #endregion
-
-    public string Username { get { return username; } }
+	//594sdh89dg5641d86fgh16df1gh541df68gh1d546fgh1546df1gh41d6fgh16df54gh1546dfgh156d1gh54d6fh
+    public string Username { get { return username; } }  
 }
