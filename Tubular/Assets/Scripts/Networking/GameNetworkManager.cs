@@ -180,7 +180,7 @@ public class GameNetworkManager : NetworkManager
             PlayerController[] players = GameObject.FindObjectsOfType<PlayerController>();
             foreach (PlayerController p in players)
             {
-                if (!p.isLocalPlayer) continue;
+                if (!p.isLocalPlayer || p.playerID == -2) continue;
                 p.CmdSetPlayerID(hmsg.connectionID);//p.playerID = hmsg.connectionID;
                 break;
             }
@@ -210,13 +210,16 @@ public class GameNetworkManager : NetworkManager
             updateMsg.usernames[i] = this.clients[i].username;
         }
 
-        NetworkServer.SendToAll(ClientListMsg.msgType, updateMsg);
+        /*NetworkServer.SendToAll(ClientListMsg.msgType, updateMsg);
         hmsg.connectionID = msg.conn.connectionId;
-        msg.conn.Send(HandshakeMsg.msgType, hmsg);
+        msg.conn.Send(HandshakeMsg.msgType, hmsg);*/
 
         foreach(PlayerController pc in GameObject.FindObjectsOfType<PlayerController>())
         {
-            pc.RpcSetPlayerID(pc.playerID);
+			if(pc.connectionToClient == msg.conn)
+				pc.RpcSetPlayerID(msg.conn.connectionId);
+			else
+            	pc.RpcSetPlayerID(pc.playerID);
         }
     }
 

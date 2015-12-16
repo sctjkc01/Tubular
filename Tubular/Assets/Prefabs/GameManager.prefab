@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameTravelSpeed: 25
-  SpeedIncreasePerSecond: 3
+  SpeedIncreasePerSecond: 1
   cam: {fileID: 0}
 --- !u!114 &11430192
 MonoBehaviour:

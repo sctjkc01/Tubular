@@ -9,6 +9,8 @@ public class GameManager : NetworkBehaviour {
     [Tooltip("In Unity Units per Second.  Read by everything that travels.")]
     public float GameTravelSpeed = 5.0f;
 
+	private ObjectSpawner objSpawn;
+
     [SerializeField]
     private float SpeedIncreasePerSecond = 1.0f;
 
@@ -30,6 +32,7 @@ public class GameManager : NetworkBehaviour {
 
 	void Start(){
 		cam = GameObject.Find("Main Camera");
+		objSpawn = GameObject.Find ("Obj Spawn").GetComponent<ObjectSpawner>();
 	}
 
 	public void Update(){
@@ -47,7 +50,12 @@ public class GameManager : NetworkBehaviour {
 			go.transform.localPosition += speed;
 		}
 
-        GameTravelSpeed += SpeedIncreasePerSecond * Time.deltaTime;
+		GameTravelSpeed += SpeedIncreasePerSecond * Time.deltaTime;
+		objSpawn.SpawnChance += 1/20.0f * Time.deltaTime;
+
+		foreach(PlayerController pc in GameObject.FindObjectsOfType<PlayerController>()){
+			pc.AddPoint(2*Time.deltaTime);
+		}
 	}
 
     public void SetLive(bool val) { _live = val; }

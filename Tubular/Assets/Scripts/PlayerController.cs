@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 [AddComponentMenu("Tubular Scripts/Runtime/Networked/Player Controller")]
 public class PlayerController : NetworkBehaviour {
@@ -8,7 +9,9 @@ public class PlayerController : NetworkBehaviour {
     [SyncVar(hook="OnKill")]
     public bool alive = true;
 	[SyncVar(hook="PlayerIDChanged")]
-	public int playerID;
+	public int playerID = -2;
+	[SyncVar]
+	public float points;
 
     public LayerMask whatIsGround;
     public LayerMask whatIsObstacle;
@@ -54,6 +57,12 @@ public class PlayerController : NetworkBehaviour {
         if(rb == null) rb = GetComponent<Rigidbody>();
 
         if(isLocalPlayer && GameManager.inst != null && GameManager.inst.IsLive()) {
+
+            if(this.transform.localPosition.magnitude > (alive ? 80:20)) {
+              this.transform.localPosition = this.alive ? Vector3.zero : new Vector3(0,12,0);
+              rb.velocity = Vector3.zero;
+            }
+            
             var horizAxis = Input.GetAxis("Horizontal");
             if(isGrounded) {
                 // Rotate player around central circle axis
@@ -82,9 +91,9 @@ public class PlayerController : NetworkBehaviour {
                         multiplier *= p.OnJumpPressed(grounded);
                 }
                 if(!grounded && multiplier > 0) rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z); //Stop vertical 
-                if(multiplier > 0) rb.AddRelativeForce(0f, 16f*multiplier, 0f, ForceMode.Impulse);
+                if(multiplier > 0) rb.AddRelativeForce(0f, 8f*multiplier, 0f, ForceMode.Impulse);
                 if(grounded)
-                    rb.AddRelativeForce(0f, 16f * multiplier, 0f, ForceMode.Impulse);
+                    rb.AddRelativeForce(0f, 8f * multiplier, 0f, ForceMode.Impulse);
                 else
                     rb.AddForce(0, 8f * multiplier, 0f, ForceMode.Impulse);
             }
@@ -101,7 +110,8 @@ public class PlayerController : NetworkBehaviour {
                 
                 if(kill) {
                     alive = false;
-                    this.GetComponent<Collider>().isTrigger = true;
+					this.GetComponent<Collider>().isTrigger = true;
+					this.GetComponent<TrailRenderer>().enabled = false;
                     CmdKill();//alive = false;
                     
                     transform.SetParent(GameObject.Find("Dead Area").transform, false);
@@ -142,10 +152,12 @@ public class PlayerController : NetworkBehaviour {
 	[Command]
 	public void CmdKill(){
 		this.alive = false;
+		this.GetComponent<TrailRenderer>().enabled = false;
 	}
 
 	private void OnKill(bool alive){
 		if(alive == this.alive) return;
+		this.GetComponent<TrailRenderer>().enabled = false;
 		if(!alive && !this.isLocalPlayer){
 			this.transform.FindChild("Model").gameObject.SetActive(false);
 		}else if(this.isLocalPlayer){
@@ -183,23 +195,30 @@ public class PlayerController : NetworkBehaviour {
     public void RpcSetPlayerID(int value)
     {
         this.playerID = value;
-        SetColors(value + 1);
+		SetColors(value + 1);
+		Debug.Log("PLAYER " + value);
+		GameObject.Find ("P" + (this.playerID+2) + "ScoreArea").GetComponent<Image>().enabled = true;
+		GameObject.Find ("P" + (this.playerID+2) + "username").GetComponent<Text>().enabled = true;
+		GameObject.Find ("p" + (this.playerID+2) + "score").GetComponent<Text>().enabled = true;
+		GameObject.Find ("p" + (this.playerID+2) + "score").GetComponent<Text>().text = "0000";
+		GameObject.Find ("P" + (this.playerID+2) + "username").GetComponent<Text>().text = ((GameNetworkManager)NetworkManager.singleton).Username;
     }
 
     [Command]
     public void CmdSetPlayerID(int value)
     {
         this.playerID = value;
-        RpcSetPlayerID(value);
+		RpcSetPlayerID(value);
         SetColors(value + 1);
     }
 
     private void SetColors(int colID)
-    {
+	{
+
         Renderer rend = this.transform.FindChild("pPrism4").GetComponent<Renderer>();
         Renderer sigrend = this.transform.FindChild("sigcolor").GetComponent<Renderer>();
         PlayerColor c = colors[colID % colors.Length];
-        Debug.Log("BITCHES " + c.color + " FUCKER " + Color.red);
+//        Debug.Log("BITCHES " + c.color + " FUCKER " + Color.red);
         rend.material.SetColor("_Color",c.color);
         rend.material.SetFloat("_Metallic", c.metal);
         rend.material.SetFloat("_Glossiness", c.smooth);
@@ -207,4 +226,15 @@ public class PlayerController : NetworkBehaviour {
         sigrend.material.SetColor("_EmissionColor", c.sigcolor);
         this.GetComponent<TrailRenderer>().material.SetColor("_Color", rend.material.color);
     }
+
+	public void AddPoint(float points){
+		this.points += points;
+		GameObject.Find ("p" + (this.playerID+2) + "score").GetComponent<Text>().text = ((int)Mathf.Round(this.points)).ToString().PadLeft(4,'0');
+	}
+
+	[ClientRpc]
+	private void RpcSetScore(float score){
+		this.points = score;
+		GameObject.Find ("p" + (this.playerID+2) + "score").GetComponent<Text>().text = ((int)Mathf.Round(this.points)).ToString().PadLeft(4,'0');
+	}
 }

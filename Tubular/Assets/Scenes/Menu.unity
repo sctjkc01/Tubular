@@ -4344,11 +4344,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471910, guid: fc008153abb02a84ea8b645b1f708069, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11405694, guid: fc008153abb02a84ea8b645b1f708069, type: 2}
       propertyPath: GameTravelSpeed
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405694, guid: fc008153abb02a84ea8b645b1f708069, type: 2}
+      propertyPath: SpeedIncreasePerSecond
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc008153abb02a84ea8b645b1f708069, type: 2}

@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11494902}
   - 65: {fileID: 6574008}
   - 96: {fileID: 9667378}
+  - 114: {fileID: 11458402}
   m_Layer: 0
   m_Name: blackbird
   m_TagString: Player
@@ -354,6 +355,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shieldVisual: {fileID: 145356}
+--- !u!114 &11458402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ba3b4a8aa876b49a59630e45079bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVisual: {fileID: 0}
+  bombPrefab: {fileID: 187362, guid: 6181ac44acf45f64ca543c27f9b5b56f, type: 2}
+  timeBetweenBombs: 2
 --- !u!114 &11460942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -374,6 +389,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   PlayerMoveSpeed: 10
+  PlayerAgainstPipeForce: 3
+  ghostMaterial: {fileID: 0}
 --- !u!114 &11494902
 MonoBehaviour:
   m_ObjectHideFlags: 1
