@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 public class openingmenu : MonoBehaviour 
 {
-	public GameObject rawimage_panel;
 	public GameObject title_panel;
 	public GameObject login_panel;
 	public GameObject instructions_panel;

@@ -9,7 +9,6 @@ using UnityEngine.EventSystems;
 [AddComponentMenu("Tubular/Scripts/Networking/Game Network Manager")]
 public class GameNetworkManager : NetworkManager
 {
-	//might not break it :) but, NetworkLobbyManager is a subclass of Netwrokmanager
     private string username;
     private bool isServer = false;
     [SerializeField]
@@ -26,11 +25,21 @@ public class GameNetworkManager : NetworkManager
     private List<ClientContainer> clients;
     private string[] usernames; //Username list stored on client. Not maintained on server.
 
+
+    //---do we make a var for each player?
+    //---i think for points, we should do it based on time on the board
+    //---so like 
+    //var P1score = p1score + Time.deltatime * 1 * multiplyer  
+
+
+    private PlayerController localPlayer;
+
     void Start()
     {
         this.SetupLoginButtons();
         clients = new List<ClientContainer>();
     }
+
 
     
     void SetIPAddress()
@@ -85,22 +94,20 @@ public class GameNetworkManager : NetworkManager
     {
         if (level == 0)
         {
-            SetupLoginButtons();
+            //SetupLoginButtons();
         }
         else
         {
             SetupGameSceneButtons();
         }
     }
-	// i think it is beacause we dont have that specific script
     
     void SetupLoginButtons()
     {
-        GameObject.Find("btnHost").GetComponent<Button>().onClick.AddListener(StartupHost);
+        //GameObject.Find("btnHost").GetComponent<Button>().onClick.AddListener(StartupHost);
         
-        GameObject.Find("btnJoin").GetComponent<Button>().onClick.AddListener(JoinGame);
+        //GameObject.Find("btnJoin").GetComponent<Button>().onClick.AddListener(JoinGame);
     }
-	//do you know how to add child?
     void SetupGameSceneButtons()
     {
         GameObject.Find("Shade").SetActive(true);
@@ -112,7 +119,6 @@ public class GameNetworkManager : NetworkManager
         }else{
           GameObject.Find("btnStart").SetActive(false);
         }
-		//577629257929679629289gh4vj894g89fj46h874gh87jk4g86hjk456k941k45
         GameObject.Find("Player List Container").GetComponent<Text>().text = "";
     }
 
@@ -122,7 +128,7 @@ public class GameNetworkManager : NetworkManager
         if (this.isServer)
         {
             Debug.Log("START");
-            GameObject inst = Instantiate(this.gameManagerPrefab); // that is similar of what you just said.. This is a ship
+            GameObject inst = Instantiate(this.gameManagerPrefab);
             NetworkServer.Spawn(inst);
             inst.GetComponent<GameManager>().live = true;
             NetworkServer.SendToAll(StartGameMsg.msgType, new StartGameMsg(Random.Range(int.MinValue, int.MaxValue)));
@@ -133,9 +139,9 @@ public class GameNetworkManager : NetworkManager
     public override void OnClientConnect(NetworkConnection conn)
     {
         base.OnClientConnect(conn);
-        HandshakeMsg msg = new HandshakeMsg();
-        msg.username = this.username;
-        conn.Send(HandshakeMsg.msgType, msg);
+        //HandshakeMsg msg = new HandshakeMsg();
+        //msg.username = this.username;
+        //conn.Send(HandshakeMsg.msgType, msg);
     }
 
     //Called on server when client disconnects
@@ -145,7 +151,7 @@ public class GameNetworkManager : NetworkManager
         foreach (ClientContainer c in this.clients)
         {
             if(c.conn == conn)
-            {  ///54645641554594141891894189189159156156189156891956
+            {
                 GameObject.Find("Player List Container").GetComponent<Text>().text.Replace(c.username + "\n", "");
                 Debug.Log(c.username + " disconnected.");
                 this.clients.Remove(c);
@@ -168,6 +174,17 @@ public class GameNetworkManager : NetworkManager
     {
         this.client.RegisterHandler(ClientListMsg.msgType, new NetworkMessageDelegate(OnUpdateClientListReceived));
         this.client.RegisterHandler(StartGameMsg.msgType, new NetworkMessageDelegate(OnGameStartReceived));
+        this.client.RegisterHandler(HandshakeMsg.msgType, new NetworkMessageDelegate(delegate(NetworkMessage msg)
+        {
+            HandshakeMsg hmsg = msg.ReadMessage<HandshakeMsg>();
+            PlayerController[] players = GameObject.FindObjectsOfType<PlayerController>();
+            foreach (PlayerController p in players)
+            {
+                if (!p.isLocalPlayer) continue;
+                p.CmdSetPlayerID(hmsg.connectionID);//p.playerID = hmsg.connectionID;
+                break;
+            }
+        }));
     }
 
     void RegisterHostHandlers()
@@ -185,7 +202,6 @@ public class GameNetworkManager : NetworkManager
         this.clients.Add(c);
 
         Debug.Log(hmsg.username + " connected.");
-        
         //Updating clients on change and telling newly connected of currently connected
         ClientListMsg updateMsg = new ClientListMsg();
         updateMsg.usernames = new string[this.clients.Count];
@@ -195,6 +211,13 @@ public class GameNetworkManager : NetworkManager
         }
 
         NetworkServer.SendToAll(ClientListMsg.msgType, updateMsg);
+        hmsg.connectionID = msg.conn.connectionId;
+        msg.conn.Send(HandshakeMsg.msgType, hmsg);
+
+        foreach(PlayerController pc in GameObject.FindObjectsOfType<PlayerController>())
+        {
+            pc.RpcSetPlayerID(pc.playerID);
+        }
     }
 
     #endregion
@@ -205,7 +228,6 @@ public class GameNetworkManager : NetworkManager
     {
         ClientListMsg cmsg = msg.ReadMessage<ClientListMsg>();
         this.usernames = cmsg.usernames;
-		//dfs4gsd5fg41s9d5f1g9sd16fg56s1df56g1s546dg1546sd1fg81sd876fg41s87df1g546sdf1g87sd10fg541sd87fg1s54df1g87s1dfg541sd876f1gsd65fg18
         GameObject.Find("Player List Container").GetComponent<Text>().text = string.Join("\n", this.usernames);
     }
 
@@ -218,6 +240,5 @@ public class GameNetworkManager : NetworkManager
     }
 
     #endregion
-	//594sdh89dg5641d86fgh16df1gh541df68gh1d546fgh1546df1gh41d6fgh16df54gh1546dfgh156d1gh54d6fh
     public string Username { get { return username; } }  
 }

@@ -1,0 +1,4073 @@
+Initialize engine version: 5.1.2f1 (afd2369b692a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 680 (ID=0x1180)
+    Vendor:   NVIDIA
+    VRAM:     1989 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  2.444 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: \\banner.main.ad.rit.edu\students\sgr3495\IGMProfile\Documents\Tubular\Tubular3\Exe\project_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 19c4 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.352290 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Play Area rot: (2f, 2f, 2f)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+CamAnchor rot: (2f, 2f, 2f)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Dead Area rot: (2f, 2f, 2f)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 999.
+Total: 0.554667 ms (FindLiveObjects: 0.062862 ms CreateObjectMapping: 0.036124 ms MarkObjects: 0.426667 ms  DeleteObjects: 0.028160 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Spawn scene object not found for 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Ineitialize engine version: 5.1.2f1 (afd:0 
+  at Pa
+thFollow.Update () [0x000e client; threaded=1
+nown>:0 
+ 
+(Filename:  Line: -1)
+  
+ 
+ VNullRe:feDirect3D 1ption: Objlect ref
+e   Renderter: NVIDIA GeForce GTX  680 (ID=0
+x1180)
+    Vendor:t_Speed ()
+    VRAM:] in <1filenam
+e unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(FBegin MonoManage-r R
+e
+loadAssembly
+Exception: Object reference Platform assembly:ance of an object
+  at PathFollow.get_Speed () [0x000e\0Documents\Tubularknown>:0 
+Exe\projhFollow.UpManage)d[\UnityEngine.dll (thisu messag:0 is
+ h
+aFilename:
+  Line: \\ban
+
+NullReferenceExcepution: nObject reference file\Do to an instance \Tf an object
+  at PathFollow.geged\UnityEnginxe.000] in <filename unknown>in
+ 
+  at PathFollow.Update () [0x00000] in <filename fonknown>:0 
+ : 
+(\\banner.main.ad.rit.
+e
+du\stuReferescgr3495\IGMProfiele\Documente noubular\Tuban instance of an object
+  at PathFollow.geharp.dll (this message  <filename unk
+nown>:0 
+  at PathFollowrit.eate () [0x00\sgr349n <filenamele\Docuwments\
+T
+(Filar\Tuebular3\Exe\pr
+o
+ject_eDarta\eMacnagied\AObject refererpcedll tineto U ni instance ofm an 
+object
+  at PaPlFatlfw.ge assembl y: [0x00000] in <.ad.rit.edun\sown>:0 
+sgr3495thFollrofUidate () [0x00000] in <filuename unknown>:0 
+at
+(Filenagme:\U nityEng1in
+e
+.UIl.dll (this messaon: Object refere
+nce not \\banner.main.aad.r of an object
+  at PathFollow.get_Speecume)n[0x0000ular\Tubuilename unknown>:0 
+a\Managed\Unity.Update () [0x0000o Unin <filename unkno
+wn>:0 
+ 
+(Filename:  LiPl:a-tfo
+r
+mNulsembly: \\bException: Object reference not set to an inrofile\Docuan object
+  at PathFollow.get_Speed () [0x00000] in <filename unknowin>:0 
+  at PathFollow.Update () [0
+x000ing \\banner.main.ad.riwn>:0 
+ tu
+deints\sgr3495\I: -1)
+f
+ilel\Documents\Tepbular\TObject refxe\epro not set to anaged\UnityEngine.Netecork
+i at Pa into low.get_Speed () [0
+x0P000] in assemename unkanown>:0 
+  at PathFollodents\sgr3495[0x00000] in <filenams\Tubular\Tu0bu
+la
+(Filename:  ect_Data1)
+
+NullReferenceExceptnalytics.edll (this message is to anlesssta
+nce of an object
+  at PathFt.edu\students\s () [0x00000] in e<filename unknown>:0 
+ a at Pa\thFollow.Updata naged\Un0it] in <filename unknown>:0 
+ 
+(Filename:  Line: 
+-1Pl
+a
+tforml assrenceException: Object reference not sett to an insGMProfile\Documeect
+  at PathFolloar.get_Speed () [0x00000] in <filenamge unknown>:0 
+  at PathFollow.Update () [0x00
+000] in <filename unknown>:0 
+ 
+(Ftilename:  Line: -1)
+o
+fille\Documents\Tubuol: Object reference not set ta\Managedtance of an o.Networ
+kint PathFollow.get_Speed () ain
+00Platform falename unknown>:0 
+  at PathFollow.Update () [34x00000] in <filename unknown>:0 
+ 
+(Filenamxe\projec: -1)
+
+NullReferenceException: Ollj (this message is het to an i
+nstance of an object
+  at PathFollow.gets\Ssgr349) [0x00000] in <filenname unkanown>:0 
+\Exe\parojollow.Update () [0x0ityEn]gine.UI.dll into Unity Chi
+ld
+ Domain
+e:  Line: -1)
+
+reload, ifn  5.682 secondsObject reference not set to an instance of an object
+  at PathFollow.get_Speed (deskx0op: 1920x1080 60Hz; nknown>:0 
+ 0 at PathFollow.Up
+date () [0x00000] in <filng input.
+o<nRI> I
+np
+(Fileniate:  Line: -
+1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of Ran objeiali
+zed touch support.
+Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filePlatform assembly:
+ \\banner.main.ad.rit.edu\students\sgr3495\IGMProfnilewn>:0 
+ 
+ts\Tubular\Tubular3\Ex
+e
+Nproject_Data\Managedon:ystem.Core.dll (this message is harmless)
+of Platformt
+  sembly: \\banner.main.ad.rit.edu\studenns <filename unknowle\Docum
+entt \Tubular\Tu.Update () [0x00000] in <Managed\Syustem.dll (t
+hi
+s message is harmles)s
+)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFolSetting_Suped () [0x00threads for Enlighten.
+own>hrea
+  at Pa378c ->ow.iUpdate 1 
+ [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at oPdathFo lnlow.geet_Slized files (Serialized files n unknown>:0  
+ nloadTime: 3.889214 ms
+) [0x00000] iln <fireenaeme unknon: Objec
+t 
+(Filerence not set to a
+n
+ iNutllRefof an object
+ion: ObjhFollow.get_Speed () [0x00000] in <filename unknown
+>:0  
+  at Pat.hFollow.Update () [0x0000 <f ile<nalename unknown>:0
+ 
+ 
+(Filenamlow.Update () [
+0
+x00000] in <efilename unknowct refe
+re
+nce not set to an inst
+a
+nce of erenceExcep
+t it PathFollow.geerence  not set t0o an infilename f nan obj:e ct
+
+  atPathFollow.w.get_Speed () [00x00000] ilnname unknown>:0 
+ 
+(Filen
+ame:  Line: -1)
+
+NullReferenceException:filename unknown>: 0 
+ s
+et to an instance of a
+n
+ object
+ enceException: Objt_Speed () [0x00000] in <filename unknown>:0obje
+ct
+t PathFollowlow.gete () [0x00000] in <filename uname un:0now
+n>
+:0 
+  at PathFollow.U
+p
+date () [0x00lay ] in <rot: (2f, 2f, 2f)
+ 
+(
+ 
+(Filen: C:/buildslave/u
+n
+ity/build/artifacts/generateject referenceime/UnityEngineDebugBindings.gen.cpp L
+ine: 65)
+F
+ollow.get_Speed () [0fx 2f)
+ ] 
+in <filename:/buildslave/un
+ity/build/artifacts/generated/common/runtime/Ume unknoweDebugB
+in
+dings.gen.cppine: -1)
+
+Nu
+l
+lReferenceExc: (2fo, 2f, 2f)
+ 
+ferenname: C:/buildslave/unity/bouild/artifac
+ts/generated/ocommon/runtime/UnityEngineDebugBindie unkneown>:0 i
+  6at 
+P
+a
+thFollonw.Up unused Asse00000] in <fileemory usage. >:0 
+ 
+(Fijects now: 999.
+Tota
+l
+: 0.572871 ms (FindLiveObjects: 0.06542e nos CreateObjectMappine of .0429b1jec Ma
+rkObjects: 0.431787 mse  DeleteO00000]s: 0.031857 ms)
+
+NullReferen
+ceException: Object reference not set to an instance of an ob
+je
+ct
+  at PathFole: -1)
+
+_SpNullRefe0renceE] in <filename unknefer>:0 
+  at PathFollow.Update () [0x00000] 
+in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+N unknown>:0 
+  att PathFolelow.Updatec () [0x0t0000]  instance of aunknown>t:
+0 
+ 
+(Filename:. Line: -1)
+
+) [0x00000] in <filename unknown>:0 
+ce not set lto aUpdinstance[ of an0 obn ectlename unknown>:0 
+t_
+Speed () [0x0i0000] i
+n
+ <filename unknoewn>:0 bject reference not set to an insta]ce of fil ename u
+n at PathFol
+lo
+w.get_Speed () [0x0000
+0
+] in <filenaee unknown>:0 
+  t reference ow.Update () [0x00000] in <filename u
+nknt PathF 
+ll
+ow.getame:  Line: -1)
+
+00] in <filename unknion: Objec
+t referehFce not set to a) [0x0000c0] in <fibject
+  at PathFollo
+w.
+get_Speed () [0x00000]
+ 
+iNullReferme unknown>:0 
+  at PathFollow.Update () [0x00000] nin <filename unk
+nown>:0 
+Fo
+llow.get_:  Line: -1)
+
+NullReiferenceException: Object 
+refe PathFollow.Update () [0x000e of in <filecna
+ mae uathFollow.ge
+t_
+Speed () [0x00000] in 
+<
+fillRefee unknown>:0 
+: Object reference anot set to 000] intancie name u object
+   
+ 
+(Filenalme:  Line: -1)
+
+NullReferenceException: Object refer
+ence not set to an instance of an object
+  at PathFollow.:0 
+ 
+(Filen) [0x00000] in <f
+i
+lename unkncown>:0 
+on: Object reow.Update (t se0x00000] in <filename unknoect
+ 0 
+ 
+(Filename:  Line: -1))
+ [0xawn scene object not foundwn>:0 
+  
+at PathFollow.Uuildsl ()e [0xty/000] inrtifacts/generated/commo
+n/
+(FilenaemUe:  Liniee: -1)
+ndinNullRe.fpp Line: cepti
+o
+n: ObjecNullReferenceException: Object reference not set
+ to an instllow.get_Speed () [
+0x00000] in <filenamepeed () [0x0000
+0] in <filename unknte ():0 
+  at PathFollow.Update () [0x000
+00
+] in <filename unknown
+>
+:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set
+ to an instance of an object
+[ at Path] in <filen_ame un(k [0x00000]
+  at PathnFollunknowna:t 
+( at PathFollow.Update (m e x00000wn>:0 
+ 
+(Filenamek:  Lin0e:
+ -
+1)
+
+NullReferene: -1)
+
+NullReferenceException: Object reference not set to obn inst
+ance of an olow.get
+_Speeda () [0x00000] in d () [0x00000] in <filen
+amet PathFon>:0 
+pdat PathFollow.Update () [0x00000] in <filen
+am
+e unknown>:0 ne:
+ -1)
+
+aNeullRefere-1)Ex
+ception: Object refere: Object ret erence not set to an instect
+ of an object
+  at PathFollow.get_Speed () [0x00000] in <filename
+ unknown>:0 
+  at PathFollow.Up00] e () [0x00000]u in <filena
+me
+ unknown>:0 
+in
+e: lenam
+e
+:  Line: -1)
+E
+xception:e Oebject ren: Object refset to an i set tce of an objce of
+ an object
+  at PathFollow.get_Speed () [0x00000] in <filenam0 un
+known>:0 
+  at PathFollow.Update () [0x00000] in <filename u
+nk
+nown>:0 
+ 
+(File: -1)
+
+NullReferen
+c
+eEllReferennceException: Object reference notn set to an instance 
+of an object
+ow.g PathFollow.g0x000peed in <filename unn <filename 
+  at PathFollo
+w.Update ()llow.Update () [0x00name unknownlename
+ u
+nknown>:0 
+ L
+ine: -a1): 
+ 
+LinNul-lRe
+f
+erenNullReftion: Object referebject reference not set to an instance t
+  at PathFt
+  at PathFpeed ()get_Speed () [0x00000] i unknown>:0 
+  at n>:0 
+  at PathFol(low.Update () [0x00000] in <file>:0 
+ 
+(Filename 
+ 
+(Filename:
+ 
+ Line: -1)
+
+NullReferenceException: Object reference not set to an an object
+ f an objhFoll
+ow.get_ShFollow.get_Speed () [0x00000me iunknownname un
+known>:0 
+  ow.UpthFollow.Update () [0x00000] in <filename un
+k
+(Fin>:0 
+e
+:Filename:  Li
+n
+e: -1)
+e
+renceExceenceException: Object reference not an instance of an objfect
+  at Pa
+thFollaohw.glow.get_Speed () [0x00000] in <filename unknown>:
+0 a
+ Pat PathFollowdaUpdate () [0x00000] in <filename unknown>:
+0 
+
+ 
+(Filename:  Line: -
+1
+)
+N
+ulNRelReferenException: Object reference no not set ton instantce of f an object
+
+ aat PathFollow.get_Sppeed () [0x00000] iin <filename unknown>:0 
+
+  at PathFollwow.Update ([0x00000] in <filename unknown>:0 
+ 
+
+ 
+(Fialen  Line:Line: 
+-
+1)
+
+NullrReferenceException: Objeference not set to an instance of an of an ob
+ject
+  thFollow.get_Speed () [0x00000x00000] in <fe unknown>:0 
+  at P
+athFollow.Update () [0x00000] in <filenafileuname unknow
+n>
+:0 le
+ n
+ame:  Line: -1)
+
+ -1)
+
+ferenceException: Objn: Object ereference not set to an in stance of an 
+object
+  at PathFollow.gdet_Speed () [0x00000] name unknown>:0 
+  at Path
+Follow.UpFoltlow. [0x00000] in <filename unknewn>:0 
+nk
+nFilename:
+  
+(File:name:
+ 
+ NullRefere
+n
+ceException: Object reference not set to an instance of an object
+  at PathFoll
+ow.get_Speed () [0x00000] in <filename un n<filenam
+e aunknown>:0 .U
+pdate () [0x00000] in <fil[0x00000] in <filen
+am
+e unknown:  Lin
+e:
+ -1)
+
+NullReferenceE)
+
+NpullR:eferenceExference not set treferennceance of an object
+s ttance ooflow.get_Spee
+d () [0x00000] in <fileed e unknown>:0 
+  at PathFollow.Update ()
+ [0x00athF in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+N
+ul
+lReferenceE Line: -n: O
+b
+ject reference not set to an instance of an object an instancellow.get_Speed 
+() [0x00000] in <filename unknown>:0 
+  at PathFme unknown>:0 
+  at PathFollow.ilename unknown>:0 
+ 
+(Filename:e uLine: -1)
+
+
+ N
+ullReferenceException:
+ 
+ObjectReferenceExceptiet to an instance ofe an object
+  at PathFollow.get_Speed 
+() [0x00000] in <filename unknown>:0 
+  at PathFollow.Uown>:0 
+  at Pa00] in <filename unknown>:0 
+ i
+n <filena:me unknown>:
+0
+ 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set t
+o at PathFollow.get_Speed ()
+  [0x00000] inw.getlename unknown>:0 
+  n t PathFollow.Update () [
+0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Nu
+ll
+ReferenceException: Ob
+j
+ect reference not set to an instance ocf an object
+  at PathFollow.get_Speed 
+() [0x00000] in <filSpeede unknown>:0 
+  at PathFollow.Updat:0 
+ [0x00000] in <filename unknown>000] 
+in
+ <filname:  Line: -1)
+
+
+ 
+(Filename:  Lxception: 
+O
+bject reference not seon to an instance of an object
+  at PathFollow.get_Speed (
+) [0x00000] in <filename unknown>:000] 
+inat PathFollow.Update () [
+0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Nu
+ll
+ReferenceEx Line: n: Ob
+j
+ect reference not set to aject rtance of an object
+  at PathFollow.get_Speed (
+) [0x00thFollow .get_Speed () [0x000 
+  at <filenalme unknoewn>:0 
+ 0 at Pat<hilename update () [0
+x0
+0000] in <filenea -1)
+n
+known>:0 nce
+Exceetion: Objint refere
+n
+ce not set to an instance of an object
+  at PathFollonw.get_Speeed () [0x0000
+0] in a<filename unknown>:0 
+  a0000] in <filename un() [0x00000]
+ in <filename unknown>:0 
+[0
+x00000a] i   <fnelename 
+u
+nknNullRefe
+re
+nceExceme:  Line: -1)
+
+eference noenceEx ceptnionstance of an object
+  at PathFoan instancepeed () [0x0000
+0] in athlFollow.get_Speed ()
+ [0x00000] in <fUilena m) [0x00000] in <
+filename unknown>:date
+ (
+) [0ename:  Line: -1)
+
+NullRefern>:0 
+ 
+(Filen: Object referenc
+e
+ not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] i
+n <filenamollow.get_Speed 
+()at PathFollow.Update () [0x00own>:0 
+  at Pate uollow.Update
+ (
+) [0x00000] Line: -1)
+
+NullReferenceE
+ c
+(FilnenOame:  Line:ence n
+o
+t set to an instance of an object
+eren PathFollow.get_Spenstance of an object
+  at PathFnknown>:0 
+  at () [0x00low.Updatefilenamx00000] in <file
+name unknowllow.Up
+da
+tei () [0x00000] in <f
+i
+lenamle unknownExcept
+io
+n: Object refene: -e1)
+
+ set to an instance of an object
+  at PathFollow.gt to peed () [0x00000] iobjefile
+name unknown>:0 
+  at PathFollow.Update ()filename 0u in <filename
+ uatknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException:
+ O
+bject reference not se
+t
+ to an instance of in object
+   rteference not set to an instance of ian object
+e unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename u
+nknown>:0 
+ 
+(Filename:  Line: -1)
+ 
+in <filename Exception: Ob
+je
+ct reference not set t
+o
+ an instance of an obj:c O
+bject referlence no_Speed () [0x00000] e n <filename un
+known>:t0 
+ o aget_Speed ()w Update () [0x00000] in <unknnown>:0 
+  at P
+at
+hFolename:  Lie () [0x0
+0
+000] lReferenceEme unknown>Objec
+t 
+reference not set to a
+n
+ NullRnce ofnceExcepect
+  at Pect reference not se() [0x00000] in <filean ob unkno
+wn>:0 
+h at PathFollow.Update () [0x00000] in <filename unknown>:
+0 
+ 
+PathFolle:  Line: -1)
+[
+0x00000] in <filentame unknown>:0 
+ 
+(Filenamse:  Line: -1)
+
+NullR an object
+  at PathFollow.get_Speed () [set to00] in <filename unknown>:0
+ 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+
+ ait Path:  Line: -1)
+
+NullReferenceException: Object referen
+ 
+(Fil enamto   Line: -1)
+
+NullReferent
+  at PathFollow.get_Speed () [0x00000] in <filename unkan ob>jec
+ 
+ at PPathFollow.Update () [0x000000] in <filename unknown>:0 
+ 
+(
+Fiat Pate:  Line: -1)
+
+ (NullReferencin xception: Object refere
+nc
+e not set to an instan
+c
+e NulalReferen
+  at PathFollow.get_Speed () [0x0000t0] in <fistancee unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename me unknown> 
+ 
+
+  at PathFolne: -1)
+
+te () [0renceException: Object reference n
+ot
+ sete to an Line: -1e o
+f
+ ullRebject
+  at PathoFollow.ct referee n) e not s00] in <filename unknown>:0 
+t
+  atathFollow.opdate () [0x00000] in <filenname unknown>:0 
+ 
+:0ilen
+ame:  Line: -1)
+
+NullReferenceException: Object reference not
+ s
+et to an :  sLine: -1)
+n
+NullRefer
+e at PathFollow Objtect reference not set to alename unknown>:0 
+  at 
+PaathFollow.Uow.gee () [0x00000] in <filin <filenamew unkno
+w
+(Filena
+me:  Line: -1)w.
+U
+pdNullR) ferxn0eException: Object reference no
+t 
+set to an instance of 
+a
+n Nullct
+  at PathFeptlow.get_ject reference 000] in <filename unknown>:0 
+  at P
+athFollow.Updow.get_Spexed0 0]  [0 xf00000] in <file>name
+ u
+nknown>:0   L
+ine: -1)
+
+NullReferateceException: Object referencu not set to 
+an
+ instance of an ob-jec
+t
+
+  lRe fathFollExceptionpeed () [0x00000] in <filename unknown>:ce of
+ an object
+  at UpdthFol() [0x00000]e in <filename unknowilename
+ u
+nknown>:0 
+  at PathF
+o
+llow.Update () [0xt00n: Object reference not sn>:0 o 
+an
+ instance of an object
+
+NullReferenceExceptioneed () [0x00000] in <filename unknown>:0 
+  at PathFoll
+ow.U PathFollow.ge0000] in <filename unknown>:0 
+ 
+(Filename:  Lin
+e: -1)
+
+hFNullReferenceException: Objec<filename unknnownet to 
+an
+ instance of an object
+
+  at PathFolnlow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFoll
+ow.Update () [0x00000] in <filename unknown>:0 
+ 
+e unknown>:0 
+  at Pa
+t
+hFolReferenceException:0000] in <filenacme unknown>:0 
+ 
+(Filename: an object
+  
+a
+NuPathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+ce of an oollow.U
+pdate () [0x00w.get_S peed () [0x00000]>:0 
+ il
+ename unknownine: -1
+)
+
+t PathFollow.Update () [0x00000] in <fie not set to an inst
+an
+ce of an object
+: -1)
+
+NuFollow.get_Speced () [0x0000t ] in <filename  unkno an insta
+nce of an objectUp
+date () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1
+)
+
+t NullReferenceException: Object reference not set to an i
+ns
+tance of an oine: -1
+)at
+ PNthFollferenceExceed () [0x00000] in <ficename unknown>:0 
+  anc PathFollow.Upd
+ te () [0x00000] in <filename unknown>:0 
+ <
+filename u  Line: -1)
+
+  at PaterenceEwxception: Object 00e] ien <filename to an instan
+ce
+ of an object
+ne: -1)
+
+Nulllw.gferenceException:000] in <filename unknoset>:0 
+  instance of an object
+  a0t PathFollow.get_aSpeed () [0x000
+00
+(] in <fil  Line: -1)
+
+NullRef
+erenceException: Object reference0] in <filename unknance of a
+n 
+oFilenta
+me:  LinhFollow.
+g
+et_Speed () [0x00000] in <filename unknownot se
+  at PathFollow.Update () [0x
+00000] inFo<lilename unSpeed () [0
+x0
+0000] ine <filenam-1)
+
+knNullRefer
+enceException: Object reference 00] in <filename unknnown>:0 
+ 
+(File
+naat PathFol: -1)
+
+t_NpeedRefere0nceExceptio<filename unknown>:0 
+  at PathFollow.Update () [0x00000
+] in <filFollow.get_Speed (
+) 
+[F0x00000:  Line: -1)
+
+NullReferenceEx
+ception: Object reference noxt set to an instance ofnown objec
+t
+  at name:  Line.:et_Spe
+e
+d () [0x00000] in <filename unknown>:0 
+  at PathFoanlow.Update () [0x00000] 
+in <filename unknot_Speed 
+()
+ [0lename:  Line: -1)
+
+NullReferenceEx
+cept PathFollowt reference not 0000] in < instance of an object
+
+ 
+ at PathFo  Line: -1)
+
+Null [0x00000] in <filename unknoefer0e
+ce not set to an instance of a0000] in <
+filename unknown>:0 
+pe
+ed () [0x00000] in <fi
+l
+enNullReferenceExce
+  at PathFollow.Uprence not sx00000] in <filename unk object
+ 
+ 
+(Filename:  Line: -1)
+
+) NullRe0ferenceExcename unknownct refe
+rence not oset to an instan0x00of an object
+  amt unknown>:0 
+ 
+(Filename:  0x00000-1)
+n
+ <fileferenceExcepntion: 
+Object reference not set to an instance oilename unkno
+w at Pat
+hF
+ollow.get_Speed () [0x
+0
+0000] in <filename unknown>:0 
+  erence not set Uto an ins[tx00000of an <filenam
+e aut Pown>:0 
+ 
+(Fil_Sname:  L [0x00000]
+ 
+in <filenamee uneption: Obje
+ct reference not set to a n instance of anlenamec u
+nknownathFol
+lo
+w.get_Speed () [0x0000
+0
+] in <filename unknown>:0 
+ct referhFollow.Update o an insta0] in <filename un
+known>:0hFo
+ll
+ow.geta_Speed n() [0x0
+0
+000] iReferenceException: Object
+ referencFollow.Upd toe an [0x00000] in <fiobjecme 
+unknown>:0 
+ ow
+.gete_ame:  Line:0x01)
+
+0] Nu <filename unknown>:0 
+ject reference not set to a0x00000] in <filename unk
+nown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceEaxceptioon: :0 
+  at PathFollow.Update () [0x00000] in an object
+ unknownhFollo
+w.
+get_Speed () [0x00000]
+ 
+in <filenanceException: Obj
+ect refehFollow.Update () an instan]ce offilename unk
+nown>:0 
+Fo
+llow.get_Speed () [0x
+
+NullReferenceException: Object r
+eferencthFollow.U to an instax00000] in <filena
+me unknohwn>:0 
+ 
+(Filend () [0x00000] in
+ 
+<filename nceException: 
+Obat PathFollow.Updott set to an000]stance of an objeknow
+n>:0 
+ 
+(Filename:  Line: () [0
+x
+00000] in <enceenamee unk: Obn>:ct efere PathFollow.Updatn instance of a in <file
+  mat PathFollow.
+ge
+t_Speed () [0x00000] i
+n
+ <NullReferenceEwn>:0 
+ : at PathFolerence not  () [0x000 instan ce of ame unknown
+  at P
+at
+hFolename:  Line: -1)
+[
+N0x00000] in <fieption: Object refere
+nce not sFollow.an insetance o0f an objecfil
+enat Pathknollow.get
+_S
+(peed () [0x00000 -1)
+
+NullReferennknown>:0 
+  at PathFolloew.Update (t) [0x0 i0nstance of an object
+  at Pat
+hF
+ollow.get_Speied () [0
+x
+00000] in <filename unknown>:0 ef
+erence not set to an instan0ce of ] in <filen
+amet PnathFollow.
+ge
+t_Speed () [0x00:000] 
+i
+n <filenaeme unknotion: Ob
+ject refhFoence not ate () [0x 00000] in < filenaect
+  at PathFol
+lo
+w.getname:   () [0x00)
+0
+0] in <fiference unknownon: Obj
+ect reference not sate () [0x000tance o f an object
+  at >P0a
+ 
+(Fille.natme:  dLine: x0000
+0
+] NnullReefemrenceEoxception
+:  Object refer.Update () [0x000an ] istance of an object
+  a 
+ 
+(Filename:  Line: -1() 
+[
+0xl000ferenceExceptnaome Object re:0 nce not set to anUpdate () [0x0000object
+  ate ame unknown>:0 
+Sp
+eed (name: 00000] in <f
+i
+lename erenceExc:0p 
+  atbjectt relow.Update () [t to an instance of an object
+  at 
+Pa
+thFollame:  Line: -1)
+
+NullReferenceException: Object refer
+ence not set to an inestance of an objecfil
+ename unknown>:0 
+ 
+(Feed () [0x00i000 -1)
+ 
+<filename ucnknown>ion: O
+bject refFerence ndate () [0xan instance of an object
+  at Pa
+t
+(Filenameet_Speed () [0
+x
+00NullReferenceException: Object 
+reference not set to an instance 0] in <filenta
+me unkathFollow.
+ 
+(Filename:  Line0000] i
+n
+ <filename unknown>:0 
+  at PacthFolerence not set to 00000] in <filenan e unknow
+n >: Pat
+hF
+oFilename:  Line: -1)
+
+NullReferenceExceme uon: Object ref
+eren Peanot selowt.Update ta) [0x00000 ] in <f
+ilenamet uollnown>:0 p 
+(F () [0x000 0ine: -1)il
+enlame unenceExce0 
+  a tb PathFoference note ()  t0o an in stance ename uonknown
+ >:0 
+at
+hFolelomw.g Line: ed ()
+ 
+[0x00000renceEfxceptmi on: Obnj:ect 
+refe rence noow.Updato an insxtance ofn <f ilename
+ unknoawhnollow.
+ge
+t_Speedm :() [0x: -000
+ in <feflename unknowno>:0 
+ect  referoence.Unot set to an in0stance fil an objenct
+  a:0 
+ 
+(Fillenamet_Speed :() [0
+x
+00NullRef erenceExceptinown>:0 e
+  aterence nlot sepdato  ()  n[0x000 00] inob<jecena
+m at nPnathFol 
+ 
+(gFilename: ) [0x000001] 
+
+in NuillReferenceExce:0t : Object referewnce not (set to 000] intance of man objewct
+  
+ t
+PathFoame:  LitnSpe -1 ()
+ 
+[0xlRefe0] in <fieption: Object re0 
+  cet Pat het tlow Upd inst(anc0e of an objecil
+e ntaPmteF luon.gnown>p:0 
+  [0xlen00me: inL n<file)
+a
+mue unknownn>:0 e
+ o : t PathFollowr.Updanoet set t0o an inst<ficlena me unkect
+  at P
+at
+(hFollow.g et_Speed1)
+
+Nu0x0000e0] in <filenanme bjnkct refe0ren
+ce tnot seot to Uadn instance o000] in <fctename unthFoollow.
+g
+et_Speame:  Li0n0e: -1)in
+
+NulllenaerenceExoception:
+ ObjecathFollow.Update ()e [0ox0n0000] in <filenname un
+  at Pa0th
+Fo
+llilenaem_Speedi () [0x0
+
+000NullnR<eferenceeExcepwti:0 
+Object reFference nate () [t0 an ins]tance olf an ounknown
+>:0 
+ at
+hFFollowe.get_Spe -1)
+
+ [Nx00000] in <fixlename u Objecnt: ref
+erencPe hFollsow.Update (s)a c[ of a000] in <f
+ilen PathuFkollow.g e
+ 
+_FSlpneme:  (L) e[0-1)
+0
+0ullRefereilenamee tion:owOn>:0t re
+  at Pat hFollow to date n() [0e o000] in j<fti
+l ename hFnollow>.0g
+ 
+_Spleed () [0x00000] )
+
+ <fileenrenceunknown>o:0 
+  at PaftrhFolloow set to an  [0x00000 ]f an <oibjecte
+  atown>:0 
+ ow.geet_Speed ()e: -10)00
+
+NullRefelrenceExceptio>:0 
+j at PatheFollow.oUpdateto an ix00000] in <fi lename
+u at PwathF 
+ 
+(Filee_npemed () [0:x0000
+0
+] in <fileename upnknown>bject 
+referPenhce not spet to ) [0x000ance onf< an obje unk
+nown Pat 
+F
+ollow.gmet_SLind :  [1)
+0
+000u0] in <filenacmpe unknObwject re
+ ferenathFollosw.Updaan ins [0x000of an ob<jilena
+ mae  unkFnown>.get
+ 
+(Fed () [0x0 0000]  i)
+
+<fNlunllReufkerenc:0 
+epation: Fobllow.Uepdratce  )notx set t on an linnstancke of a0  
+ 
+(Fi
+lename:  Lollow .1)
+
+NulelReferenxceException: Obname ureknown>:e not
+  aet Pat ano low.Updae of an 0object   at PathFollow.known>peed
+ (
+) [lename:  Lii neilen1am
+
+N ulklRef>eren
+ceException: Object re () [ncx00000] in <ofan insteaunknown >:0 
+ 
+ct
+  at PathFonllow.ge
+
+N_ullRd f() [0x0000ption: <filename unknocen>:0 et at PathFnstance odf an object
+  at Pa thFollamw.gunknown>:0 
+ [
+x0000name:  Linle:am-1)
+
+known>:0r 
+  ate PathFoOlject rpdate ()  not s0e0] in anf instan ce of a>: 0 
+ 
+ti  at PeathFollo w.ge
+t
+_Speed ()ferenceE0x] in <ofilenjame  unknonce not 
+set to ahn instanpce of a n obje0cti na <fathFoamlow.get_Speed 
+(
+(Fi0lename:   Line: -1)
+unkNulnl:0 
+  nat PaethFoll ow.Update () [0x00000] in <filename unknof an ob
+ 
+(Fi
+lean ame:  Linw.ge-1)
+
+Nud () [0xenceExcepn <on: Object nreferen0ce 
+not sPathto ano instaaence [0x00n object
+  ilename Funknowgnt>:0 e
+ (
+) [0x0000:   in <filen
+a
+mulluRefewrenceE
+x at PathFolbject refee () [0not set] to an instan ce of an obj
+ec
+t
+  atame:  Line: -1)
+
+Npeed (f)ren0c0eExcepti oni:enamject knownre:0 
+  tast PathFollowt.nUe of ean object
+ 0] tiPathFollow.get_Speed :() 
+ [
+(Fx00000] in <inel: -1)
+
+Nknown>:e0 
+ ExceptiohFollow.ct retferenc0e not sein <f ilename nce oow n>:0 
+ 
+(
+FilenaaethFolnl: -1)
+
+_SNullR(e [0x000eE0xceptioin:name unknefwn>:0  
+ t at Pta thFolslaow.Uopdaate (ec [
+0x0000athFoll<fi.get_Sepeed ()n>:0 
+ 
+(0] lin <fil ename un)
+
+owN>u0llR
+eferePathEFolltion: Obj ect 0xeference not seen aome unksnowce o0f 
+an
+ obljecme:
+   t ineth Foll
+o
+w.glet_SpeeceE() [0tion: O] jen <filename e nknown>:0t  an
+ iats PathFollow.Upjdct
+e () P[0x00000w] in <filename 0u000n0wn>:in 
+ 
+ilienamee unknown>-:)
+
+N
+  at PathnceExowe.Update () [0x0000re]nice not set ton nowni>:0 ce
+(Filen abject
+L itne: -1oll
+o
+w.llRefereedn(ceExx00000] in bject nrefernennce no  et to PathFnollow.Upd an objectx
+  at Pat hFolloame unkSpeed :( )
+ [
+0x00ename: n <filena1)
+ 
+unknowfnrenceE
+ ceptiPon: Oblject reference0x00000]  in  < filename unkan obje0 
+
+ 
+( at Paat:hFollow.get_
+
+SpNullR) [0x0nc000] in <ofilObname unknerence0 no
+t set athFolliosw.Updaot en objecxt
+000t  in <fillow.get_nSpeed () 
+ 
+x00l000] in <filena1) u
+nknownlRefere
+ncat PathFollow.Ujedate e() [0ce not set  <filenanstance own>:0 
+ ect
+  aam PathFine: -1)et
+_
+Speed () [0cx00000tioin <filecname furnkce no>:0 
+ tot PathnFollow.Ufpdate () [0
+x000 PathFn <filegname und () [0x000
+00
+0] len <fe: e Line:n -1)
+:0 
+  atr nceEhFollow.n: Obje ()  [fere0nce not setl tome u instwnnc:0 
+ a(Filename:
+  LinPe: F-ll)
+
+NultlReference[0x00000]n: nObfject refenknown >:0 t tat PatinFstance of an o)bject00
+0 0t] in Fofllow.get_Speewn >: [0
+x0
+0000] ine:  Line: -1)nk
+n
+own>:0f 
+  atxcPathFon: Objecta refere0x00000] in <filenaime unkn ofn>:0 
+bj
+ect
+ name:PaLine: l-1)
+
+tNSpelRef)eren00000] in o<f Objecme unknrown>:0 
+set tPo an instance of a)n[ obje00] 
+ina <filhFollo w.get_Speed 
+()
+ [0x0000e0 ] in : -ilen
+a
+me unllRenf:e r
+  at xception: ObUject re) [rexnce not nset to amn innknown>:0 
+ 
+ objecte:  Linae: -1)
+
+NullRepfed () eExxceptio i:n <filtename uncenowot set 
+to t PathFolncow of ante b() [
+ x0a0000] Fonllow.gnatme unk n) [0x0000
+ 
+(File<file:  Linenknown>
+:
+NullR
+efae renceExcew.Upda: eObjec0x00000r] ie n<filseta to ann instan
+c
+e of nane:  Line
+  at)
+P
+athFollow.getException: Objec000] firn <finot set  tko an insancat oPathFolleow.
+Upda Pe () ollo00000] Sin <fi)l[0x000 0n0] in <0f
+ 
+(File unkn:own>:0 
+  a
+t
+ ullReFflerenceExcept) [0x 00000]  iferefnce not sekt to an i
+ns
+tancename:   oine: -1
+)
+a
+t PathFollow.get_ceptio n) [0x0000 reference notme unknowan insta
+  at Patan object
+  att Pa [h0x00000]et_Speedlename un0000]n in <
+fi
+lFilenamen:nown>ne0: -
+1)
+t
+NullReflerencedate () [0x00000] in <filecname unkt to an  i
+ns
+tancen of   L object) 
+
+NulatheFollow.gxet_Spen:  () e[0x0e0000n] inot set to ean instan:ce o
+f an objeFct
+  atpdate (ol l0x00g000]peed () lename u0] in <filen
+am
+e ilename:>: 0 
+  a1t 
+P
+athlFollow.ceExcepti)on: Obje0] in fefielenamet snknown>:n0 
+ 
+(Fce of an obLine: 
+- 1)
+
+Nullollow.eget_xceptd ()  Object00]eference not set to an insta
+n at of an oobjecUt
+  e ( PathFo0llow.get_Speeed () [0now000:0] 
+ i
+n ilename:  Linke: -1)
+ 
+
+  at PathceExceptUion: Object refere nn <fnileset eton anwni>:0 
+ 
+(oFiln nobject
+ ne: -1)hF
+olNou.get_Speed (E) [0x00000] inc <refereance nono set to a
+n instaance lof an aobject
+0x00000] inllow.leename ud k() [0x0 0
+00
+0] inname:  Line: n-1)n>
+:0 
+eferenceExcleptiUpd:ate ()  refere0n]ce n<otl set  un known>:anc
+ o
+f iln oabject
+ine:  -1h)
+
+Nul.lRefereed () c[0tion: 0Object refereence not >:0 
+o at PantthFollow an obje () 
+[0xt0Path0] in <fiet_Speed n() [0x00 
+ 
+(Fil <nfilen ame : nknow
+n
+>:0 Ref
+erenceathFollown.Update  (eferen0ce no t setiltename untknnown>:a0 ob
+je
+(Ft
+  aate   Line:l -1)gt_
+SpelRe () [nceExcept ion: Obename ueferenc>:0 
+  at PathFollotw.Update () [0x000
+00] in <filename et_Spewed () 
+[
+(Filename:  Line: -1)
+
+NullRe>feren
+  eat Pation: Obj.Uct refer)e[0x00000]set to ian instuance of:  
+ 
+(Filena
+me:  PathFollo)w
+.
+get_Speed r(nceExce0p00] i:n <file name unkenown>:0 o an insthFollow.Updaote () 
+[ 0tx0000F0] in <et_Speeme unkn0x00000   
+(Filelname:  nLine:>:01 
+
+  atl PathFollow.Uppdiate (bjec0x00e0e00] in ot set tme un innstance
+ 
+of annaobject
+  e:t -1)Fo
+llow.geet_Speedcept [n: O00j00] inference anot set to an in
+stancPa thFollow.Upda
+t at PathxFollow ign <filename  unkno00] in  
+ 
+(Filenaeme:  ownne: -1)
+  
+a
+t PatehFollowExcedpte () [0x00000] inrencilenoat set to a>n in
+ s
+tance ofe  an oebject
+ 
+ ualReferhFoceException: Od () [0rx00rence not fseen ame unknsoance o  a
+  atbject
+  atowP.Uhpdate .(et_Spx00d () [0n <fil0ename uilknown> :0 
+ow
+nF>:0 ame
+:  LinathF-ol
+
+Nu.Update () eE0xcept0ioin <filename ferkence not 
+se
+(Filenan e:  Lince: -1)
+
+oNullR
+e fereanhceExocegptiSoen: Ob ject 000ferenc<ei not s et town>:0i 
+  at  PathFollow.U
+  aate a() [0low0000] Sin <filen0a00000n] in <:0 le
+na
+(Filennnown> :0 
+   at 
+P
+aNhullRef.epdate () [0x000:00] ein <filename  ot setw to an
+ i
+(nstance :o f an  o1bj
+e
+cut
+  aetenceExcollow.ge ObSpect r(e f0eren00] in <fil to an unknownce of a
+n  objethFo
+llow PathFte () [get_Speed () <[0x0000e unkn <fnilena
+m
+(Filename:  Lin
+ e: -Pa)t
+h
+FollRef.UrpnceExcept[0x00000]ect r<filename uot setn to a
+n
+ instance:  Linneobject
+ 
+NullRPafthFolloxceptionp: Objec[0x0000r0] in <fisetnamoe unknown>ce of 
+ana  objeFcltow
+.Update () [0x00000_Spen < filenam0e0 uninn <filena
+ m
+(Filekname:  Line
+: -1 )a
+
+NullRe.Update () [0x000:00b]ect refelrence not sen>:0 
+ 
+(Filenname:  Line: e-1)
+
+ 
+NullaRefereon.ceExcepetion : xOb000] irn <filee not set to a:0 s tat Pathf oan objectte
+ (at PathF0ollown getileename unknown>:0 
+ 
+(Filename :  Line::0 
+ 
+ 
+atNPathFofllow.UEpcepti () [0x000t re fe rence nme unkn to a:n i
+ns
+tance of a nLine: -1)
+
+ 
+at PathFollceExcep_tion: O)bjexct refernence nname un to an>:0 
+  at P an objecot
+  at ePath[0ox0000get _Spefed ()me[ xu0n0knownn<>:0 ame
+ unlenown>:0 
+  a t Pa
+t
+NuollReferdanceExcep0t00000] ijn <filenrenc e not set t
+o
+ anlenamean  Line:an o)b
+j
+ect
+  ferenceEFxlceptiotnSpeed (ct refe00e00] in  <fi lename untknoewof an 
+  at P
+atahFPathFwoUpdate () [0eed 0(0] [0x0<f000] in  <filenname u
+n
+kniown>:0: 
+  ea -1)
+
+NullReferedate ()eption: Object reference  nknown>:0 
+ 
+(Filename:  Line: -1)
+
+
+  atl Pefereollow.gett_Speedb ect reference in <filteno an uinstance  of
+ ant objectl
+  at dPtath) ollow.get_Speed () [0xe00000]wn>:0 
+il
+ename unkno wnne: -1
+)
+
+t NaullRelfwerenacee(Ex[ce0ptio] in <file name unckeo not se
+t 
+to an insta Lin of an o
+
+bjllRef
+e rtenceExcllow.gn: Objecdt refexr0000] in <filetname unktnnown>:0a 
+  eat
+  at PathFollowa.get_ [0x00000][ in <fil innme unkename :unk
+no
+wn>l:name
+   at PathF)
+
+NullRpdate (ce [0x000ion] in <filenamer ence not: se
+t 
+to an insta nce of an 
+o
+bjectf erenceEhxceptiogn: Speedt ref[0rxn000not set tfilan amne unknoown>: 0 j
+  
+ at PatthFolloow.pget_ Speedx 0() ] in <f0ilein <filenamwn>:0 o w
+nFile na
+me:  PathFo llow
+.
+UullRef erence0Excep in <: Olbnject nknownence n
+ot
+ set nto an inne: -1) 
+f
+ NullReect
+  eEtxceptioln: ObjecSt refer e0nce0 not set ile anm instance>:0 
+n objecthF
+ l at PpdthFollow.get_S00eed () f[0x000e 0] in <n>ilena
+me
+(Fulenamwe:  Lin
+e :  -athF
+o
+llow.UpdateenceEx0c00000] in <jfitlenamre unknown>:0 
+o 
+aFn enamtance ofe:an ob
+j
+NullR
+efet PathFollow.get_Speeed () [0ex00000] in <fi lename unce ofn>a: obje
+c t
+  at PathFollow.tget_Spee0d000] in <0filenam <filenname unk
+ n
+own>:0 :  Li Pa:thFol
+l
+owl.Updarte e() [0xion: Object rilename e nnot set0 
+ 
+anilename:  Line: -1b)c
+Nu
+llRe ferencelow.epet_SpeeOdj () [0xerence  in <fit ename uinstanc>: of a
+n ob ject
+ llow.UpdaFoll() [0xt_Sp00]  () [0ix00000]u ino n<fil
+e
+name numnknownn>:0 1)
+  
+at PatfeFollceExcedate () O[0x00000] in <e not set to an i>:0 
+ 
+(Foi an obj:  Li
+n e: -1)F
+olNullRefereneceExce0ption: Object reference not >set t
+o  an inhsollow.Update ()je[0x0
+00at ] in <ofilengatme unknown>:0 000
+] in <filename unknown
+>
+:0 
+l at PathcFollow.Uon: Object reference not set to an inswn>:0 
+of
+( an objeect
+  e: -1)th
+F
+ollowe.get_cSExcepti)on0x00000] inefefrence not ksetn>:0 a
+  at Pat hFoll ow.Upd
+  at Pat0x0ol0low.get_Silename  [0x00wn>:0 in
+ <
+fFileenae unknoine: 0-1
+ 
+
+at lRaehFollnceExcdepe () [0x000c0 refer ence not set to an i sta
+ncelenfame:  Linte
+: -1)at
+hFolReoferencSeeException: Obj] in <ffelename unknown t:o 
+  atstanthF of an.Upbdate 
+ ()t Pat00F00l0w] in_ <feile)name 0u0nknown>f:0 a m
+(e uename:  >Line:
+  -at 
+P
+aulhlRefer.Updatxc e)ptio0n00 O] inc <filernnce  nnknown>:0o a
+n 
+(Fnstancee:  Lineobject
+ 
+ aNulalReferenceExcepptio(n: Obj0e00] in erence nmot set tn>:0 n  atn e of anl object
+  at  [0x0000l0].get_Spieeed () nkno0w0n>: 0n <
+fi
+lename unkn Line: -1)
+
+
+atNPathFolerenceEdxception:x Object refeilence not set to an 
+i
+(Filnceame:  Line: -1
+) 
+
+NuatlRefeow.get_Sception: [0x00t referencfileota eset nown>:0 t aat PaothFollowect
+  at PathFollow.get_Speed (ame unk00o00] in
+ 
+(Fileaname:  Lwn>:0 -1
+ 
+
+aut PafehFolleEx.ceptio () [0ject re]eren cef notamse unknon insta
+nc
+e of name:b  Lt
+ne: -1ath
+
+Follow.eree_Speed () [0x0 O00jectin <feilenamen u seto t>o an 
+inatt PathFfolloobject
+tea () th0xo00000]et_Speed e() [0x00nown>:0n <
+fi
+lenleneame:  Li>:0 1  a
+t
+NullRefelrew.Updxcee () [0x00j000 ]efen rfilenamoe senknownan in
+s
+(Filenof e:  Line: 
+- 1)
+
+athNolllRefeereSneedE () t[0n: O0b0jecnt frlename unknown >:t0 
+anat PathFcollowa.Update (
+) [0x0000Follow <get_Speed () [0x00:000
+ ]
+ inl <filename u:nknow
+n
+>:Nul
+l ReferthFoeExcepUtiotn () [0xct re0ferencfe not set ktoo an in
+s
+(Filenafme:  Liecet 
+1)
+t
+ PathFollow.getception:() [0xct 000] innce not smt to an instance
+  ot  Pn objoect
+ U at Pa(t hFoll0o0] in <filena() [0x0n00n>:0 
+n 
+<filenamm:  uLinnewn>:1)
+
+N
+ullR PathFoclExceptpiate () [e0x00000] in <foilenameo an instan0  of
+( alenoame:  
+L ant PathF
+o
+lulow.gete_Speecd () [: O0b000]  re <filnen ame unknto a>: 0 st
+  at Pa thFollow.U
+ pad aate o()ow.0xet0000] d n <f[ix0e00me unkn <wn>:0 am
+ e
+(Filenoawn>  Lin
+  at Pat
+h
+Folloew.Update c() [0n: O000ec in <feilene ne unknowno>:n i
+ 
+(Fileename: o ject
+: a-1)
+
+hFNllowR.fget_Sepeeept()o [0Oxj00000e]e in <fnot seme unkan ins>t0an
+  at Pat objleow.U
+pdat eathFollx0w.get_ ipeed (le nam00 000n] nin <f
+ 
+lFelenameu:  Line:  
+  
+
+atNPathFolloen.Uepdatet on: Obj00000] fin <fi lename unknowni>:0a 
+ 
+of lename:e  L
+ine: PathF
+o
+llolReferenceExcept[io00000] in  <ffelename nunknown>:0  i
+nsta nce ofl oan obaje ct
+ 0 at Pat hFollilename pened w(>:0 
+ 00
+(000] in <filename un
+k
+nown>:feren
+ceEx cathFoln: Objectt ref e0x00000] t setfilename untknown>: 0 
+ bj
+ectename Pa thFol -1)
+
+et_Speed () eException: Objeclt refeunkncown>:0 t 
+to an ainstancwe of an object
+  at  PathFiolname unk_Spwn>:0( 
+ 
+(Fil00] ien  Linee: -1)
+
+Nulwn>e:eren
+ceEx PeathFollow.Ucpdrate ()ce not0000] in an inename unok an o>bjec
+ 
+Fi lename:  Line.: -1)ped
+ Nu llRef000] inE <fpilena Oebunknowrnference
+  aot set to an .instae () [0x00 object
+  ait Path Follow.ge0t_
+Sp
+eFil enamex0 0000]  in <
+f
+ilNname unknenceExcept
+ion: PabthFtollfewrUence n(ot set 000] in <filena oe unknobject
+ 
+ 
+(FiathFame:  .Line:peed (
+)
+N[0x00000] in <xceptiaoen: Oboject0 e
+  at PathFoletow.U an ie sta n0ce o0f] in o<bject
+  atnknowhF>o0 
+ 
+(Fitlename: ) L0i0ne: ] in 
+<
+fillRneferennceExcepti
+  at  Pject oreoferencte not 0xet to ]an instlennamoe an kobject0 
+
+ 
+t PathFoll ow.ge: _Spee
+d
+ ullReferenceExin <tion: Objeunknowneren ce
+ not satt too an Uinastan) e[0x0000o0] in 
+<filenatmh Folnlon>:get_
+ peedlename: 00000] i-n <
+f
+illenamereuncnewExc0ep
+tion: Otbject wrUpdaree (e n[0t set to an <fnstance of an wobject
+
+(Filenaame:llowi.e: -1)pe
+e
+d Nul[lxRe00e0] ceExceptenoame ujnktnrefer:e 
+  att set too an Upndate e(o)  n[o0x0000
+ 0]t PinhFolileoameg t_Speewd () [
+0
+x00000]m :  Line: -1)
+
+unknoNn>:l0 r  at PacthFollow.bjectte () [0xce not sie <fil enniame unk nf an :0 e t
+  atn Pe: hFollow.-1)
+_
+Spleed ()en[ceExcep] in <filename ference >:0 
+  at  ant inllow.Updof an obj0xct
+ 00]t in hFfilename t_Speed >(0) 
+[0
+x00000] in  <fil: -1me 
+u
+nknoRwn>:0 ce
+Exceptaihon: ObjUpdate () [0x0 0ot00] i to anl ianesutannwc>e0 
+ 
+(Filenamet
+  atne: -1F)
+
+Nu.glet_Srpeedn(c eExcepti]oin: Oibejaect renfwerence 
+  oat PathoFollow.Updae of()an object0
+  at filenamelow.geot_Speed
+ (
+(Filexname0:  Li<fe: -1ame
+
+ unknowen>:0eEx
+  at on: OFbject. reference not0 00] itn  <finltance  of an ob:jec
+t
+ Filename:  llonw. g1)
+
+Speed () [e0x00000]e in n<fObjectm  rnkfeown>:0  
+  attt  an hFollow.Upofa an ob[jxec0t
+  ant fiathFame un.knowSp>:0 
+ )
+(0x00000] i nLine:lename
+
+ uNullwn>:0 
+  at PpathF: Object drefer)en0x00000 ] in o an iname unk nowan>:0 
+ c
+
+  atn me:  Follow.get_
+S
+peedR () [0x000c0p0] in  <file neame unknown>:0t t
+o an PatstFollowo.Upd abte ()
+  [0x00000o] in <et_Speed (u) [0wn>:0 0]
+ i
+nF <filme:a  Linknown1)0 
+
+  at erenceExceptiodate ()ec[t referenin <fitlenameo unknowsn>nc0e
+ o
+f ian object
+  at Path
+
+Nullow.get_nceExc e) [ion: 000] in  <feilename unknot n>o:0 nstat Pa of anl obUpdatt
+   () [0x00000ow.iget_Speed e(u) n[wn>:00 
+]
+(iFilfilename Lunknow1)>
+
+Nul
+lRaefPathFcolxcoeptioate  () [0 x000rencein <filet to an innstance 
+of
+ an onbje:  L
+  at P-1thF
+o
+llouwlReferSenceExcep0x00000] in <filenrence not se:t to
+  at inathFnce oof anatoe ()t
+[ 0x0000h0o] in <filSpeed (u) nown0>:0 
+ in
+ <ilienaame unknne: -10)
+
+ Nul lRefeoreonceExatep () [0x00000 ]eferenilename sunknownn>:0 
+ nc
+e oleaname:  tL
+inae: -1)
+
+lulow.geet_Speedep() [0:xObj0ect re ffilenae enot noetn :0 
+  antt PathFolal objepdt
+  at  [0x00000ow.get_Spleed e u n0x0000>00 
+ 
+(Filename:  Line: -1)
+
+  at PfathFollxoew.Updatebject[0x00000] innot set tmo unknown>:0 
+ o
+f an nobject
+  at -1)
+
+Nullow.get_Speed (ption: 000j0]  reference notu known>:0 
+  atanPcthFollaow.Updatt
+   () [0thFollow .ge<fileename u0nkno00] in < 
+(Filemname: o Li:0 : -
+  at
+ 
+PathFollown.Update () [0x00000] in <fnce not  setnown an i
+ 
+(Filenoame:  Line: 
+-1) P
+atNuollow.get_Sepxeedt on: [0xj00000ef ere<niceea enuot sent to a
+n  t PatthcF of an Uodate ()
+  [0t PathFollow<fielename unknown00000]
+ i
+(Filename:  Line:o n>:0
+
+  at PaferenceExcUpdaite () ject00000]rence< ineoame unkno an in 
+ 
+(Filoe na mbje  L
+ine: -1)F
+NullRefet_SpeeExc()pti0xn: Ob0jein <reference  not set to a
+ n t PathnFollowa.Updatce 
+() [0x00000] ow.get_Seneed () [0x00000] 
+in
+ <filenaeme unnk: -1)
+
+Nu
+  afereanceExcewptiont: O) [0xt re00] ince<filenaeme unknown>:0 e o
+fF an obj:  Li
+ne: -1)th
+F
+ollow.get_Speexd () [0x000je0ct referenname unknown>:0 
+inat Pate Foflan object
+  at [0at0hFollow. <filepnadme  unx00000] i n
+ <
+fillennme:  Lnknown>1:0
+ 
+ul
+lReferetnceExce.Updat: Object re000] nin <filsename unknown>:0 
+ o
+fF laname:  cLi
+ne: -1a)
+
+olNow.get_SpenceExc [ption: 0] in <fileerencen not >s0 
+ o aat Pathncoe of apd object[0x0000at]hFollowlename unknown>[00x0
+00
+00]l in <:  lLine: -nkno
+w
+n>:0l 
+  at PathFollown: Object ) eferenc0e  in <fet to an unknown>e:0f a
+ 
+objectme:   PanthFollo
+w
+.get_SperednceE[0x000ion] in <filename unkn nwn>:0 
+to an inhFoancow.oUpdate () t[
+0x00000] in <filename eunkno [0x000
+ 
+(File<filen aLme unk1)ow
+n
+>:0 e
+  at PaxthFtollow.bUepdate ()ence n0ot s en <filae instance of an0 o
+b
+(Fcil
+enameP:  Lillow.get_
+S
+peeld () [0x00000] in < Object refereown>:0 
+  at Paan insltance of an ob0x000
+0 0] iathFfollow.get_Snown> () [
+0x
+(00000]m in <fil:n me un
+k
+NullRefe 
+  at cPathFollowject ate () nce not 0set to ilename aunknow nn obje
+ct
+
+  atn PathFollow -1)t
+S
+peNull)Referenc0eExcepftlionme Object re:0 
+  atnot set tlow.Updatea ce of an0 object
+<filenamhe unkn.get_Spee
+d
+ () [0x0e0  Line:  -1)
+naNeuulkloRn>:0 e
+  atepPaion: Oboj.Updatee () [0 x00 set to an insntae unkofo an o b
+je
+ctl  at P:a Line: -1)
+
+NuSllRd () [n0eExce00] in <fileename unknown>:0 s
+ tot Pn instance opdate object00000] ain <file.name unkd own>[0x00
+00
+0] in <fi:  name :u-1)
+
+Nu>:lRefe
+r at eExtception: pObject reference] in <sfi tenamne unknnoe of an
+ o
+bjectame:  Litne: -1)
+
+NullReferenc[0x00000] in <fjilename runknownt set t
+o at Pathtance wof an obj) [0x
+00000] ihn <filenam_Speed ow) >[0x0
+00
+00] in mef:lenamne unkno
+w
+n>:0R e
+  at xceptFollow.Updatere(ference not iset to an i nsknowne>:f an
+ o
+bject
+ meat  PanthFoll
+o
+w.getefSpeed ()xc[0x000n: Objec<t reeafeernennwn> n0 set toP ahFollow.Ucpdoa tn obje[cx00
+000] PiathFollow.get_Snpwn>: 0) 
+ 
+(F00lename:  ilename u)
+
+nown>l:Refer
+  at Pateption: Obpdate () [0x00e not se t to anme unknown>:0 an
+ o
+bjilena
+m a:  LatnhFoll)o
+w
+.ullRefeeedn () [0x0ion: ]Oinject renferennce not set 
+to anPathFollow.Updat object
+x00000] in <filenameSpeed () [0x00
+ 
+(Filen <filenamne: -1n)
+
+>:0 ef
+erenceEthFoltlow.Updatce () [0x00e000] ien to an instance oon>:0 
+ b
+ect
+ name:PathFollow.g
+
+et_Speeer e) [0x00eption:  <filenamee unkno wnt set t
+o  an ainstance.Update ob)ject
+  at PathFfilenamget_Speed () [0
+x0
+0000] ame:  iliename un
+k
+nown>:0 
+nceExPceptiolo: Object ref[0xence not s et to ame unknowne of a
+  (Fbjectm e:  Litne: -1w.g
+e
+t_Speled () [0eExc000] in  <fjilenaeferencne not se
+  at Pa thFollow of an o () [0x
+00at PathF <filenaet_Speend () [0x
+00
+(000eninm <filename-1)nk
+
+nownull0 e  enceException: Objece () ference not set ito an instance>:0  a
+n 
+(objecam
+  at Pne: -1)o
+Nullt_Sference) [0x00io0n: iO <jfilenefme uence not set 
+toatan inhFollow.Up an object
+x00000athFollow.getm_Speed () [0x0
+ 0
+(File iam <filenam:e unk
+n
+own>:0 
+  at PathtFollow.Upcdate (r) [0x000 set in <filenamence ono an ob j
+ec
+(Fi
+lent me:  Loine: -1t_
+S
+peed eferenc00E000ption :f Oenamet uenknowce not 
+ set to an inst.Update () [0x000t
+  atn <fileFollowu.kget_>:p0 
+ 
+(F[ilename:  Line: -1)
+e
+ unknowerenceE
+ xat Patoh: Objoect refeerencex not seit to anname unkce of an 
+ob
+jeclt
+  at  LPath Foll
+o
+wullRefepeed e(xceptx00000] inct rilenamn ce not s:0 
+  aat PathFce oow.Up objec() 
+[0x00000] in o<filename unknown>:0 0
+ ] 
+in <fnameea:  Linnown>:0
+
+
+Null PeferenceExceptate () [0ect re0] in <filet set tnknown>:0 an
+ce
+ Filenn ob: e Li
+ne:  P1)
+
+NolllRefere_Speed (ption: O000] inreference not snown>:0 n
+nstanPce ofl an obdject
+  at P000h0] in .<fileneadme) [unk0n0o] in <f
+il
+ename unk:  Ln>:0 1 )
+
+NuathFolloencUpEdate i() [0x000t00] in <filentame unknaown>:0 n
+ 
+(Filename:  L
+i at Pa1)
+
+NullReferenceEd () [ion: O00]ect referennce nnotown>:0  a
+ nat Patancellow.Update ()
+  0x00000] in <f.ilenameed () [0nx0000
+0]
+ in <filename nunkno)
+
+Nu0 Re
+f erencthException: Obe ct referen0ce not< ilename unknoswan>: 0f an
+ o
+bjiect
+  at Line: -1l)
+
+get_Speed ()enceException: Ofbject reunknowen>:t set
+ tot Patinstance.Uof an object00000] ithFollow.age t_Skpoened0 ) [
+0x00000] :  Linile name
+ 
+uNkullR>ef er
+encteEaxceptlown.Updatet () [rence 0not set to aam e unkncoe of an
+  
+objectme:  Line: -1)
+w
+.uglRefereenceExcex0t0000] bient rfelenaenc unknowsn>:0 n  at Pancheollow.Updajte (
+  at PathFol iow.geil_ename u)n[0x0wn>00] i
+n 
+(Fillename  uLnkno w1n>
+:
+0u 
+eferenaceFollow.Uond: Obj) [t x00000encin <filsename an known>:ce 
+ 
+ Fane objectLne: -1)at
+
+hFolloferenceExceptio [0 Obje0ct reference no t known>:0 n i
+n atanPathFo ll objecdt
+  a)t[ PathF0o llow.glent_Spenend n(:) [
+0
+(Filen]ame:  Linname u)n
+k
+nown>:f0 
+ eException: Object reeference00000] it tofin ename une of an obj
+ c(t
+  at PathFine: -1)
+Speed ()e [0x00000] in <filenatme unknown>:0  se
+t at PathFollow.Updaten object00
+000] PathFollow.get_Sknown>:0 
+ 
+(Filename: filename unk
+
+NullRefere
+ncaeExcthFtion: OUpdate (ef erenc0e0] in <ft to ane unknoncn>:of a
+ n
+ objectme
+  at Pat: -1)
+w.get_SfpreecdE (ep [0x00000]e in <firlenameotu kset to0 an
+ iat Pance of oan objtec (
+) [0x0a0000] own.<filenamed unknown>0:00] 
+in
+(F<ilename: unknown>:0 
+
+ u lat PathFoEllowt.oU: Obje c) [0x000ence  nnot leet to unknown>a:0 
+  aFn objmectLine: -1thF
+o
+llolReferenpceExcept0x00000] ein <fileencme unk not to a n 
+inst Pace of anw.Updatte
+  at Path0Folloin.get_Speame unknow0n>:0 
+  <filenamme unknown>:0 
+
+
+  at PathFcollowp.Upn:ate j() [0x00000]  int sfit to an unknownc>:0 
+ n
+(Filena
+  a:t PathFo-1)
+
+.gNt_Speed () [0x00000] in <filen refereknow n>:0 et 
+  at Painstanlow.Updat e () [
+ x00000] iFn low.lget_Speekd () [0x0
+00
+00] enam<filename u-nkn
+o
+wn>:0 
+ featenceException: Objee()t [0x0000c0] in <efilenan einstance> of 
+an
+ objenct
+  at iPe: -1o)l
+
+NullRSpeed ()eExcept000]  ibn <filenarme unnkn set to a
+  at PtanhFollow.nUpdate (
+) [0x0000F0llow.gefilSpname ()nk[nown>0:0  
+ 
+(Fielename: nown>:0 -
+ 
+ 
+autl PaerhenceEx.cpdateon(:  Obje0ct] in e<efie nnot setk to an  i
+ns
+tFalename: an obj: -1)
+
+
+at PatheFolleEw.get_iSpeed (e) [0xference not sete to annknostan:0 
+  at Pbject
+  oat PathFollow.g0et0_S in <fil [0x00000] in <f0il
+en
+ame unknown>:0 
+ -at P
+a
+thlFRollow.UeException: Object] reference no u set to> an 
+in
+stiance of  Linoe:e -1
+) a
+
+t PatlReferen.get_Speted ( ) [0x000eference<filename unkanown>:0 e
+  at  Pbject
+ l at Pathe () [0xg0t_000] in <filen0000] inn <n>i:enam
+e 
+unklnname:  Lin
+ e: -1at
+
+FolNou.llRefere)nceExc0e0ption<:i ename t reference n
+ 
+(Filentame:  Lstance of 
+a
+n olbjectec eExcepthFon: ow.get_ Spfere () [0x0 set t on <filesname uon an obj:0t 
+ a
+t  PathFhFlollow.U_pdate () [0x000000] inn <filenam e unokn>own>:
+0 at
+ P
+athFollme:  Line:  -1)
+
+Nul0lRein r<fcilename unknown>:0 
+ 
+(Finleenot set to ea -1)
+
+NaullRefern object
+  atn: Objecllow.gere_nce not) s[0x00000 ] in <filename object
+n>:0 thFaollothFolt_Speed ()e [0x00x000] in <fileneaame unnknown>:0 
+
+  ilenaathFollone: -1)
+
+ ()lReferenc0] in <fiin: Obme cunknowre>nce 
+no
+tF set te:  Line:t n-1)
+
+ Nu objecere
+nceExPcteption: Objecpeed ()r [0x000t set to<filennamance ofo an o j
+  a
+t Pt tPatlhoFollow.get_Speed ()0 [0x0000lename  funknomw unknow
+ n
+(Filena
+meat  PathFoll)o
+w
+.UNuallReferen0000xce ption: Objectu refenrence
+ n
+oFilenamte:  Linstance 
+
+NullRebfeere
+nceExPathFiollow.gett referen) [0x000s00] i an finltencame uanknbjen>:0
+ t PathFolloow.get_Sdate ()  [0x000000] ni<filenlename unknown> 
+0 
+Fi
+  eat PathFollow-1U)
+
+Null) [0x00000] in tifon:naOme unknefer>en 
+ 
+notl nsme:t to ea n in
+s
+tullRefefrenceExecep
+tion: athjFollow.erence not set txo an instance of an onbnown>:
+0 
+  athFPathFollet_Speed () [ [00x000] in <fi<lename unknown>:0   a
+t Plenamel:ow.Upda:te ()
+ 
+[0x00000renineExceptiome unkjnown>:0 
+en
+(ce notm set tno an i
+stNullRoffere objectep
+tion: Objectl wrefe_Senced ()  [0x00000n] in ance onf an object:0 
+  athFollow.glow.Upedate ([) [0x00] in  ini <filename unknown>:
+ 0at 
+Pa
+tFilenlow.UpdLine: -1[0
+
+00N0ul lR <feileneExceptknown>:0 
+ct
+ relfnerenc eine: -1)
+
+NulanRefertanceException: Obtj
+ect reaferenlce. not seed to  anx instancn <filename unkn
+own>:Pat
+  at P.athFSpelow.Upda0t00000 [0x00000lename unknown>:0 o wn>:0a F 
+(FileUname: ()Line: -1)0]
+ 
+iullRefereanceExkcepntion:
+ 
+(bijenameref eine: -1n) s
+Nell to an ineExceptioon:  Obbectt  rat Patce onotw get_Speead ()s ance of a]n objeilen
+ame  uathFollow.get
+ _Speed hFollow.0000] in( <filena0me unk<nilena:0 un
+knat P>:0 o 
+(Filepdate () [0x00000]
+
+NullReferenceExceptwi>on: 
+Ob
+ject rame:  Line: -1)
+t
+ Nu lnlinstarenceof an tobjecOb
+  at PathFollownot seSte to an[ instan]cin <file name un
+  nown>:0 F
+  atg Patheed () [0xdate () [0x00000] in <filename un
+  at PathFo
+ l
+low.Upadat eLine: -1)0
+
+0]NullRefereane unknept>ion:
+ 
+(bjectnamee: ence en -1)
+t to Rane inceException:n object r
+  at ence not swet to an instancx00000]n iobjeicena
+me unPknown>:o0 
+ _ peed ()h [0x0w.Up0datn  <)filenam0e unknowilename 
+unknownthFol
+ w.Updeaame: ) L[ne: -100]
+ 
+in l<eferenace unknown>:0 O
+b
+ject rame: encin n:ot se
+
+t to ean incsEtance oof abnect rect
+  at  PoathFo lo ow.get_Speee  () [0x0bjec0t
+   <filaename unknown>:0 
+  a[0 x00000] in <fdilenam [0x0000wn>:i0 
+  enamPathFkollow.Upd
+ 
+(eFilenam00000] ne:  -1)e
+
+NullReference 
+ 
+eFitlenamebjectine: -1)
+
+e NoullRteferencenExceptiof an bobject
+  at Patnht set wto an ined anc e of a0n objecft
+  amt PathoFollow.
+  at pPath() l[0x00p000] in <0x0000a0e unkn<oiwn>:0  un
+known>:t0 
+ lo
+(.Filenea(m [:  L0000] in <
+f
+ilNname unknown>:x0ept
+i
+(Filebname:  Line: - not
+ 
+set to an instancetion: n object
+  atence hnot os.et tSp ed () s[0x00 of ani  ofilenam
+e  unknowFollow
+ e at Path(Follx00000date () [0xn00000n] in <fi le
+name Punknollow.Upd
+at
+e (l) [0x00 Line: n <fi
+l
+enllRe uenknownxc:e 
+ 
+(Fi lbject r eferenc-1)
+
+Nuset tfo anceiExceptioon an obejt re
+ eren ce not sewt to ape ed (an ce of000] in ect
+  at PathFnowlow:0get_
+S peed () [0x0w00pdate ( ) [0x00m000] ion <filen
+  me unakhFown>:w0 
+ 
+(F ilename:  Linen <fil
+e
+nameRefnknoncneExce
+pt
+ionl: Object inee: -nce 
+n
+otNull ReferenceExcee of an objectr eferentce nlow.get_Speaed () [nce of an object
+  at Panknown>:0. 
+  aeed () Folxlow.Updiate (l) [0x0unknown>:0 
+  at ePathFolnlow.U
+pd
+aFilename0:  L0in in <f)l
+enaNullReferen:ceE
+xc
+eFition: Obj ecnt re1)
+r
+enlce note set to tan insbjence of ean objeot s
+et to anh instance of an o(bject0000] in <follena.get_Speed (:0 0x
+0 at 0]a hFollow.Update (known>0:0 
+  nat PathFme unknowdate ()
+ [
+0xilen00m] in <fi: ename
+ 
+uulknown>:0 
+ 
+(ceilenam:e:bject referen
+
+cue not set eto ant instanjcct rf an oncje no
+ tat PathF an insgeatce oefd an o0bje000]
+  iat PathnFollow.get_Speed 
+ () [0x0hFo0lloi.Update name un0know] >in <f
+ ilenamte unkno.Update 
+()
+ F[0xname: ] iin <file)am
+e unknown>:0 
+ 
+epilenameObjeLcte r-e)
+
+reNue not esenceExcen inst: Ocbject r ebject
+   not athFolloaw.get_aSpe ed an objec0t0]  i n thfiolenamee unknod (>:0 0  at Path Follow.Up atne ()n [0x0
+  00] int Folloew.Updunkno()n [0x
+ 0
+(Fi in <fi:lename unkno
+w
+n>:0 R 
+(FilncneExcepLtnion-: 
+
+NullR reference not sont to anc instancnceof an sot to an
+  at PatheFof an objt_Spe
+ed ( PathFollow.get_Speed a() [0x00wn>:0 in
+ <filPathFollow.Upn>a:e () 
+  at PathFoll <filenatme unknown>:0 
+ n
+ <flinaememe uniknown>:
+
+Nu
+ll
+Reference:  Leine: -1)
+
+Nut lreferenceExcoeption:o an icnstanerenof  no tbjeect
+  at Pathance of aen object
+) [0x0a0000] in. <filenea me u0n00000] in <f
+ilat PathFolloon>:0 
+te () a[0x0ll0ow.Upndate enam[0x00000]n in 
+ f
+(Filee unknown>:0 
+ 
+(F
+i
+lellRefe  Line: -1)
+
+onNullReferencerence not set to a reference nof an object
+  sat PathFoallooje.cet_
+S pt dPa)t[hFol000] iet_Speledna) e[0x0000n>:0 n <
+filtenamhFollowown>:0 e
+  at Pa0thFoll ow.Updame unknowx0000 0]
+ 
+(Filenlamaee  uniken own
+
+:0Nu
+l
+lReferame: E cepntio-1)
+
+NulclRefferenncExceptiset tob ecn  resferce of nont set to
+ an  iathFonllow.get_Spjecdt
+  at 0PathFollo<figeeta_e ueedn () [00x
+00at Pa thFolllonw.U pdkate >:) [0x
+0 0000]t Filnow.fildate e() [nown0000 
+ 
+(nFifielene:m  Lineown>1)
+Nu
+llilefnere:n eELine:t o-1)
+
+Nect refferenceenEtxscteptiaon: sOance of afe rbenct  not PsathtF an oi.gett_Sp ef dan) [objec00]
+ int <fileoname gut_Spoen>:0 [0x000P0t0] inow<filenam () [0no0w000] in 
+<fil enameolulow.wU>pda
+ 
+((Filena0me:  Lin<file1na
+
+Ne unknowrn>:0 xe 
+(Fin: Obmject reeferenc
+e
+ not seet to eaxn inista nce otfreferenjee no
+t set to Fanlow.get_cSpof an object
+  at PathFollow.get_Speen> :0 x00at P]ait hFolename unkne () [0 0
+  at Pa <filenawme uate o() [0x0
+00
+00] in m<fileineame un
+k
+Nnowne>e:0 
+ Ec(Filien: mObjectne: -ere
+
+cellRoe fereto anx instan: Objectn objecen
+  ant PathFto lon .instaneed () [0x00000t]
+ in <Pfilenamoe unknown>:0 [0x00000t] in <f.ilename( unknown>:0 
+ <filenathFollow.Update 
+(
+(Filename:  Lin<file1)am
+e
+ unknown>:nc e
+Ex
+ceiltion: ObjLine: -f1)
+
+Ne llRefeeen ceExc ipnion: Ob ofct refejrenc
+e not set tloow.get_Spaeed () a[0x00ect
+  iat<fPalthFollowk.gwn>:0 d () [P0thFoll0ow.Updfilename[ x0000o0] in <
+ fit Pname unkno.Updat e
+ (
+) [lexname:   nLine:ena1)
+
+unknown>:e0 
+Ex
+cFeptiomn:  Lijne: -efe
+ence nlRtefer enceExcepttioenof Obj ect re
+f etrPaehnoclownogtt_Spt tdo a n in0s00]n inof filenbject
+nknt Pa>thFol
+ low.geth_Speed.Upda[0x00) [00 in <f0ilen a<fiulenawm>e unk
+n at PathF
+ol
+(lowenapmaee () [0x0000)0
+]
+ iN ufllenefereunknown>:0 
+  Objeect e:  Lrence no)t
+ 
+set Rto an ienxception:  Objecjt re
+fearencehFoot set etoS eadn(  i0n0s0t0a nn <fil en ome eut
+  awn P:0 hF
+ oallPawtghF_oplldo(). [0x0e0000]0xi0 00i00] mi un<fnowena:me
+  at wPathFo
+ll
+(oiw.Upmdat e () [0x00
+0
+00ll Refefilename untkon: Obje c
+t 
+reflernnce notLine: -1)
+
+NulstRefer of an obption:
+  ObjectthrFollow.g et_Spetetd an) [0xt00000o]  in <filen
+ame uPathFoll:0 
+  at eed () l[0w.Upd0ate ()<f[0x00000] in <fi>le 
+me unkntoFwlno>.:p0 
+ 
+()File0n000] inLine:lename
+ 
+unklnofwn>:0 xce
+pFiiln: aOb: e L reeferenc
+e
+NullReftetrean einstance of an object
+  at Pnot Folloto get_Sneed () [0fx00000] it
+  filenathFounknown>:0 
+e at Pa[txhFol0low.Updilee () [0nx00000:] in
+ <ftilename unk.nown>: ()
+ 
+(File0name: <filen:a-me 
+u
+nkNoullRe 
+ 
+(Filencept:i oine: -1)t
+NulleReferenct sxcteptionn: Object refer ence no
+t set tohFaollow.gnee of aen obj[0xt0  at Pant<filenam.g unknown> :0 x00000P]t in <fw.lenaatee () [0x00000]
+ int <fihlelname unaknown>[0x 0
+00
+00]leiname: e ame unk-1)wn
+>
+:0 Ref
+(Filecnamce: ioLnne : j-ct r
+e
+felrRencre nceExet to ann Objecance of anne notj ste
+t to Pan instaonce of aen obj [0t
+  a00] in <fillenamt_ Speed () [0x0
+  a0t PinthFollname unktnown>:0 
+ 00]t in <fillename ate () n>0:0 0 0
+] inename: n Line:k -w1>:
+
+Nu
+ lReferenceExceptio -1 )
+
+ectNuellRefce noteEset to an: Objectcer of an objects
+  ao aPn insltance of an ob(ject
+  0at PathFollenamget_Snknown>):0 
+  a0] in <fillename unkn(own>:0 000
+] in  <filellaow.Updaown>:0 [
+x0
+00i0ename:  fiLlnen -me u
+n
+kNullRe0f
+er
+enceEname:ti LineOb -1)
+ 
+ruefereenece noceptet to Oan itnstancee o not set to a
+n  insttancel w.get_Speed ()
+  [0x000h00] iwn e<fileed () [0x00000] in 
+< filenameollow.own>:0 ()
+  at PathFollo wfilenate () [0x0n>:0  in
+ <ifilena: e unknow-n>:
+0
+ 
+ l
+(ferencame: e tLine: b1je
+c
+t lrReferenceExct set to an intsrtance of ant set to a
+n instaance oof an _Sbpeeed
+ ()  PathF0o0llin <filenamed () [0x00000] i
+  at PaethFolunow.Upda:0 
+  [0x00000] in <fUplename unk0nown>:0 in
+ <
+fiilenamee unknow n>:0
+ 
+
+ 
+(Refereame:  Line:o :-O1)
+c
+tNullRefere noeExcet to n:n Objean reference bnot s
+et to atn insta.get_Sfpeed b()c [
+0x0000athFno<filenam_Speed o() [0x00
+000] int <filenaUme unk() w[0x000
+00] iPathFollow.Updnanown>:0 
+x
+00000] ie: <filnen: -1)kn
+owNullRe
+fe
+rencenEme:eption: Objec
+t
+ referenrenceException: Object reeference bnoct
+  tat Pat inollow.get_ Speed e() 
+[0x000athFollo<wilename und () [0x0000
+0] inPathFollomw.unknown>() [0x
+00at PatihFollow.Ume unknown>:0 000
+] in <fie:  Lineu: -1)>
+Nu 
+ 
+(ferenceEexception : Ob
+j
+ect refeereceEe cnot set toj an  instance not anet to an 
+inst PathFol lowo.gect
+  eet Pat [0x000w.get_Sp<eed nam [ ux00000]> in <
+ filename ollonown>:0 () [0x00thFollow .Updante () [0ox00000]
+ i
+(Filenamne:  Likno: -1)0 
+
+ 
+(FilenameceE Linpeion:1)
+
+ject lrefeereenc eExcepttiona: Onbjecce of ane object
+s et to hFn insw.ance ofe an ) bj0ect00 at Patfilename. unknpown>:0 [
+  at ]PathFollename date () [0x00
+000] PathFollenwame unkn() [0x00
+ 
+(Filename:  Lmi unknow)n
+>
+:0 
+ll
+(Fifereane:  Lcenption)
+ 
+Object refnceExcepnot set bject referennce fnot setect
+  ati PatnheFof an objecteedat PathFo0llow.get_Speed (e unkno0000] in 
+<fitlPathFollokw.Update (
+) [0x0a0000] iwn <filename 0x00000n>:0 
+<f
+ilename unknowne:  1)
+
+Nulename:  nceExce-pti
+o
+n:l Oeferet crExceeencio n:ot sect to an ice not seot to anject
+  act Pa tn object
+  atSpeed () [0x00e0_Speed (<) [0x0000unknown<filena
+m et PathFwol:0 w.U
+pdatePa(thFoll0000] int <filename un]knn <file n
+am
+e unknnown>:0 ne
+: 
+-1)
+
+Name:  Line: -1)
+
+ptNonl:Referect referption: Ot set tro arence tnnce of an obnject
+anat  of haonlow.gett
+  at P() [0x000w.get_n p<filename unknow in < fi
+leat PeathFollo>w.Upd
+atet () [0x00o000] in <fi lexn0000] knn <n>:0en
+ 
+(Fuiklenn>:0 
+ ine: -n1)
+
+  LNnullRef
+e
+renceEfxceptionceptijon: refject refeorenece notn snstanoce of an nce of 
+an o bjecto
+  at Pa_Speed (). et_Speed () [ <f00000] in <filen>ame u
+ naknownh>:0 
+  pat PathFollow.Update (filename 00] iown<filen
+am
+eF unknown >:0n :
+-1
+)
+
+lenamef:ereineExcepti
+o
+n:llRefere nceExcept iot set to anreference not  set to t
+  anstaathFollow.got_Spce
+  at Pa0x0000l0] in <filed () [0nkno0wn]>:0 
+  eat PatnhnFollow .
+UpdatPa t) [0x0ow.00] in <file0name u] kin <file
+na
+meilunnknow nLine :
+ 
+(Fi
+l
+ename: erLenc:eE1)c
+
+tiNu: Object rceExcenptioot set to an ferencnc e of ea tooban ins
+t ance toFollo wb.get_
+ SapePetd () [0x0000S0] in <f[0x00000] inn wn>ilenam
+  at known>:0l 
+  at eP() [F0lx00000d] in()< [0x000e unknown>:0 
+am
+e unknown>:0 
+ 
+(Filen
+a
+mN:ullRefe -1)
+
+Nxceptioen:nceException: Obce ct referencean instance of ain objee of
+ an objecFt
+  at Pt_Speedlow.get_00000d] in[0<x00000m] in <ofilename
+  unknowhFollow.
+ Upd Pte ()ol[0ox00p0a00] i [0x00l000]e in <filename 
+u
+nknownam:0 
+ 
+(File-nam
+e
+:  Lineerence
+xceptReoferenceEtxceptionc: Object  to arencnstanceset to an jinst
+anct PathFollow.ge
+t_Speed (Follow.get_S pneed (e) me unkn00] >:0 fi
+lenamPa thFollow:0 
+  at Pa[0hx00000.Update () n[0e unknown>:0 i 
+(nameename:own>:ne: 
+-1
+)
+
+NullRe:ference Exc
+
+ptNou: Objfect ncefExceptioot set eto an instan notof an  obaj ect
+anac Patf aollow.gcet
+ _atp Path)Follow.g0] in <ed (en amx00000nowin <file
+name unthFollo:w.Up
+d at PathFollow.Update () ename unknown>:0i 
+ meF unknown>:0 
+e:
+ -ilen
+
+amNullRiefer-1)
+
+NullReferenceExct rtioerence not referto ce not set to a a instance
+ of an objollow
+.gat PathFdollow.x0et_Speeid  () [0x0e unknown >:0 
+ me unkathwFollo
+  pdatea () [0x00Updatein(  [0x00000] inknown>:0 e  
+unknown>::  
+Li
+(nelename:
+ 
+NullRe:fe1)
+
+NuExlReferen:ceExcepttrefe: eObject  set to an ins tet ct of aan notancet 
+of an othFollo
+w.gt PathFeollow.gxe0t_Speed <fil[0nam0e unkinown>:0n 
+  at oPath0 
+  at pPaat () l[0x0000at]ein <fi0xe00000] known>:0 na
+me
+ unlkname:  0Li
+ne
+(File)
+
+NullReine: -1eEx
+c
+epNiunllRefectenceExcenpce notObeject refierence not setobje an 
+  at PatehFollow.bject
+  at P)athFo0llow in <fSpeed (e) [0nxw00:0 0 in < PathFomllow.Upwn>:0 ) 
+ [0x000thFollow.Update () [0xow0000] 
+ 
+(Fileename: n Line::0 
+ 
+(
+FilenameerencieExcepti
+
+NullReferenceEexceptinot set to an firencencne oset n objectstance otf an ob.ject
+  ad () [0x00000] et_Speeename unk0nown>:0 
+  at Pme unknlow.Updat
+e  () athFollo0w.Update ename u0nknown>n <fi
+le
+nFame ame:  Line: -
+1)
+
+F
+NullReferenceExce-1)
+
+NullReferencference tion: Ob ject renstancee fnonto ject
+  atn instFance of an object
+  at PathFoll ow.get_Speed () [0x000
+00] in thilenaow.Updatew () [0x
+00at 0]athFollow.Upda unknown>:0000
+0]
+(Finlename: me unknown>:
+0
+ ll
+Reflenrme: ceExceeption
+
+: Nujlcl refeerence nepttion:toObjectnsteance oe not  seect
+  aan instanclow.get_Sopeect
+() [0xathFolloiw.get_Speed () [o0x>00 00
+0]at P afthFoamlow.Upndate () [
+0x000P00] inl <fileane (e u[0x0ow0n>:0  <f
+ilelname u knowne: -1)
+
+
+(FiNullRe: e LineE: -1)
+
+Nu llReferrenceExce ption:e  Objencinsteanren cfe not jset 
+to t n instolnlow.g an pebed ()
+ [0tx00000o] in <etilenamd  (nknown0>000] i
+  atfilename unk.nown>e:0) [0
+x0a0000] iollow.Update () [0x0>:0 
+ 
+(F ifilenaeme unke:o ->:
+
+Nu
+ll
+(Fileneame:  Line: -1O)je
+c
+t reRfferenceeExcepet to  abn instance of an objetct
+  an insthFce of agn object
+() [0PathFollow.get_Sename (unkno0wn>:0 in 
+<fat Patme unknowUpdate (
+)  [ 0x00000] i.Upfdate me  [0x0000>0] i
+n 
+<filename:  Line: -1)
+
+ N
+(FilenamrenceException
+
+ ONueclRerefrenceException: Otbject nstance ce not sbet to
+ an insthaFce of aget_Specet (
+) [0x00t000] in.g<filename () knox00000] i
+n <filaename unkUpdate:  
+  at0 Pat] in <filename unknown>:0 0 in
+ <filename  Line: n>:0 
+
+ N
+ullRename:  Lixne:tio1n
+:
+ Objecft reference nont set tto an rince not seft to aject
+  ance of anllow.ect
+  at Pa() [0llo0w.0] in p<filen [0x0000no] i>:0<fil
+enat PathFnown>:0 p
+  at Path0Follo in pdate () [0x00000] i0n 
+<f
+ilename u:  Line::0 
+ 
+
+(FilenameenceExneeption:
+ 
+OuljlRefrefenrenxce noot set tco aefeiretncee oof an object
+  at nPathfFollobjecet
+  at P() h[0x00000] in <fi l) [0xe unknowin><:ilena
+m atunkntowon>:0 datet (a) [0x00w0Update ()f [0x00000] in n<fil
+ n
+(Filennawn>:0 L
+i
+ne: -1am: 
+ uLlRefe -ence
+E
+xNullRenferbenceErefeerenn:e Objesct re fe rence ne of an tobject
+ t at PathaFollow.g
+et_S Peed ()llow.get_S] eed (f)l [0xe unkno inn <fil
+ename unkFnownw.:Upda
+t a t Pa0t00000l] in d<fi l) [a0ex0nk000w]>:0n <
+ 
+(Fimlenaknown>:0 
+: 
+-1)e
+name:  Linren: -1)
+tion: eOerenceErxceptnce notb set to ean in ntot set ton on insta
+  ce of an objew.ge
+t_Speed () [loxw.get_Sipeed () [0x000k00w] i0n <
+filename unknow.Updat
+  () [0x0Fo0llowinUp<filen() [0x0000wn>:0 
+ 
+(Filenamunknowine: -1
+)
+
+Filenamer:  Line: -1)
+ NullReferenceExce ption: Otbject rstance oe not sbet to
+  an instance of an objedc() 
+[ at PathFolnlow.get_Speed n() [0x00
+000t Pat hFilenam.Upunknow(n>:0 
+ 0 at P <tfilenaw.e unknow(n>:0 000
+0] iename:  Line :nkn1o
+w
+nu>l:0 r 
+(FeileepateionLine: -1) r
+e
+ference not seet to aioni: Obnceet refer once not
+  at Pat aFollow.ance opf an ob[ject
+  ] in <filename untknown>:0) 
+  00t Patih Followa.Updatne () [ 
+  at Pin hFollonamUpdate own>:0x 
+00
+(0] enamefilenamee -1n)no
+w
+N>ullR
+ e
+(filenameex:  Liin: O -ject
+ 
+rulereeferenot seteption: Onstant refe rence not
+  at PoathFolstance of peed () [0x
+0 00 00] in <filenamepeed () [>0x000
+0 a]tin <tfFolelow.Upnknow ():0 0x0
+00at0] ithFollow.Updateknown>:0 
+ 
+(F in <fmel:  Linenk -1)
+
+:0 
+ 
+(Filenamxe:  Lon:e: bj1)
+
+NullRrencrennceExcepto an instect reoferencbject
+  at Pathan instaget_Spf an obj[ect
+  at PathfFollow.genknowned: () 
+[ at Pat0hFollowi.ename e () [0x0:0000
+  at  PathFoallow.Updan>:0  [0
+x000ename:n <filename1)un
+k
+nownRefere
+nc
+eEixeneame:  LOine:  -1)
+r
+ence neoet set toe an insOtjecte or an objcect
+  aet Pathn illow.gcet Speed () [0xt
+ 0 0at PathFlename gutnSpeed () [0x
+00000]a in <filename un()nownx>0:0 
+in <fPathname unkUnown>:0  
+ 
+(Filename:<  Lineme: -1)
+n>Null
+ R
+(eiferenc:eExcne: -1) O
+bject ferenrceExceop tit to Object reference n objectt  at Panstanceow.get_Sobject
+  [0x0000hFollow.filename un()n [0x00000
+] in PathFolloew.Updown>:0 
+  00000] in llow.eUpdatue () [0x0 
+00
+0] inna<milenamen : -1)w
+NullRe
+fe
+(renceExce  Line:  -1)
+
+NullReferee not seet tn: Object referof an nobt sct
+  a t PathFaollow.get _bject
+  at[0x00hFol] in <filSeename u[0x00000] in 
+<fit ename unlow.Upda0 
+  at0xPathFol low.Updante () [0o0wn>:0 n <
+filename unknown>:-1)
+ 
+
+(Flilenamenc  Line: -o1)
+
+bjNullReference not set to an ins teference an objec to
+ an instance ow.get_Speect
+  at0xP00hFoll iwn <filenam e unkn000n>:0 i<filenamehFollow.nUpdate
+ (a) [0x000l00] inda<te () [0x000nown>:n0 
+i
+(Fileenanmeown>:ine:
+  
+-1ile
+n
+amNu llRef:e-ren
+c
+eElxRefetionc: Object re Obrject reference not set ato anf insobance o
+f an PothFollo
+w.get_atpeFd () w.gxet_Sp] in <f [l0x00000] in <filen
+a me uanhknowon.Updat
+e a( Pa[0xF00000] idate ()ename un0known <fi 
+ amFelename: n Line
+: 
+(-1)ea
+mullRefinre:ceE1)
+e
+Nuion: Object rxefperenceObjects refe aen insttance of ann instat
+ce of ath Follot
+.get PathFollo [.get_S00e] in <f0i00000] in <filn>n:0  nk
+nowt PathFo
+llao w.Updatlew.Update0 000] in000f00en anme ulnnknown>:n0 
+ 
+0 len
+ame:  Line: L-1)
+
+NullR
+e
+ferellRefereenceEx ception: Objecte not senc to at set ton an insn object
+ a at PattF oallow.get_lopeed () peed ()0 [0x000f00] in <filenwame unk
+noat PathFo
+llow.PUpdatel () [0x00000][ in <f0i in <fi lename >:0 
+ n(Filen
+am
+(Filenanm:e:  L
+i
+ne:NullR
+e
+felrenceExnceExcen:t Objectject reference  sot set to  an inst ance oofjean o
+b at Pa
+thFollathFolt_oSpeed Sp)eed 0() [0xi000f0l0] in  <filenn:0  
+  at P>athFo
+llaow.Uphdate () [date (00] in <0fi]lin <filenamew >:0 
+ n(>:0 
+ e:  Linem: -1)
+
+Nu -1)
+f
+erenceeErencptixception: Objectr rce not set to aet instance ota nce of can
+ objePath
+Foll ow.getllSpeed ()Speexd0000] ix00000] in <finlename u 
+  at PathF
+ ollow.Update w.Updat0e ()  [n0xfile00] in <fnown>:0e u
+nk
+nown>:0 
+   
+Line: a-e:  
+L
+inel: -1)
+
+ceENullReferenceeExceptiron:  notect refe rn instances totf  an ostaect
+  a tn objectl ow. get_Speedw.get_Speed0 () n 0<filenamin unknowname un
+  at PathFo
+llotw.athFote (w.Update000] in <0000]n ie unknoenn>:0 
+n
+(File>:0me:
+  
+Linle: -e1)Li
+nN:u-llR
+
+euflReencreEnceExcon: Obje Object referenote not tsean ionst insetaf an of an t
+  act
+ athF PathwFolloSpeedt_Spee0d (000]0 00000] ien ame enakme unkn 
+  :0  Pa
+thFt Plow.Upllaow.Upd[0x00() [0x000<filenamef unkame unkno
+wn
+>:0 
+na
+me:  Line:  L1)
+e
+: llRef
+e
+rullRefeceptceEn: Objion: Oeferencee not seenot setn to ann e of aane of ant
+  at tP
+  at Patow.get_wSgpeed ()d [0x[0x0000 i] in <lfname unk unknown>:0
+ 
+  at hFollow.Uow.Upda(te () 0[0x00i000] lename unknownu>:0 
+ 
+(F 
+ 
+(Fil:  Lin:  Line:
+ 
+NullR
+e
+fNuenceeEerenceEon: Objon: Object referenceet to an insta instafnce of an o
+bjetcPat
+hFaollow.Fget_w.getd () [0x() [0x00in <fiilename unknownknown>:
+0  
+  at PathFoUpdow.U() [0x000 [0x00n000] in <f inknowne>:0 
+ w
+(:Fil
+en
+aFmlenamein  Line: 
+
+-1)N
+u
+llRleferencceExcepttion: OObjeect refrerence n oet to ano instancae of ana  objectt
+  at PaathFololww.get_Speed ()) [0x000000] in <<filname ununnown>:0 
+  
+a t PathFolllow.Update ()  [0x00000] n < filenname unknoown>:0 
+ 
+(Filename:  Linee: -1)
+
+
+NullReferenceexceptitoon: OObjectreferenenc e note seo an  ans instanocean objnect
+  ta
+  at Pathllow.get_Sp_eed () ) [0x00000] in <ifeilen ame unk>:o0 
+  at
+ PathFothFollow.Update  () [0x00 in <filenfame unknownn>:0 
+0 
+
+Fi
+lename:m :  Line:- -1
+)
+
+N
+ullRefereenceException: Obbecectreferencne not sett to an iistancne of  an  bobjec
+t
+  at PathFoow.get_Speepd () [ [0x0000] ini  <filenamme unkkown>:>00 
+
+  at PahthFollowpdate t() [0x0x0000]0]in <filienamme  nknowon>>:0 
+ 
+(
+(Filename:  Line: -1))
+
+NulNullReferenceExceptioOnject jecferenfcren not sese to ana iinstance oof an objject
+
+  taPt PathFowlget_.gpet_Spe [0x000000] in <finl<enameamen unknown 
+  at
+ Pat PFallow.Ulow.Upd(a te ()0 [0x000<f0] in <efuilenwa>:e un
+k
+(Filenam
+e:
+  iLine: -1)
+
+Nul -R1)
+
+NulelReferenceExceptioreferencce not sence notn insttance of an object
+  abject
+  oltlow.gFotlSlow. () [0x0ed () [0x0<filename unknown>:0 nk
+  at :Pa
+  at PatpdFollow).U0x00000] in x<filename unkneown>:0 
+no
+wn>:0nam
+e:
+  ilename:  L
+i
+neNullR
+
+ferlReferxenceException: Orbjecen referenet to a seit to an instanceject 
+  at Path
+Follow.getolloew. get_Spee000] in <00000] me unknowname  kn own>:0 ol
+low.Update ()o [0x0000 () [0x<00000]me unkfnoename un
+kn
+own>:name
+: 
+ Linename: 
+ 
+LullRefe1re
+n
+cNEuclption: enceExceretion: cebject sreferennce noat s of to aobjinsta
+ncet of an object
+  apeedat) Follo0w0.get_ Sfilename [0nkno0wn]>:0 
+  ena Pathnknolwwn>:0 
+  ) [ Path00ollow.Update ()  unk0000n>] in
+ <
+fFilenname unLinown>:0 
+
+ 
+llRleferenceExceep-tio
+n
+:u Object refereeption:t set to  an einstancot se an objectns
+tance othFol obwject
+  at Pat [0x0l0w000] ineed () [a0x00000] in < 
+lena PathFollwow.Upd
+ate () [0x00000.] in <f() [n0x00000n] in 0 
+ 
+(Fameename:  L>:0 
+ -
+)il
+ename:e  Lince:Except
+
+ion: Object refcerence not eset to ann insta scet to naobject
+ance of an olowectt  at Pa () [0x00.get_ Sn <filena[0x000k00] >:0 <fi
+lena mae unknownUpdate 
+() [0x00hF00] iw.Updatee () [0xn00000] i
+n 
+<filename u nikno -n1) 
+ ul
+(FileenenceExcLine: n-1O)
+
+ct NeullRneefnetreenceE xc instan:ce of tan objecte 
+n at  PathF an insgttaSpeed f an ob00ect
+  iat< PathFol unk.gewn_Sp0 
+ () [0x0h0000] iUn <fi () [0x0u0k000]> in <
+f ilenatme unkw.Upd>a0 e
+  [0x00000] i n <filenam
+
+e unknoewn>:0 xc
+ep
+tionename: c Line: -nce 
+n
+outlReferen ceExcetancen:of an object
+r ence thFollow.tget_ inest () [0ox00000b] in 
+< ftilenaFoellow.gent_Spee
+d (t PathFollow.iU <filename unkn000] in <f
+ ilenaame unlow.Un>:0 
+ (
+) [0x00000] in <filena
+m
+e NukllRef:e 
+ 
+(eFilenamon: Objnect ref
+
+Nulnce norencet toeptn in: Objecto ran objce no
+t at P to an ins.tancSee do(f an object n  a<fiathFollow.get_n>:0 d
+) [0x00000] iow.Updaename) [n0x000000 
+n <filename unknUown>:0() 
+ 
+(File00]m in <inilename
+ 
+unknowne>:0 
+ xeption:ame:  ct ne: -1)nc
+
+e not ReferencenExcepticon: Obj ebct re
+fearence Fnolow.et tto an instance0 0of an objectme unknownFollow.
+  at PatehFoll[0x.000ate  (n <fil00n000] ikn <f>:lenam
+e un known>:0 
+ pdatee a(e) [0ix000-00
+
+Nul <fiferenmceExcneptio0n:
+ O
+bjieenamre:ference  not
+ 
+selt to aen ceException anObjbjcect
+  atn PathtFoet to gat_Speed () [0x00000] in <
+filename Fonllow.g:et
+  eet Path[Follow0.Update lenamex unkno in <0f
+leatamPatunknown>:0 
+ t
+(Fil[ename:   Line:i e-1)
+
+NullRefe:0 
+ 
+(Filenamn::  Line: refer
+
+eullRefer set txo an instanjcet refereobject
+  set tothFn inst.get_Spe ed () e[0x
+00000PathnFofilename unknown(>:0 
+ 0 at PathfFollow. unknow n>:00x00
+000] in <filloname unknown [0x00
+0
+(F] inn me:  Lnine: -1n)
+n
+>:0 efe
+renceExceptioine: -je)c
+t
+ rNullRneefeot nseext to an instect reff rence ject
+  at Paan insltwance Sof an()o [0x00
+ 0a00] in <llow.nget_Speeod ()  0
+0000 0] in <loilenadae unkno[wx0000 
+  a < PathFomllow.Update ()
+  
+[F0x00a0e:  Lin <filena
+m
+e unRknown>:e0 e tion: Obje:ct refer-1)
+ NullReet to ceExcesptnce of aject reet
+  at ePathFollow.gan _Speed (e) [0x00000] in
+ <at PathFo llow.get_Spe
+  at PathFo00low.Update () [0 unknown in  ilename tunknoow.Updat
+e 
+(() [0x0e0000] in <fil
+e
+nNullunkferenceEx
+ ption: ame: ctLine:erenc
+
+Null set teo eException: Oobjan objeect
+  a not set llow.get_Speed ()f [0x0000ct
+ in <Pfilenamoe unknown>:0 [0x00000t] in <f.Upename un known0>:0 
+ <filenameF unkn.Upn>:0 
+ 
+ [0x00ame0] in <f: -1)
+
+NullReferenceE
+xc
+epition: Ob ject refer
+e
+nNeunllReef erenceinstance of an obtjectre ace not set tw.gaet_Speance of an00objec t
+  at Pname unkowown>:0Spee
+  at PathFol0low.Up<date () [0x00own0] 0 n
+  at ame unknoow.n>:0t 
+()
+ [0lx00000 ] in : -ilen
+a
+mellRefnown>ceExc
+ e
+(ptionam ObjeLit re -1)
+
+NullRefserencean instion: Obj ect refet
+  at PathFotllow.n in_Spanece of[ an object
+ <filenameollown.gn>:0 
+ed ( ) t[0ollo0w0] in <e () [0x00000] win: <fi
+  atamPethFolnoww.Updat
+e 
+(Filename0:  Linn : -1)
+
+aNe unknowrn>:0E 
+ep
+tiole:nObject Lreeferenc
+e
+ unot sete to an pinsn: Obj ec an objeenc
+  at Paet to lan instSpeed (f)an ob00e000
+]  in <filename. ut_Speed (0) [
+0xa00P000] iln <Ufilen ame unk00own>:0n <
+filename unknow.Upda t
+e 
+() lename:0 ] in <f:ilena
+m
+eu lunkenonwn>:0 p
+ : Filenam e:  Lincee no) s
+etNuolal instrance ofeption:j ct
+  at PathFeoce not set toe  () [0x0a0000]f ian objenct
+  atn PathFol
+  at Ptatheed (ow.Updat0e0] in <filenamei  <filowname0 
+k at Path 
+ 
+(Fi.lename: ) Line: -1] i
+n
+ <fiReferenceExcewn>:0 
+ 
+(Feil ename:nce not: -1)
+
+NullRieftance of aeption: Ob
+jecttPathFerenoce nt_Speet to an0x0000ance of ailenamec un
+known>:0 
+  at Pat_Speed (.)p ate ()000] i0n <filename unknown>:0 
+  at 
+Pa
+(Filenaome:  Liene: -1)0
+000N ilnReferencame unptiown>:0 
+ 
+(Filename:  nLine: -1)
+
+NullReferee of ace object
+  aect reference.get_Spet to ) [0x00ta0nceino <afilenacme
+ unt nPathFoll
+ow.get_Speed ().Upda0te () [0x00000] me unknown>m:0 
+  ant Pat
+hF
+ollow.Updat Line: -1000
+0
+0] iRn <filenamceptiono: Objec
+ t
+ refenaence not e:et to 
+a
+N instefnee of anx object
+ O at PathFeollow.get _Speed (n) [0x00000o] in objecetam
+e  unknowno>low.ge
+t _t PathFol low.Update () [0x000m00] in <n>:l0name
+ unk nown>:0lo
+ 
+(Filena() [0x0in0e: in <f
+
+NullRefeurencwn>xcept
+io
+n:i eObjec t refer-1nce
+ 
+not sete toceEx ieption:e Ob an object
+  cat Pa set too .get_Ssteanc() [0x00000] ct
+  at PaamhFollow.ge>:0 ee
+d at Pa0x0F000ow] in <tfile [0xe0000] own>:0 namet PathFollow.U
+pd
+atil (n) [0x0Li000] in) 
+<
+fNlunlleRuekfown>:ceEx
+ce
+ptilon: Ob  Lct ref-1ren
+c
+eullReferenceEanceiption: Oobject reect
+  ce  PathFollow.getinstandce of a0n0 o] inct
+ i aname unknolwwng>:0 
+ d () [0x00000] in <file() m[0x00000n>:0  <
+filenaath Follown>:p0ate
+ (
+)F [0x00000  iine: -1)
+
+NullRefoerenceE
+ x
+ception: Objecne: -1)en
+cNunllRefertenceExceptioe o Object refer
+ ence anhot set to an einstancex00000]  in <f
+ l atm PathFown>:0. 
+  aee Pat)hFollo000] iane (filename 0u] in <nfilena
+mea unknhown>ow.Up
+da
+teilenamex00000ne in <fi
+l
+eullRefenrencn>E:0 
+ 
+(Filebject refinre:n-c)e
+
+NuollRefere nn insteanice of ject refctr
+  at Pa set lto an tinstan ce ofx0a0 object <filename ullow.wn>:0 pee
+  at PathFollow.Updafilename0 unknown>:0 
+  aame unhFnown>:0 
+ 
+(Fi() [0x00000] in -1fil
+e
+naNu llRefer>e0 
+ x(ceptiomn: Objec: -1)
+
+NullReferenceExcean instance otf an object
+  aset to aollow.gaet_Speed () [0ct
+  at] in <filename unknown () [0x
+0000 PathFollow.Updeate () [>0x000
+00a] in <Follow.Up date (n>:0 
+ 000] iname:  Liame : known
+
+Null
+ 
+(erenceEme:  Line:  Obje
+c
+t referencee not set ito anbjinstarefe of ae nobject
+  at Patinsollow. of an obj ect
+  a0000] ino low.get_mSpeed () [0x000
+  at PnathFollow. update n()0 
+  at PathF <lfilename unkno[wn>:0 
+  n <filenme:   Lknown>:0 
+
+ 
+lFilenamen:  Linpti -1)
+bject reerenceEx not set: Objecnt refencence nont set t
+  an insttaollowo.get_objeedt
+   at Pat0h] illow.let_Speed known0x00000
+] in  <filename unkate (): [0x
+000t Pa ihn llowl.Update k()w [00x
+0
+000l0name:  Lilne: -1)n
+
+oNul:lRe
+f
+erenceExecepLtion: O)b
+j
+ect referenceExceptiet toO aen instarncee nof an obo an i
+n at Pathof alnw.get_Sp
+eed () t[Follow.get_S <file(na[me 0u0nknonw<filena
+m at PatohFollow.
+U at Path)Foll0o000] int <filename unkniown>:0 n
+ 
+(Fileown>:0 
+ 
+(Filena
+
+NullRefne: -1)x
+cepNuln: eObject Ereference nojtct refeo an insotance tof an objtance
+  of ant obllow.
+  at PatdhFollox0.get_Speed () [0x00000k] wn>:<file
+n at e utnFklnoowUnd>t: 0 [
+  at P]athFollow.Updatek () [:0 
+00
+(F0] in m<f  Liname  unk
+n
+owlnRefere
+ n
+ceExcepmt:  L:ine: -t r
+
+NullRceferenceEtxto an innsObject  refn oence no
+t set ato anlown.get_Speed () bj0ect0 0] ina <Follow.ge t_Speen> () [0
+x00t Pathin llow.Updme unkn o0x00000]
+ in  <filFollow.Upkdown>:0 
+[0
+(x000n0me: i L<fne: -1)
+ 
+NullRenf:0 
+n
+ceilename:  L One: -1)rfe
+renlReeferenet to apnion: Obnjecof aeferenect
+  at PathoFon inw.tance of da(n objec000
+] in  athFolnlow.unkn_own>: () [
+0 at PathFin low.lenamee () [0xwn>:0 
+in <filehFollow.kUpdate ()
+ [
+0x00e000] inLine: -1a)
+
+NullRwnferenc
+eE
+xcilename:  bLine: efere
+n
+ceNull setereo an insttance  of an object
+cea not hsoet to ean instanc [0x0000 objec t
+  at PathFololow.get
+  at PathFollow00Update () [0x0me unknown>:0 ena
+me unPathFollo 
+ 
+(Filename:0x00000] in <
+f
+illename unceExce>ptio
+n
+(Filename:  Linnce not
+ 
+set tef an icestxceptioon:n oOjebtj
+e at PathrFncle wnget_Speetd () [0x00000 of an objeect   aknown>hFo 
+  agt PathFdollow.Upd0ate ()  [0xen0000] in own>:0 me
+ unknoathFol ow.
+Updaename: [0x0n0000] 
+i
+nNullRefere unknocwntion: 
+Ob
+ject raeferencne no1 s
+e
+t to eaerencetEnxception: Oject
+t at PatenFollnot set_Spo an instax0c000f ] in <jeict
+ me unknown>l:0 
+e at Paet () [low.Upda]te () [0x0000 0n] in <:0 
+ a at PathFnollow
+.U
+pFdate () [0x00000-1)
+
+Nufilename unknocwpn>:0 
+ ject refme:  cL not: -1)
+
+o an ineferene of can obn:ect
+  at PathFonclow.getset to  an ins00ance of  an objeme u
+nkat wn>:0 
+  at PathFold ow.Updat0000] inx <fil]ename unknown>:0k 
+  at 
+ 
+(Filenow.Upd aine: -1[0x
+0
+000lReferencilenamet unknown>c: ref
+er
+ence not s et teo -an 
+i
+nstance ofn an objeict
+  atect referenceg not set ()o [0x instancen <of an oe unkno
+ wn>:0 t
+  at .Pet_Speed w.Update0000] in 0<0filenamfelenameown>:0 
+ : at
+ P
+atihename: .Updnete -1)
+
+0x0ullRef in <fiElenatmen  Obknowt refer
+en
+cFe not s:  Lin e: -1)
+
+NcullReferobnject
+  taon: ObhFect refget_Speednot se0t to an  instancname unn object 
+  at PathFollowet_pSpeed () [0x0000] in <fi<lename e nunkno>:0> 0 
+
+  at PathFollow.:Updat
+
+e (lRef0xrenceE] cin <filenamee urefeownnce no
+t
+ silt to ean inne:ance o
+
+f an objecren
+ceat ception: Object rpeferenc[e not se t to alename unce of an0 
+ ectt 
+PathFollow.Ulpdatet_S)peed ()00] in <f0ilien<ame unkenowkn>wn> :
+ 
+ 
+lename:  Follo:w.1)
+
+Ntul(lRefe0renceExc eption:meObjecto re:0er
+en
+ce neoame:  Lton an 1)
+
+NulleReferenobjectption: Object rw.get_nceeed () e[0x000n0i0] ince< of anme unkno
+wn>: 0 thF
+olltowa.get_Sopeed (te () [00x0]0000<f ilenfiml unknowunknown
+> at P
+a
+(FFolename:pdatin () [0x0
+
+00NulliReferencame unpknown>O:0 
+  r
+(eflename:   Lineet -1)
+
+NuinsRtancenceExan poibnjeOcjtc refe Pathe onot .seet toed () [s0x00000f  in <fjilte
+  ame PathFollow. ge
+t_Sp eed (o) [0x0pda00] (i n <fil0e] in  ufnknown>:unkn
+own>:0 
+ 
+ollow.Upe:  Lin) [0x000
+
+N0] in <erenceaEexcekptwi>:0 
+ 
+(Filename:  Line: -1et 
+t
+o Nu lnlRenfe of anException
+  at PacthFollow.gcet_Speed  to an 0in00] ine of an obj uct
+  at> Path
+Follow.geFt_Speed () [0x)000000] in <f <filename unoknown>:0
+  a
+ t
+ PathFame:  Line: e () 
+
+[0lx00000] ceE xception: Onknect refer
+en
+(Feilenamet:  Line: -1)
+c
+eullReferebnect
+  eation: hFbject refterpeed () [0x00 000an in <filcename unkonown>:
+  at 
+Path PathFollow.Upeda () () [0x000] in <fileiname unknknown>:0 
+ 
+(FiPlthnFme:  Line: -e ()
+ 
+[0xu00R00erenceE<xclenaioenu: Objn>c:0 f e
+rencename:  Lt nt:  -1)in
+s
+tanlReeferenceEject
+tion: athjFollowf.rence pned (s) [t0xan i00] in <fif eaan object
+  at P
+a ahFollow.get_Speed () [0x00000]00in inf l<file unknounknown>
+0 
+t
+(PathFollow.Upine: -1)[
+Nul0lRe] in n<eficletnanm Objecnt refe 
+en
+ce nenameet  to a:n ins
+t
+aNullRf an objecxce
+ t oat PathFo lelerencee not dset to 0an insitancilename unknown>
+: at 
+PathFolloFollow_.pUpdat) [0x00000] in  <filenaeme unknowown>:0 
+
+ 
+(FilthnFollow.Unp: -t1)
+ NullRe0f0] in <Exilenamoe unkneown>:0ere
+nc
+eFilen ame:  Lan instanc
+e
+ ofl aferebnceEx
+ception:h Object refereen c)e not0 00] ito an inname ce known>:o0 
+  
+a t PathFolloww.Updatpe () )[0x000000] in <ffilename unknown>:0  
+
+ 
+ at Pname:ollow.Updat)
+(Nu[0xR0ferenceinxceptiona:e unkectw r:0 
+ en
+(Filentaset to ine: -1)n
+Ne of efnereneceE
+xception:Follow.t rteferen ce not set toi an iinsate uce of an o b
+  att
+  at hPolhloolow.gdate ()e [0x000000000] ifn e<fil enamoe >unkn
+o
+(Fi:lena
+  eat Path: -1)
+w
+.Updatee () [0x00000] : Object nreference not se
+t 
+to aen ie:  Lnineof a1n 
+o
+bjeNu
+  atfePrenceExceptio_n: Obje) [0xe0erence not set nto an innsta:nce 
+o at n objectl
+  apdaPathFoll0ow.g00t]Spee <f(ilenxa0000] in <f>:0ena
+me
+ uinknown>: Line
+   -t1)
+
+hullRefweUpdate ()eption0000] in <rfilename not ksown>:0 a in
+stanename: a Line:c 
+  at
+ 
+NullReferen.get_Speedo () [0xct0000] in <filoenset tonknown>:0 
+  at an objellt
+  apdate () [0x000et_Speed< () [0me unkn] in <fil
+ e
+name uane:  Lin:e : 
+-1)
+
+PathFolllow.Updcate e()i [0x00000t] ein <fil entamet tnknown>n:t0 
+ 
+(Filenamje:  
+Lian Pa -1)olo
+w.geRefereednceE[0cx000o00] biec <filfeneame unknown to a instancteFollow.Update (
+) [0x00000ollow.get_Speed (nknown>:000  i
+n
+(Filename:  Line: -1)
+
+N
+ullReferenceExc.Uption: Object reference not name unkno instanc
+e
+(Filename:  Li
+  at Pa)
+
+FoNullReferenceException: Object reference unknown> to an
+ instance of an objate 
+  at PathFollow.gfilename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ l
+  ferenceException: Object r0x00000] in <filename unknowance of
+ a
+n object
+  at PathFoll
+o
+w.get_SerenceExcexp0ti0] in b<fit refeerencoe not se
+t at Pathinsllow.Update  object
+  at PathFollow.get_Speed () [0
+x
+(Filename:  Line: -1)
+
+nown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:10777}
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PathFollow.get_Speed () [0x00000] in <filename unknown>:0 
+  at PathFollow.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UNet Client Disconnect Error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+UnloadTime: 2.138171 ms
+Multiple NetworkManagers detected in the scene. Only one NetworkManager can exist at a time. The duplicate NetworkManager will not be used.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
