@@ -431,9 +431,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Intructions
-
-'
+  m_Text: Instructions
 --- !u!222 &136530793
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1406,8 +1404,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 574, y: -43}
-  m_SizeDelta: {x: 1148, y: 43}
+  m_AnchoredPosition: {x: 512, y: -43}
+  m_SizeDelta: {x: 1024, y: 43}
   m_Pivot: {x: .5, y: 0}
 --- !u!114 &406896145
 MonoBehaviour:
@@ -1525,16 +1523,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '-Use the LEFT and RIGHT arrow keys to move your ship left or right
+  m_Text: '-Use the LEFT and RIGHT arrow keys to move your ship left or right and
+    press SPACE to jump
 
 
     -Avoid obstacles along the path
 
 
-    -Collect power-ups to gain the advantage over your opponants
+    -Collect power-ups to gain the advantage over your opponents
 
 
-    -Use your GHOST MODE to sabotage other players'
+    -Use your GHOST MODE to sabotage other players after death - press SPACE to drop
+    a deadly bomb'
 --- !u!222 &472342752
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1828,7 +1828,7 @@ GameObject:
   - 222: {fileID: 702522636}
   - 114: {fileID: 702522635}
   m_Layer: 5
-  m_Name: Intruction Screen
+  m_Name: Instruction Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2535,9 +2535,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Credits
-
-'
+  m_Text: Credits
 --- !u!222 &1109454158
 CanvasRenderer:
   m_ObjectHideFlags: 0
