@@ -119,7 +119,17 @@ public class GameNetworkManager : NetworkManager
         }else{
           GameObject.Find("btnStart").SetActive(false);
         }
-        GameObject.Find("Player List Container").GetComponent<Text>().text = "";
+		string lanIP = "[unavailable]";
+		//CheckPubIP();
+		var host = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
+		foreach(var ip in host.AddressList){
+			Debug.Log("IP " + ip.AddressFamily);
+			if(ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork){
+				lanIP = ip.ToString();
+			}
+		}
+
+        GameObject.Find("Player List Container").GetComponent<Text>().text = "IP " + lanIP;
     }
 
 
@@ -148,7 +158,7 @@ public class GameNetworkManager : NetworkManager
     public override void OnServerDisconnect(NetworkConnection conn)
     {
         base.OnServerDisconnect(conn);
-        foreach (ClientContainer c in this.clients)
+        /*foreach (ClientContainer c in this.clients)
         {
             if(c.conn == conn)
             {
@@ -157,7 +167,7 @@ public class GameNetworkManager : NetworkManager
                 this.clients.Remove(c);
                 break;
             }
-        }
+        }*/
 
         //Updating clients on change
         ClientListMsg updateMsg = new ClientListMsg();
@@ -181,7 +191,7 @@ public class GameNetworkManager : NetworkManager
             foreach (PlayerController p in players)
             {
                 if (!p.isLocalPlayer || p.playerID == -2) continue;
-                p.CmdSetPlayerID(hmsg.connectionID);//p.playerID = hmsg.connectionID;
+                p.CmdSetPlayerID(hmsg.connectionID, this.username);//p.playerID = hmsg.connectionID;
                 break;
             }
         }));
@@ -216,10 +226,17 @@ public class GameNetworkManager : NetworkManager
 
         foreach(PlayerController pc in GameObject.FindObjectsOfType<PlayerController>())
         {
+			string username = null;
+			for(int i = 0; i < this.clients.Count; i++)
+			{
+				if(this.clients[i].conn.connectionId == pc.playerID || (pc.connectionToClient == msg.conn && this.clients[i].conn == msg.conn))
+				username = this.clients[i].username;
+			}
+
 			if(pc.connectionToClient == msg.conn)
-				pc.RpcSetPlayerID(msg.conn.connectionId);
+				pc.RpcSetPlayerID(msg.conn.connectionId, username);
 			else
-            	pc.RpcSetPlayerID(pc.playerID);
+            	pc.RpcSetPlayerID(pc.playerID, username);
         }
     }
 
@@ -231,7 +248,7 @@ public class GameNetworkManager : NetworkManager
     {
         ClientListMsg cmsg = msg.ReadMessage<ClientListMsg>();
         this.usernames = cmsg.usernames;
-        GameObject.Find("Player List Container").GetComponent<Text>().text = string.Join("\n", this.usernames);
+        //GameObject.Find("Player List Container").GetComponent<Text>().text = string.Join("\n", this.usernames);
     }
 
     void OnGameStartReceived(NetworkMessage msg)

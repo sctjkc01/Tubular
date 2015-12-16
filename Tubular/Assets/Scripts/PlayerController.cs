@@ -192,7 +192,7 @@ public class PlayerController : NetworkBehaviour {
     }
 
     [ClientRpc]
-    public void RpcSetPlayerID(int value)
+    public void RpcSetPlayerID(int value, string username)
     {
         this.playerID = value;
 		SetColors(value + 1);
@@ -201,14 +201,14 @@ public class PlayerController : NetworkBehaviour {
 		GameObject.Find ("P" + Mathf.Max(1,this.playerID+1) + "username").GetComponent<Text>().enabled = true;
 		GameObject.Find ("p" + Mathf.Max(1,this.playerID+1) + "score").GetComponent<Text>().enabled = true;
 		GameObject.Find ("p" + Mathf.Max(1,this.playerID+1) + "score").GetComponent<Text>().text = "0000";
-		GameObject.Find ("P" + Mathf.Max(1,this.playerID+1) + "username").GetComponent<Text>().text = ((GameNetworkManager)NetworkManager.singleton).Username;
+		GameObject.Find ("P" + Mathf.Max(1,this.playerID+1) + "username").GetComponent<Text>().text = username;
     }
 
     [Command]
-    public void CmdSetPlayerID(int value)
+    public void CmdSetPlayerID(int value, string username)
     {
         this.playerID = value;
-		RpcSetPlayerID(value);
+		RpcSetPlayerID(value, username);
         SetColors(value + 1);
     }
 
