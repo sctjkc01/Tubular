@@ -54,7 +54,7 @@ public class GameManager : NetworkBehaviour {
 		objSpawn.SpawnChance += 1/20.0f * Time.deltaTime;
 
 		foreach(PlayerController pc in GameObject.FindObjectsOfType<PlayerController>()){
-			pc.AddPoint(2*Time.deltaTime);
+			if(pc.alive) pc.AddPoint(2*Time.deltaTime);
 		}
 	}
 

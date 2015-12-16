@@ -197,11 +197,11 @@ public class PlayerController : NetworkBehaviour {
         this.playerID = value;
 		SetColors(value + 1);
 		Debug.Log("PLAYER " + value);
-		GameObject.Find ("P" + (this.playerID+2) + "ScoreArea").GetComponent<Image>().enabled = true;
-		GameObject.Find ("P" + (this.playerID+2) + "username").GetComponent<Text>().enabled = true;
-		GameObject.Find ("p" + (this.playerID+2) + "score").GetComponent<Text>().enabled = true;
-		GameObject.Find ("p" + (this.playerID+2) + "score").GetComponent<Text>().text = "0000";
-		GameObject.Find ("P" + (this.playerID+2) + "username").GetComponent<Text>().text = ((GameNetworkManager)NetworkManager.singleton).Username;
+		GameObject.Find ("P" + Mathf.Max(1,this.playerID+1) + "ScoreArea").GetComponent<Image>().enabled = true;
+		GameObject.Find ("P" + Mathf.Max(1,this.playerID+1) + "username").GetComponent<Text>().enabled = true;
+		GameObject.Find ("p" + Mathf.Max(1,this.playerID+1) + "score").GetComponent<Text>().enabled = true;
+		GameObject.Find ("p" + Mathf.Max(1,this.playerID+1) + "score").GetComponent<Text>().text = "0000";
+		GameObject.Find ("P" + Mathf.Max(1,this.playerID+1) + "username").GetComponent<Text>().text = ((GameNetworkManager)NetworkManager.singleton).Username;
     }
 
     [Command]
@@ -229,12 +229,36 @@ public class PlayerController : NetworkBehaviour {
 
 	public void AddPoint(float points){
 		this.points += points;
-		GameObject.Find ("p" + (this.playerID+2) + "score").GetComponent<Text>().text = ((int)Mathf.Round(this.points)).ToString().PadLeft(4,'0');
+		PowerupBase[] powerups = this.GetComponents<PowerupBase>();
+		foreach(PowerupBase p in powerups) {
+			//Debug.Log(p.name + " " + p.Active);
+			float nscore = p.OnScoreGained(this.points, points);
+			if(p.Active && nscore != -1) 
+			{
+				this.points = nscore;
+				//powerup = true;
+				break;
+			}
+		}
+		GameObject.Find ("p" + Mathf.Max(1,this.playerID+1) + "score").GetComponent<Text>().text = ((int)Mathf.Round(this.points)).ToString().PadLeft(4,'0');
 	}
 
 	[ClientRpc]
 	private void RpcSetScore(float score){
-		this.points = score;
-		GameObject.Find ("p" + (this.playerID+2) + "score").GetComponent<Text>().text = ((int)Mathf.Round(this.points)).ToString().PadLeft(4,'0');
+		bool powerup = false;
+		PowerupBase[] powerups = this.GetComponents<PowerupBase>();
+		foreach(PowerupBase p in powerups) {
+			//Debug.Log(p.name + " " + p.Active);
+			float nscore = p.OnScoreGained(this.points, score - this.points);
+			if(p.Active && nscore != -1) 
+			{
+				this.points = nscore;
+				powerup = true;
+				break;
+			}
+		}
+		if(!powerup) this.points = score;
+
+		GameObject.Find ("p" + Mathf.Max(1,this.playerID+1) + "score").GetComponent<Text>().text = ((int)Mathf.Round(this.points)).ToString().PadLeft(4,'0');
 	}
 }
