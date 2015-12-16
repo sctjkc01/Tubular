@@ -219,7 +219,7 @@ public class PlayerController : NetworkBehaviour {
         Renderer sigrend = this.transform.FindChild("sigcolor").GetComponent<Renderer>();
         PlayerColor c = colors[colID % colors.Length];
 //        Debug.Log("BITCHES " + c.color + " FUCKER " + Color.red);
-        rend.material.SetColor("_Color",c.color);
+		rend.material.SetColor("_EmissionColor",c.color);
         rend.material.SetFloat("_Metallic", c.metal);
         rend.material.SetFloat("_Glossiness", c.smooth);
         sigrend.material.SetColor("_Color", c.color);
@@ -227,7 +227,8 @@ public class PlayerController : NetworkBehaviour {
         this.GetComponent<TrailRenderer>().material.SetColor("_Color", rend.material.color);
     }
 
-	public void AddPoint(float points){
+	[Command]
+	public void CmdAddPoint(float points){
 		this.points += points;
 		PowerupBase[] powerups = this.GetComponents<PowerupBase>();
 		foreach(PowerupBase p in powerups) {
@@ -241,6 +242,7 @@ public class PlayerController : NetworkBehaviour {
 			}
 		}
 		GameObject.Find ("p" + Mathf.Max(1,this.playerID+1) + "score").GetComponent<Text>().text = ((int)Mathf.Round(this.points)).ToString().PadLeft(4,'0');
+		RpcSetScore (this.points);
 	}
 
 	[ClientRpc]
