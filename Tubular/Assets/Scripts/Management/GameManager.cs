@@ -20,11 +20,17 @@ public class GameManager : NetworkBehaviour {
 
     public static GameManager inst;
 
+	public GameObject cam;
+
     void Awake() {
         inst = this;
         //DontDestroyOnLoad(this.gameObject);
         //else Destroy(this.gameObject);
     }
+
+	void Start(){
+		cam = GameObject.Find("Main Camera");
+	}
 
 	public void Update(){
 #if UNITY_EDITOR

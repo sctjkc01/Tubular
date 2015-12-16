@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.Networking;
+using UnityEngine.Networking;	
 using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -13,6 +13,8 @@ public class GameNetworkManager : NetworkManager
     private bool isServer = false;
     [SerializeField]
     private GameObject gameManagerPrefab;
+
+	public GameObject playerInfo;
     
     private struct ClientContainer
     {
@@ -23,11 +25,21 @@ public class GameNetworkManager : NetworkManager
     private List<ClientContainer> clients;
     private string[] usernames; //Username list stored on client. Not maintained on server.
 
+
+    //---do we make a var for each player?
+    //---i think for points, we should do it based on time on the board
+    //---so like 
+    //var P1score = p1score + Time.deltatime * 1 * multiplyer  
+
+
+    private PlayerController localPlayer;
+
     void Start()
     {
         this.SetupLoginButtons();
         clients = new List<ClientContainer>();
     }
+
 
     
     void SetIPAddress()
@@ -82,22 +94,20 @@ public class GameNetworkManager : NetworkManager
     {
         if (level == 0)
         {
-            SetupLoginButtons();
+            //SetupLoginButtons();
         }
         else
         {
             SetupGameSceneButtons();
         }
     }
-
     
     void SetupLoginButtons()
     {
-        GameObject.Find("btnHost").GetComponent<Button>().onClick.AddListener(StartupHost);
+        //GameObject.Find("btnHost").GetComponent<Button>().onClick.AddListener(StartupHost);
         
-        GameObject.Find("btnJoin").GetComponent<Button>().onClick.AddListener(JoinGame);
+        //GameObject.Find("btnJoin").GetComponent<Button>().onClick.AddListener(JoinGame);
     }
-
     void SetupGameSceneButtons()
     {
         GameObject.Find("Shade").SetActive(true);
@@ -111,6 +121,7 @@ public class GameNetworkManager : NetworkManager
         }
         GameObject.Find("Player List Container").GetComponent<Text>().text = "";
     }
+
 
     public void OnStartClicked()
     {
@@ -128,9 +139,9 @@ public class GameNetworkManager : NetworkManager
     public override void OnClientConnect(NetworkConnection conn)
     {
         base.OnClientConnect(conn);
-        HandshakeMsg msg = new HandshakeMsg();
-        msg.username = this.username;
-        conn.Send(HandshakeMsg.msgType, msg);
+        //HandshakeMsg msg = new HandshakeMsg();
+        //msg.username = this.username;
+        //conn.Send(HandshakeMsg.msgType, msg);
     }
 
     //Called on server when client disconnects
@@ -163,6 +174,17 @@ public class GameNetworkManager : NetworkManager
     {
         this.client.RegisterHandler(ClientListMsg.msgType, new NetworkMessageDelegate(OnUpdateClientListReceived));
         this.client.RegisterHandler(StartGameMsg.msgType, new NetworkMessageDelegate(OnGameStartReceived));
+        this.client.RegisterHandler(HandshakeMsg.msgType, new NetworkMessageDelegate(delegate(NetworkMessage msg)
+        {
+            HandshakeMsg hmsg = msg.ReadMessage<HandshakeMsg>();
+            PlayerController[] players = GameObject.FindObjectsOfType<PlayerController>();
+            foreach (PlayerController p in players)
+            {
+                if (!p.isLocalPlayer) continue;
+                p.CmdSetPlayerID(hmsg.connectionID);//p.playerID = hmsg.connectionID;
+                break;
+            }
+        }));
     }
 
     void RegisterHostHandlers()
@@ -180,7 +202,6 @@ public class GameNetworkManager : NetworkManager
         this.clients.Add(c);
 
         Debug.Log(hmsg.username + " connected.");
-        
         //Updating clients on change and telling newly connected of currently connected
         ClientListMsg updateMsg = new ClientListMsg();
         updateMsg.usernames = new string[this.clients.Count];
@@ -190,6 +211,13 @@ public class GameNetworkManager : NetworkManager
         }
 
         NetworkServer.SendToAll(ClientListMsg.msgType, updateMsg);
+        hmsg.connectionID = msg.conn.connectionId;
+        msg.conn.Send(HandshakeMsg.msgType, hmsg);
+
+        foreach(PlayerController pc in GameObject.FindObjectsOfType<PlayerController>())
+        {
+            pc.RpcSetPlayerID(pc.playerID);
+        }
     }
 
     #endregion
@@ -212,6 +240,5 @@ public class GameNetworkManager : NetworkManager
     }
 
     #endregion
-
-    public string Username { get { return username; } }
+    public string Username { get { return username; } }  
 }
