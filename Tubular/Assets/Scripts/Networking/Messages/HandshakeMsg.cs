@@ -10,4 +10,5 @@ using UnityEngine.Networking;
 public class HandshakeMsg : MessageBase {
     public const short msgType = MsgType.Highest + 1;
     public string username;
+    public int connectionID;
 }

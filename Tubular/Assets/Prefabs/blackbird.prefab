@@ -14,10 +14,13 @@ GameObject:
   - 54: {fileID: 5461344}
   - 114: {fileID: 11444146}
   - 114: {fileID: 11494902}
-  - 135: {fileID: 13537424}
+  - 65: {fileID: 6574008}
+  - 96: {fileID: 9667378}
+  - 114: {fileID: 11458402}
+  - 114: {fileID: 11408218}
   m_Layer: 0
   m_Name: blackbird
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +95,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.10290003, y: 1.278, z: .395999998}
+  m_LocalPosition: {x: -21.1399994, y: 6.0999999, z: .395999998}
   m_LocalScale: {x: .864695311, y: .864695311, z: .864695311}
   m_Children:
   - {fileID: 432282}
@@ -232,6 +235,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!65 &6574008
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.20000005, y: 1, z: 2}
+  m_Center: {x: .100000001, y: .5, z: -.300000012}
+--- !u!96 &9667378
+TrailRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125578}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 23e6b3dc4d8b54d47b2c6be4342415c5, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Time: 5
+  m_StartWidth: 1
+  m_EndWidth: 1
+  m_Colors:
+    m_Color[0]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[1]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[2]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[3]:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_Color[4]:
+      serializedVersion: 2
+      rgba: 16777215
+  m_MinVertexDistance: .100000001
+  m_Autodestruct: 0
 --- !u!114 &11403514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -264,6 +324,19 @@ MonoBehaviour:
     i15: 148
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &11408218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd07c0e0fb29863468908334c3e550bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldVisual: {fileID: 0}
+  duration: 5
 --- !u!114 &11443898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -296,6 +369,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shieldVisual: {fileID: 145356}
+--- !u!114 &11458402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ba3b4a8aa876b49a59630e45079bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathVisual: {fileID: 0}
+  bombPrefab: {fileID: 187362, guid: 6181ac44acf45f64ca543c27f9b5b56f, type: 2}
+  timeBetweenBombs: 2
 --- !u!114 &11460942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -308,6 +395,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alive: 1
+  playerID: 0
+  points: 0
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
@@ -315,6 +404,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   PlayerMoveSpeed: 10
+  PlayerAgainstPipeForce: 3
+  ghostMaterial: {fileID: 0}
 --- !u!114 &11494902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -329,18 +420,6 @@ MonoBehaviour:
   doubleJumpVisual: {fileID: 0}
   maxJumps: 3
   jumpsPerPowerup: 1
---- !u!135 &13537424
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125578}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.20000005
-  m_Center: {x: 0, y: .699999988, z: -.400000006}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -356,6 +435,10 @@ Prefab:
       propertyPath: whatIsObstacle.m_Bits
       value: 1024
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23e6b3dc4d8b54d47b2c6be4342415c5, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125578}

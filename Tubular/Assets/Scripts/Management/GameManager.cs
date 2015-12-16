@@ -9,6 +9,11 @@ public class GameManager : NetworkBehaviour {
     [Tooltip("In Unity Units per Second.  Read by everything that travels.")]
     public float GameTravelSpeed = 5.0f;
 
+	private ObjectSpawner objSpawn;
+
+    [SerializeField]
+    private float SpeedIncreasePerSecond = 1.0f;
+
     /// <summary>
     /// Are we playing a game right now?
     /// </summary>
@@ -17,12 +22,18 @@ public class GameManager : NetworkBehaviour {
 
     public static GameManager inst;
 
+	public GameObject cam;
+
     void Awake() {
-        //if (inst == null) 
         inst = this;
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
         //else Destroy(this.gameObject);
     }
+
+	void Start(){
+		cam = GameObject.Find("Main Camera");
+		objSpawn = GameObject.Find ("Obj Spawn").GetComponent<ObjectSpawner>();
+	}
 
 	public void Update(){
 #if UNITY_EDITOR
@@ -37,6 +48,13 @@ public class GameManager : NetworkBehaviour {
 				go.transform.GetChild(i).position -= speed;
 			}
 			go.transform.localPosition += speed;
+		}
+
+		GameTravelSpeed += SpeedIncreasePerSecond * Time.deltaTime;
+		objSpawn.SpawnChance += 1/20.0f * Time.deltaTime;
+
+		foreach(PlayerController pc in GameObject.FindObjectsOfType<PlayerController>()){
+			if(pc.alive) pc.AddPoint(2*Time.deltaTime);
 		}
 	}
 

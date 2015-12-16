@@ -36,7 +36,7 @@ public class PathFollow : MonoBehaviour {
                 if(!RotateX) {
                     rotEuler.x = 0;
                 }
-                Debug.Log(gameObject.name + " rot: " + rotEuler.ToString("2f"));
+//                Debug.Log(gameObject.name + " rot: " + rotEuler.ToString("2f"));
                 transform.eulerAngles = rotEuler;
             }
 

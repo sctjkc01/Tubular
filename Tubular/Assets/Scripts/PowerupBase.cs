@@ -26,6 +26,8 @@ public class PowerupBase : NetworkBehaviour {
 	/// <param name="grounded">If set to <c>true</c> grounded.</param>
 	public virtual float OnJumpPressed(bool grounded) { return 1.0f; }
 
+	public virtual float OnScoreGained(float curScore, float add) { return -1; }
+
 	public virtual void OnActivated(bool newValue){
 		this.isActive = newValue;
 	}

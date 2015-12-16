@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 22535da057fed8a4ca38798f8d5ea4dd
+timeCreated: 1449862334
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - rawimage_panel: {instanceID: 0}
+  - title_panel: {instanceID: 0}
+  - login_panel: {instanceID: 0}
+  - instructions_panel: {instanceID: 0}
+  - credits_panel: {instanceID: 0}
+  - bgimage_1: {fileID: 2800000, guid: d19dc8196fee6e8439c5ce23aaa7ca13, type: 3}
+  - bgimage_2: {fileID: 2800000, guid: 9503835c1f3c7b6479afe777ccb3400f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -93,7 +93,7 @@ public class PathBuilder : MonoBehaviour {
                     if(followers[j].gameObject.GetComponent<ObjectSpawner>() != null) {
                         followers[j].Travel(200f); // Push the obstacle spawner 200 units ahead instead
                     } else if(followers[j].gameObject.name == "Dead Area") {
-                        followers[j].Travel(30f); // Push the "dead player" area 30 units ahead instead
+                        followers[j].Travel(70f); // Push the "dead player" area 30 units ahead instead
                     } else {
                         followers[j].Travel(5f); // Push everything 5 units ahead, prevent the starting clipping
                     }
